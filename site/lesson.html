@@ -1835,20 +1835,29 @@
       }
 
       function fetchLesson(path) {
-        var rawUrl = 'https://raw.githubusercontent.com/rohitg00/ai-engineering-from-scratch/main/' + path + '/docs/en.md';
-        var quizUrl = 'https://raw.githubusercontent.com/rohitg00/ai-engineering-from-scratch/main/' + path + '/quiz.json';
+        var giteeBase = 'https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/raw/master/';
+        var zhUrl = giteeBase + path + '/docs/zh.md';
+        var enUrl = giteeBase + path + '/docs/en.md';
+        var quizUrl = giteeBase + path + '/quiz.json';
 
-        fetch(rawUrl)
+        // Try zh.md first, fallback to en.md
+        fetch(zhUrl)
           .then(function (res) {
-            if (!res.ok) throw new Error('fetch-failed');
+            if (!res.ok) throw new Error('zh-not-found');
             return res.text();
+          })
+          .catch(function () {
+            return fetch(enUrl).then(function (res) {
+              if (!res.ok) throw new Error('en-not-found');
+              return res.text();
+            });
           })
           .then(function (md) {
             try {
               renderLesson(md);
             } catch (err) {
               console.error('renderLesson failed', err);
-              showError('Render error', 'Loaded the lesson markdown but failed to render it. Details in the browser console.');
+              showError('渲染错误', '已加载课程文档，但渲染失败。详情请查看浏览器控制台。');
               return;
             }
             fetch(quizUrl)
@@ -1861,7 +1870,7 @@
               });
           })
           .catch(function () {
-            showError('Lesson not found', 'Could not fetch the lesson at <code>' + escapeHtml(path) + '</code>. It may not have been written yet.');
+            showError('课程未找到', '无法加载课程 <code>' + escapeHtml(path) + '</code>。该课程可能尚未编写。');
           });
       }
 
@@ -2841,8 +2850,8 @@
           cb(null, ghApiCache[apiPath]);
           return;
         }
-        fetch('https://api.github.com/repos/rohitg00/ai-engineering-from-scratch/contents/' + apiPath, {
-          headers: { 'Accept': 'application/vnd.github.v3+json' }
+        fetch('https://gitee.com/api/v5/repos/qianchilang/ai-engineering-from-scratch-zh/contents/' + apiPath, {
+          headers: { 'Accept': 'application/json' }
         }).then(function (res) {
           if (!res.ok) throw new Error(res.status);
           return res.json();
