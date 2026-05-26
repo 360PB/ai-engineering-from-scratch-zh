@@ -164,107 +164,107 @@ Total estimated time: ~314 hours, at your own pace.
 
 | # | Lesson | Status | Est. |
 |---|--------|--------|------|
-| 01 | [Audio Fundamentals — Waveforms, Sampling, Fourier Transform](phases/06-speech-and-audio/01-audio-fundamentals) | ✅ | ~45 min |
-| 02 | [Spectrograms, Mel Scale & Audio Features](phases/06-speech-and-audio/02-spectrograms-mel-features) | ✅ | ~45 min |
-| 03 | [Audio Classification](phases/06-speech-and-audio/03-audio-classification) | ✅ | ~75 min |
-| 04 | [Speech Recognition (ASR)](phases/06-speech-and-audio/04-speech-recognition-asr) | ✅ | ~45 min |
-| 05 | [Whisper — Architecture & Fine-Tuning](phases/06-speech-and-audio/05-whisper-architecture-finetuning) | ✅ | ~75 min |
-| 06 | [Speaker Recognition & Verification](phases/06-speech-and-audio/06-speaker-recognition-verification) | ✅ | ~45 min |
-| 07 | [Text-to-Speech (TTS)](phases/06-speech-and-audio/07-text-to-speech) | ✅ | ~75 min |
-| 08 | [Voice Cloning & Voice Conversion](phases/06-speech-and-audio/08-voice-cloning-conversion) | ✅ | ~75 min |
-| 09 | [Music Generation](phases/06-speech-and-audio/09-music-generation) | ✅ | ~75 min |
-| 10 | [Audio-Language Models](phases/06-speech-and-audio/10-audio-language-models) | ✅ | ~45 min |
-| 11 | [Real-Time Audio Processing](phases/06-speech-and-audio/11-real-time-audio-processing) | ✅ | ~75 min |
-| 12 | [Build a Voice Assistant Pipeline](phases/06-speech-and-audio/12-voice-assistant-pipeline) | ✅ | ~120 min |
-| 13 | [Neural Audio Codecs — EnCodec, SNAC, Mimi, DAC](phases/06-speech-and-audio/13-neural-audio-codecs) | ✅ | ~60 min |
-| 14 | [Voice Activity Detection & Turn-Taking](phases/06-speech-and-audio/14-voice-activity-detection-turn-taking) | ✅ | ~45 min |
-| 15 | [Streaming Speech-to-Speech — Moshi, Hibiki](phases/06-speech-and-audio/15-streaming-speech-to-speech-moshi-hibiki) | ✅ | ~75 min |
-| 16 | [Voice Anti-Spoofing & Audio Watermarking](phases/06-speech-and-audio/16-anti-spoofing-audio-watermarking) | ✅ | ~75 min |
-| 17 | [Audio Evaluation — WER, MOS, MMAU, Leaderboards](phases/06-speech-and-audio/17-audio-evaluation-metrics) | ✅ | ~60 min |
+| 01 | [音频基础——波形、采样与傅里叶变换](phases/06-speech-and-audio/01-audio-fundamentals) | ✅ | ~45 min |
+| 02 | [频谱图、梅尔刻度与音频特征](phases/06-speech-and-audio/02-spectrograms-mel-features) | ✅ | ~45 min |
+| 03 | [音频分类](phases/06-speech-and-audio/03-audio-classification) | ✅ | ~75 min |
+| 04 | [语音识别 (ASR)](phases/06-speech-and-audio/04-speech-recognition-asr) | ✅ | ~45 min |
+| 05 | [Whisper——架构与微调](phases/06-speech-and-audio/05-whisper-architecture-finetuning) | ✅ | ~75 min |
+| 06 | [说话人识别与验证](phases/06-speech-and-audio/06-speaker-recognition-verification) | ✅ | ~45 min |
+| 07 | [文本转语音 (TTS)](phases/06-speech-and-audio/07-text-to-speech) | ✅ | ~75 min |
+| 08 | [语音克隆与语音转换](phases/06-speech-and-audio/08-voice-cloning-conversion) | ✅ | ~75 min |
+| 09 | [音乐生成](phases/06-speech-and-audio/09-music-generation) | ✅ | ~75 min |
+| 10 | [音频-语言模型](phases/06-speech-and-audio/10-audio-language-models) | ✅ | ~45 min |
+| 11 | [实时音频处理](phases/06-speech-and-audio/11-real-time-audio-processing) | ✅ | ~75 min |
+| 12 | [构建语音助手流水线](phases/06-speech-and-audio/12-voice-assistant-pipeline) | ✅ | ~120 min |
+| 13 | [神经音频编解码器——EnCodec、SNAC、Mimi、DAC](phases/06-speech-and-audio/13-neural-audio-codecs) | ✅ | ~60 min |
+| 14 | [语音活动检测与话轮转换](phases/06-speech-and-audio/14-voice-activity-detection-turn-taking) | ✅ | ~45 min |
+| 15 | [流式语音到语音——Moshi、Hibiki](phases/06-speech-and-audio/15-streaming-speech-to-speech-moshi-hibiki) | ✅ | ~75 min |
+| 16 | [语音反欺骗与音频水印](phases/06-speech-and-audio/16-anti-spoofing-audio-watermarking) | ✅ | ~75 min |
+| 17 | [音频评估——WER、MOS、MMAU、排行榜](phases/06-speech-and-audio/17-audio-evaluation-metrics) | ✅ | ~60 min |
 
-## Phase 7: Transformers Deep Dive — ✅ (~14 hours)
-
-| # | Lesson | Status | Est. |
-|---|--------|--------|------|
-| 01 | [Why Transformers — The Problems with RNNs](phases/07-transformers-deep-dive/01-why-transformers) | ✅ | ~45 min |
-| 02 | [Self-Attention from Scratch](phases/07-transformers-deep-dive/02-self-attention-from-scratch) | ✅ | ~75 min |
-| 03 | [Multi-Head Attention](phases/07-transformers-deep-dive/03-multi-head-attention) | ✅ | ~75 min |
-| 04 | [Positional Encoding — Sinusoidal, RoPE, ALiBi](phases/07-transformers-deep-dive/04-positional-encoding) | ✅ | ~45 min |
-| 05 | [The Full Transformer — Encoder + Decoder](phases/07-transformers-deep-dive/05-full-transformer) | ✅ | ~75 min |
-| 06 | [BERT — Masked Language Modeling](phases/07-transformers-deep-dive/06-bert-masked-language-modeling) | ✅ | ~45 min |
-| 07 | [GPT — Causal Language Modeling](phases/07-transformers-deep-dive/07-gpt-causal-language-modeling) | ✅ | ~75 min |
-| 08 | [T5, BART — Encoder-Decoder Models](phases/07-transformers-deep-dive/08-t5-bart-encoder-decoder) | ✅ | ~45 min |
-| 09 | [Vision Transformers (ViT)](phases/07-transformers-deep-dive/09-vision-transformers) | ✅ | ~45 min |
-| 10 | [Audio Transformers — Whisper Architecture](phases/07-transformers-deep-dive/10-audio-transformers-whisper) | ✅ | ~45 min |
-| 11 | [Mixture of Experts (MoE)](phases/07-transformers-deep-dive/11-mixture-of-experts) | ✅ | ~45 min |
-| 12 | [KV Cache, Flash Attention & Inference Optimization](phases/07-transformers-deep-dive/12-kv-cache-flash-attention) | ✅ | ~75 min |
-| 13 | [Scaling Laws](phases/07-transformers-deep-dive/13-scaling-laws) | ✅ | ~45 min |
-| 14 | [Build a Transformer from Scratch — The Capstone](phases/07-transformers-deep-dive/14-build-a-transformer-capstone) | ✅ | ~120 min |
-
-## Phase 8: Generative AI — ✅ (~14 hours)
+## Phase 7: Transformer 深度剖析 — ✅ (~14 hours)
 
 | # | Lesson | Status | Est. |
 |---|--------|--------|------|
-| 01 | [Generative Models — Taxonomy & History](phases/08-generative-ai/01-generative-models-taxonomy-history/) | ✅ | ~45 min |
-| 02 | [Autoencoders & VAE](phases/08-generative-ai/02-autoencoders-vae/) | ✅ | ~75 min |
-| 03 | [GANs — Generator vs Discriminator](phases/08-generative-ai/03-gans-generator-discriminator/) | ✅ | ~75 min |
-| 04 | [Conditional GANs & Pix2Pix](phases/08-generative-ai/04-conditional-gans-pix2pix/) | ✅ | ~75 min |
+| 01 | [为什么用 Transformer——RNN 的问题](phases/07-transformers-deep-dive/01-why-transformers) | ✅ | ~45 min |
+| 02 | [从零实现自注意力](phases/07-transformers-deep-dive/02-self-attention-from-scratch) | ✅ | ~75 min |
+| 03 | [多头注意力](phases/07-transformers-deep-dive/03-multi-head-attention) | ✅ | ~75 min |
+| 04 | [位置编码——正弦、RoPE、ALiBi](phases/07-transformers-deep-dive/04-positional-encoding) | ✅ | ~45 min |
+| 05 | [完整 Transformer——编码器 + 解码器](phases/07-transformers-deep-dive/05-full-transformer) | ✅ | ~75 min |
+| 06 | [BERT——掩码语言建模](phases/07-transformers-deep-dive/06-bert-masked-language-modeling) | ✅ | ~45 min |
+| 07 | [GPT——因果语言建模](phases/07-transformers-deep-dive/07-gpt-causal-language-modeling) | ✅ | ~75 min |
+| 08 | [T5、BART——编码器-解码器模型](phases/07-transformers-deep-dive/08-t5-bart-encoder-decoder) | ✅ | ~45 min |
+| 09 | [视觉 Transformer (ViT)](phases/07-transformers-deep-dive/09-vision-transformers) | ✅ | ~45 min |
+| 10 | [音频 Transformer——Whisper 架构](phases/07-transformers-deep-dive/10-audio-transformers-whisper) | ✅ | ~45 min |
+| 11 | [混合专家模型 (MoE)](phases/07-transformers-deep-dive/11-mixture-of-experts) | ✅ | ~45 min |
+| 12 | [KV 缓存、Flash Attention 与推理优化](phases/07-transformers-deep-dive/12-kv-cache-flash-attention) | ✅ | ~75 min |
+| 13 | [缩放定律](phases/07-transformers-deep-dive/13-scaling-laws) | ✅ | ~45 min |
+| 14 | [从零构建 Transformer——综合项目](phases/07-transformers-deep-dive/14-build-a-transformer-capstone) | ✅ | ~120 min |
+
+## Phase 8: 生成式 AI — ✅ (~14 hours)
+
+| # | Lesson | Status | Est. |
+|---|--------|--------|------|
+| 01 | [生成模型——分类与历史](phases/08-generative-ai/01-generative-models-taxonomy-history/) | ✅ | ~45 min |
+| 02 | [自编码器与 VAE](phases/08-generative-ai/02-autoencoders-vae/) | ✅ | ~75 min |
+| 03 | [GAN——生成器与判别器](phases/08-generative-ai/03-gans-generator-discriminator/) | ✅ | ~75 min |
+| 04 | [条件 GAN 与 Pix2Pix](phases/08-generative-ai/04-conditional-gans-pix2pix/) | ✅ | ~75 min |
 | 05 | [StyleGAN](phases/08-generative-ai/05-stylegan/) | ✅ | ~45 min |
-| 06 | [Diffusion Models — DDPM from Scratch](phases/08-generative-ai/06-diffusion-ddpm-from-scratch/) | ✅ | ~75 min |
-| 07 | [Latent Diffusion & Stable Diffusion](phases/08-generative-ai/07-latent-diffusion-stable-diffusion/) | ✅ | ~75 min |
-| 08 | [ControlNet, LoRA & Image Conditioning](phases/08-generative-ai/08-controlnet-lora-conditioning/) | ✅ | ~75 min |
-| 09 | [Inpainting, Outpainting & Image Editing](phases/08-generative-ai/09-inpainting-outpainting-editing/) | ✅ | ~75 min |
-| 10 | [Video Generation](phases/08-generative-ai/10-video-generation/) | ✅ | ~45 min |
-| 11 | [Audio Generation](phases/08-generative-ai/11-audio-generation/) | ✅ | ~45 min |
-| 12 | [3D Generation](phases/08-generative-ai/12-3d-generation/) | ✅ | ~45 min |
-| 13 | [Flow Matching & Rectified Flows](phases/08-generative-ai/13-flow-matching-rectified-flows/) | ✅ | ~45 min |
-| 14 | [Evaluation — FID, CLIP Score, Human Preference](phases/08-generative-ai/14-evaluation-fid-clip-score/) | ✅ | ~45 min |
+| 06 | [扩散模型——从零实现 DDPM](phases/08-generative-ai/06-diffusion-ddpm-from-scratch/) | ✅ | ~75 min |
+| 07 | [潜在扩散与 Stable Diffusion](phases/08-generative-ai/07-latent-diffusion-stable-diffusion/) | ✅ | ~75 min |
+| 08 | [ControlNet、LoRA 与图像条件控制](phases/08-generative-ai/08-controlnet-lora-conditioning/) | ✅ | ~75 min |
+| 09 | [图像修复、外扩与编辑](phases/08-generative-ai/09-inpainting-outpainting-editing/) | ✅ | ~75 min |
+| 10 | [视频生成](phases/08-generative-ai/10-video-generation/) | ✅ | ~45 min |
+| 11 | [音频生成](phases/08-generative-ai/11-audio-generation/) | ✅ | ~45 min |
+| 12 | [3D 生成](phases/08-generative-ai/12-3d-generation/) | ✅ | ~45 min |
+| 13 | [流匹配与整流流](phases/08-generative-ai/13-flow-matching-rectified-flows/) | ✅ | ~45 min |
+| 14 | [评估——FID、CLIP 分数、人类偏好](phases/08-generative-ai/14-evaluation-fid-clip-score/) | ✅ | ~45 min |
 
-## Phase 9: Reinforcement Learning — ✅ (~13 hours)
-
-| # | Lesson | Status | Est. |
-|---|--------|--------|------|
-| 01 | MDPs, States, Actions & Rewards | ✅ | ~45 min |
-| 02 | Dynamic Programming | ✅ | ~75 min |
-| 03 | Monte Carlo Methods | ✅ | ~75 min |
-| 04 | Temporal Difference — Q-Learning, SARSA | ✅ | ~75 min |
-| 05 | Deep Q-Networks (DQN) | ✅ | ~75 min |
-| 06 | Policy Gradient Methods — REINFORCE | ✅ | ~75 min |
-| 07 | Actor-Critic — A2C, A3C | ✅ | ~75 min |
-| 08 | Proximal Policy Optimization (PPO) | ✅ | ~75 min |
-| 09 | Reward Modeling & RLHF | ✅ | ~45 min |
-| 10 | Multi-Agent RL | ✅ | ~45 min |
-| 11 | Sim-to-Real Transfer | ✅ | ~45 min |
-| 12 | RL for Games | ✅ | ~75 min |
-
-## Phase 10: LLMs from Scratch — ✅ (~26 hours)
+## Phase 9: 强化学习 — ✅ (~13 hours)
 
 | # | Lesson | Status | Est. |
 |---|--------|--------|------|
-| 01 | [Tokenizers — BPE, WordPiece, SentencePiece](phases/10-llms-from-scratch/01-tokenizers) | ✅ | ~45 min |
-| 02 | [Building a Tokenizer from Scratch](phases/10-llms-from-scratch/02-building-a-tokenizer) | ✅ | ~75 min |
-| 03 | [Data Pipelines for Pre-Training](phases/10-llms-from-scratch/03-data-pipelines) | ✅ | ~75 min |
-| 04 | [Pre-Training a Mini GPT (124M)](phases/10-llms-from-scratch/04-pre-training-mini-gpt) | ✅ | ~120 min |
-| 05 | [Scaling — Distributed Training, FSDP, DeepSpeed](phases/10-llms-from-scratch/05-scaling-distributed) | ✅ | ~75 min |
-| 06 | [Instruction Tuning — SFT](phases/10-llms-from-scratch/06-instruction-tuning-sft) | ✅ | ~75 min |
-| 07 | [RLHF — Reward Model + PPO Training](phases/10-llms-from-scratch/07-rlhf) | ✅ | ~75 min |
-| 08 | [DPO — Direct Preference Optimization](phases/10-llms-from-scratch/08-dpo) | ✅ | ~75 min |
-| 09 | [Constitutional AI & Self-Improvement](phases/10-llms-from-scratch/09-constitutional-ai-self-improvement) | ✅ | ~45 min |
-| 10 | [Evaluation — Benchmarks, Evals, LM Harness](phases/10-llms-from-scratch/10-evaluation) | ✅ | ~75 min |
-| 11 | [Quantization — INT8, GPTQ, AWQ, GGUF](phases/10-llms-from-scratch/11-quantization) | ✅ | ~75 min |
-| 12 | [Inference Optimization](phases/10-llms-from-scratch/12-inference-optimization) | ✅ | ~75 min |
-| 13 | [Building a Complete LLM Pipeline](phases/10-llms-from-scratch/13-building-complete-llm-pipeline) | ✅ | ~120 min |
-| 14 | [Open Models — Architecture Walkthroughs](phases/10-llms-from-scratch/14-open-models-architecture-walkthroughs) | ✅ | ~45 min |
-| 15 | [Speculative Decoding and EAGLE-3](phases/10-llms-from-scratch/15-speculative-decoding-eagle3) | ✅ | ~75 min |
-| 16 | [Differential Attention (V2)](phases/10-llms-from-scratch/16-differential-attention-v2) | ✅ | ~60 min |
-| 17 | [Native Sparse Attention (DeepSeek NSA)](phases/10-llms-from-scratch/17-native-sparse-attention) | ✅ | ~60 min |
-| 18 | [Multi-Token Prediction (MTP)](phases/10-llms-from-scratch/18-multi-token-prediction) | ✅ | ~60 min |
-| 19 | [DualPipe Parallelism](phases/10-llms-from-scratch/19-dualpipe-parallelism) | ✅ | ~60 min |
-| 20 | [DeepSeek-V3 Architecture Walkthrough](phases/10-llms-from-scratch/20-deepseek-v3-walkthrough) | ✅ | ~75 min |
-| 21 | [Jamba — Hybrid SSM-Transformer](phases/10-llms-from-scratch/21-jamba-hybrid-ssm-transformer) | ✅ | ~60 min |
-| 22 | [Async and Hogwild! Inference](phases/10-llms-from-scratch/22-async-hogwild-inference) | ✅ | ~60 min |
+| 01 | 马尔可夫决策过程、状态、动作与奖励 | ✅ | ~45 min |
+| 02 | 动态规划 | ✅ | ~75 min |
+| 03 | 蒙特卡洛方法 | ✅ | ~75 min |
+| 04 | 时序差分——Q-Learning、SARSA | ✅ | ~75 min |
+| 05 | 深度 Q 网络 (DQN) | ✅ | ~75 min |
+| 06 | 策略梯度方法——REINFORCE | ✅ | ~75 min |
+| 07 | Actor-Critic——A2C、A3C | ✅ | ~75 min |
+| 08 | 近端策略优化 (PPO) | ✅ | ~75 min |
+| 09 | 奖励建模与 RLHF | ✅ | ~45 min |
+| 10 | 多智能体强化学习 | ✅ | ~45 min |
+| 11 | 仿真到现实迁移 | ✅ | ~45 min |
+| 12 | 游戏强化学习 | ✅ | ~75 min |
 
-## Phase 11: LLM Engineering — ✅ (~17 hours)
+## Phase 10: 从零构建大语言模型 — ✅ (~26 hours)
+
+| # | Lesson | Status | Est. |
+|---|--------|--------|------|
+| 01 | [分词器——BPE、WordPiece、SentencePiece](phases/10-llms-from-scratch/01-tokenizers) | ✅ | ~45 min |
+| 02 | [从零构建分词器](phases/10-llms-from-scratch/02-building-a-tokenizer) | ✅ | ~75 min |
+| 03 | [预训练数据流水线](phases/10-llms-from-scratch/03-data-pipelines) | ✅ | ~75 min |
+| 04 | [预训练迷你 GPT (124M)](phases/10-llms-from-scratch/04-pre-training-mini-gpt) | ✅ | ~120 min |
+| 05 | [扩展——分布式训练、FSDP、DeepSpeed](phases/10-llms-from-scratch/05-scaling-distributed) | ✅ | ~75 min |
+| 06 | [指令微调——SFT](phases/10-llms-from-scratch/06-instruction-tuning-sft) | ✅ | ~75 min |
+| 07 | [RLHF——奖励模型 + PPO 训练](phases/10-llms-from-scratch/07-rlhf) | ✅ | ~75 min |
+| 08 | [DPO——直接偏好优化](phases/10-llms-from-scratch/08-dpo) | ✅ | ~75 min |
+| 09 | [宪法 AI 与自我改进](phases/10-llms-from-scratch/09-constitutional-ai-self-improvement) | ✅ | ~45 min |
+| 10 | [评估——基准测试、Evals、LM Harness](phases/10-llms-from-scratch/10-evaluation) | ✅ | ~75 min |
+| 11 | [量化——INT8、GPTQ、AWQ、GGUF](phases/10-llms-from-scratch/11-quantization) | ✅ | ~75 min |
+| 12 | [推理优化](phases/10-llms-from-scratch/12-inference-optimization) | ✅ | ~75 min |
+| 13 | [构建完整的 LLM 流水线](phases/10-llms-from-scratch/13-building-complete-llm-pipeline) | ✅ | ~120 min |
+| 14 | [开源模型——架构详解](phases/10-llms-from-scratch/14-open-models-architecture-walkthroughs) | ✅ | ~45 min |
+| 15 | [投机解码与 EAGLE-3](phases/10-llms-from-scratch/15-speculative-decoding-eagle3) | ✅ | ~75 min |
+| 16 | [差分注意力 (V2)](phases/10-llms-from-scratch/16-differential-attention-v2) | ✅ | ~60 min |
+| 17 | [原生稀疏注意力 (DeepSeek NSA)](phases/10-llms-from-scratch/17-native-sparse-attention) | ✅ | ~60 min |
+| 18 | [多 Token 预测 (MTP)](phases/10-llms-from-scratch/18-multi-token-prediction) | ✅ | ~60 min |
+| 19 | [DualPipe 并行](phases/10-llms-from-scratch/19-dualpipe-parallelism) | ✅ | ~60 min |
+| 20 | [DeepSeek-V3 架构详解](phases/10-llms-from-scratch/20-deepseek-v3-walkthrough) | ✅ | ~75 min |
+| 21 | [Jamba——混合 SSM-Transformer](phases/10-llms-from-scratch/21-jamba-hybrid-ssm-transformer) | ✅ | ~60 min |
+| 22 | [异步与 Hogwild! 推理](phases/10-llms-from-scratch/22-async-hogwild-inference) | ✅ | ~60 min |
+
+## Phase 11: 大语言模型工程 — ✅ (~17 hours)
 
 | # | Lesson | Status | Est. |
 |---|--------|--------|------|
