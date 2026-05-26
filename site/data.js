@@ -120,9 +120,9 @@ const PHASES = [
   },
   {
     "id": 1,
-    "name": "Math Foundations",
+    "name": "数学基础",
     "status": "complete",
-    "desc": "The intuition behind every AI algorithm, through code.",
+    "desc": "通过代码理解每个 AI 算法的直觉。",
     "lessons": [
       {
         "name": "线性代数直觉",
@@ -326,12 +326,12 @@ const PHASES = [
   },
   {
     "id": 2,
-    "name": "ML Fundamentals",
+    "name": "机器学习基础",
     "status": "complete",
-    "desc": "Classical ML — still the backbone of most production AI.",
+    "desc": "经典机器学习——仍然是大多数生产环境 AI 的支柱。",
     "lessons": [
       {
-        "name": "What Is Machine Learning",
+        "name": "什么是机器学习",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -340,7 +340,7 @@ const PHASES = [
         "keywords": "Learning From Data, Not Rules · The Three Types of Machine Learning · Beyond the Big Three · Classification vs Regression · The ML Workflow · Training, Validation, and Test Splits · Overfitting vs Underfitting · The Bias-Variance Tradeoff · No Free Lunch Theorem · When NOT to Use Machine Learning · Step 1: Nearest Centroid Classifier from Scratch · Step 2: Train on Synthetic Data · Step 3: Compare Against a Baseline · Why This Matters · Step 4: What the Centroid Classifier Cannot Do"
       },
       {
-        "name": "Linear Regression from Scratch",
+        "name": "从零实现线性回归",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -349,7 +349,7 @@ const PHASES = [
         "keywords": "The Model · The Cost Function (Mean Squared Error) · Gradient Descent · The Normal Equation (Closed-Form Solution) · Multiple Linear Regression · Polynomial Regression · R-Squared Score · Regularization Preview (Ridge Regression) · Step 1: Generate sample data · Step 2: Linear regression from scratch with gradient descent · Step 3: Normal equation (closed-form solution) · Step 4: Multiple linear regression · Step 5: Polynomial regression · Step 6: Ridge regression (L2 regularization)"
       },
       {
-        "name": "Logistic Regression & Classification",
+        "name": "逻辑回归与分类",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -358,7 +358,7 @@ const PHASES = [
         "keywords": "Why Linear Regression Fails for Classification · The Sigmoid Function · Logistic Regression = Linear Model + Sigmoid · Binary Cross-Entropy Loss · Gradient Descent for Logistic Regression · The Decision Boundary · Multi-Class Classification with Softmax · Evaluation Metrics · Step 1: Sigmoid function and data generation · Step 2: Logistic regression from scratch · Step 3: Confusion matrix and metrics from scratch · Step 4: Decision boundary analysis · Step 5: Multi-class with softmax · Step 6: Threshold tuning"
       },
       {
-        "name": "Decision Trees & Random Forests",
+        "name": "决策树与随机森林",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -367,7 +367,7 @@ const PHASES = [
         "keywords": "What a decision tree does · Split criteria: measuring impurity · How splitting works · Stopping conditions · Decision trees for regression · Random forests: the power of ensembles · Feature importance · When trees beat neural networks · Step 1: Gini impurity and entropy · Step 2: Find the best split · Step 3: Build the DecisionTree class · Step 4: Build the RandomForest class"
       },
       {
-        "name": "Support Vector Machines",
+        "name": "支持向量机",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -376,7 +376,7 @@ const PHASES = [
         "keywords": "The maximum margin classifier · Support vectors: the critical few · Soft margin: handling noise with the C parameter · Hinge loss: the SVM loss function · Training a linear SVM with gradient descent · The dual formulation and the kernel trick · SVM for regression (SVR) · Why SVMs lost to deep learning (and when they still win) · Step 1: Hinge loss and gradient · Step 2: Linear SVM via gradient descent · Step 3: Kernel functions · Step 4: Margin and support vector identification"
       },
       {
-        "name": "KNN & Distance Metrics",
+        "name": "KNN 与距离度量",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -385,7 +385,7 @@ const PHASES = [
         "keywords": "How KNN works · Choosing K · Distance metrics · Weighted KNN · The curse of dimensionality · KD-trees: fast nearest neighbor search · Ball trees: better for moderate dimensions · Lazy learning vs eager learning · KNN for regression · Step 1: Distance functions · Step 2: KNN classifier and regressor · Step 3: KD-tree for efficient search · Step 4: Feature scaling"
       },
       {
-        "name": "Unsupervised Learning: K-Means, DBSCAN",
+        "name": "无监督学习：K-Means、DBSCAN",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -394,7 +394,7 @@ const PHASES = [
         "keywords": "Clustering: Grouping Similar Things Together · K-Means: The Workhorse · Choosing K · DBSCAN: Density-Based Clustering · Hierarchical Clustering · Gaussian Mixture Models (GMM) · When to Use Which · Anomaly Detection with Clustering · Step 1: K-Means from scratch · Step 2: Elbow method and silhouette score · Step 3: DBSCAN from scratch · Step 4: Gaussian Mixture Model (EM algorithm) · Step 5: Generate test data and run everything"
       },
       {
-        "name": "Feature Engineering & Selection",
+        "name": "特征工程与选择",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -403,7 +403,7 @@ const PHASES = [
         "keywords": "The Feature Pipeline · Numerical Features · Categorical Features · Text Features · Missing Values · Feature Interaction · Feature Selection · Step 1: Numerical transforms from scratch · Step 2: Categorical encoding from scratch · Step 3: Text features from scratch · Step 4: Missing value imputation from scratch · Step 5: Feature selection from scratch · Step 6: Full pipeline and demo"
       },
       {
-        "name": "Model Evaluation: Metrics, Cross-Validation",
+        "name": "模型评估：指标、交叉验证",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -412,7 +412,7 @@ const PHASES = [
         "keywords": "Train, Validation, Test · K-Fold Cross-Validation · Classification Metrics · Regression Metrics · Learning Curves · Validation Curves · Common Evaluation Mistakes · Step 1: Train/validation/test split · Step 2: K-fold and stratified K-fold cross-validation · Step 3: Confusion matrix and classification metrics · Step 4: Regression metrics · Step 5: Learning curves · Step 6: A simple classifier for testing, plus the full demo"
       },
       {
-        "name": "Bias, Variance & the Learning Curve",
+        "name": "偏差、方差与学习曲线",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -421,7 +421,7 @@ const PHASES = [
         "keywords": "Bias: Systematic Error · Variance: Sensitivity to Training Data · The Decomposition · Model Complexity vs Error · Regularization as Bias-Variance Control · Double Descent: The Modern Perspective · Diagnosing Your Model · Practical Strategies · Ensemble Methods and Variance Reduction · Learning Curves · How to Generate Learning Curves · Step 1: Generate Synthetic Data from a Known Function · Step 2: Bootstrap Sampling and Polynomial Fitting · Step 3: Computing Bias^2, Variance Decomposition · Step 4: Learning Curves · Step 5: Regularization Sweep · Validation Curve: Sweep Model Complexity · Learning Curve: Sweep Training Set Size · Cross-Validation with Regularization Sweep · Putting It All Together: A Complete Diagnostic Workflow"
       },
       {
-        "name": "Ensemble Methods: Boosting, Bagging, Stacking",
+        "name": "集成方法：Boosting、Bagging、Stacking",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -430,7 +430,7 @@ const PHASES = [
         "keywords": "Why Ensembles Work · Bagging (Bootstrap Aggregating) · Boosting (Sequential Error Correction) · AdaBoost · Gradient Boosting · XGBoost: Why It Dominates Tabular Data · Stacking (Meta-Learning) · Voting · Step 1: Decision Stump (Base Learner) · Step 2: AdaBoost from Scratch · Step 3: Gradient Boosting from Scratch · Step 4: Compare against sklearn · When to Use Each Method · The Production Stack for Tabular Data"
       },
       {
-        "name": "Hyperparameter Tuning",
+        "name": "超参数调优",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -439,7 +439,7 @@ const PHASES = [
         "keywords": "Parameters vs Hyperparameters · Grid Search · Random Search · Bayesian Optimization · Early Stopping · Learning Rate Schedulers · Hyperparameter Importance · Practical Strategy · Cross-Validation Integration · Practical Tips · Step 1: Grid Search from Scratch · Step 2: Random Search from Scratch · Step 3: Bayesian Optimization (Simplified) · Step 4: Compare All Methods · Optuna in Practice · Optuna with Pruning · sklearn's Built-in Tuners · Common Mistakes in Hyperparameter Tuning"
       },
       {
-        "name": "ML Pipelines & Experiment Tracking",
+        "name": "ML 流水线与实验追踪",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -448,7 +448,7 @@ const PHASES = [
         "keywords": "What a Pipeline Is · Data Leakage: The Silent Killer · sklearn Pipeline · ColumnTransformer: Different Pipelines for Different Columns · Experiment Tracking · Model Versioning · Data Versioning with DVC · Reproducible Experiments · From Notebook to Production Pipeline · Common Pipeline Mistakes · Step 1: Custom Transformer · Step 2: Pipeline from Scratch · Step 3: Cross-Validation with Pipeline · Step 4: Full Production Pipeline with sklearn"
       },
       {
-        "name": "Naive Bayes",
+        "name": "朴素贝叶斯",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -457,7 +457,7 @@ const PHASES = [
         "keywords": "Bayes' Theorem (Quick Review) · The Naive Independence Assumption · Why It Still Works · The Math Step by Step · Three Variants · When to Use Each Variant · Laplace Smoothing · Log-Space Computation · Naive Bayes vs Logistic Regression · Classification Pipeline · MultinomialNB · GaussianNB · Demo: Text Classification · Demo: Continuous Features · Prediction Speed · TF-IDF with Naive Bayes · BernoulliNB for Short Text · Calibrating NB Probabilities · Common Gotchas · When Naive Bayes Fails"
       },
       {
-        "name": "Time Series Fundamentals",
+        "name": "时间序列基础",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -466,7 +466,7 @@ const PHASES = [
         "keywords": "What Makes Time Series Different · Components of a Time Series · Stationarity · Autocorrelation · Lag Features: Turning Time Series into Supervised Learning · Walk-Forward Validation · ARIMA Intuition · When to Use What · Forecasting Horizons and Strategies · Common Mistakes in Time Series · Lag Feature Creator · Walk-Forward Cross-Validation · Simple Autoregressive Model · Stationarity Check · Autocorrelation · sklearn TimeSeriesSplit · Evaluation Metrics · Rolling Features · Baselines You Must Beat · Practical Tips"
       },
       {
-        "name": "Anomaly Detection",
+        "name": "异常检测",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -475,7 +475,7 @@ const PHASES = [
         "keywords": "Types of Anomalies · The Unsupervised Framing · Supervised vs Unsupervised: The Tradeoff · Z-Score Method · IQR Method · Isolation Forest · Local Outlier Factor (LOF) · Comparison · Evaluation Challenges · Anomaly Detection Pipeline · Z-Score Detector · IQR Detector · Isolation Forest from Scratch · Demo Scenarios · sklearn Contamination Parameter · One-Class SVM · Autoencoder Approach (Preview) · Ensemble Anomaly Detection · Production Considerations · Choosing a Threshold · Scaling to Production"
       },
       {
-        "name": "Handling Imbalanced Data",
+        "name": "处理不平衡数据",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -484,7 +484,7 @@ const PHASES = [
         "keywords": "Why Accuracy Fails · Better Metrics · The Imbalanced Data Pipeline · SMOTE: Synthetic Minority Oversampling Technique · Sampling Strategies Compared · Class Weights · Threshold Tuning · Cost-Sensitive Learning · Decision Flowchart · Step 1: Generate an imbalanced dataset · Step 2: SMOTE from scratch · Step 3: Random oversampling and undersampling · Step 4: Logistic regression with class weights · Step 5: Threshold tuning · Step 6: Evaluation functions · Step 7: Compare all approaches"
       },
       {
-        "name": "Feature Selection",
+        "name": "特征选择",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -496,12 +496,12 @@ const PHASES = [
   },
   {
     "id": 3,
-    "name": "Deep Learning Core",
+    "name": "深度学习核心",
     "status": "complete",
-    "desc": "Neural networks from first principles. No frameworks until you build one.",
+    "desc": "从第一性原理构建神经网络。在你亲手实现之前不用任何框架。",
     "lessons": [
       {
-        "name": "The Perceptron: Where It All Started",
+        "name": "感知机：一切的起点",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -510,7 +510,7 @@ const PHASES = [
         "keywords": "One Neuron, One Decision · The Decision Boundary · The Learning Rule · The XOR Problem · Step 1: The Perceptron class · Step 2: Train on logic gates · Step 3: Watch XOR fail · Step 4: Solve XOR with two layers · Step 5: Train a Two-Layer Network"
       },
       {
-        "name": "Multi-Layer Networks & Forward Pass",
+        "name": "多层网络与前向传播",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -519,7 +519,7 @@ const PHASES = [
         "keywords": "Layers: Input, Hidden, Output · Neurons and Activations · Forward Pass: How Data Flows · Matrix Dimensions · Universal Approximation Theorem · Composability · Step 1: Sigmoid Activation · Step 2: Layer Class · Step 3: Network Class · Step 4: XOR with Hand-Tuned Weights · Step 5: Circle Classification"
       },
       {
-        "name": "Backpropagation from Scratch",
+        "name": "从零实现反向传播",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -528,7 +528,7 @@ const PHASES = [
         "keywords": "The Chain Rule, Applied to Networks · Computational Graphs · Forward vs Backward · Gradient Flow Through a Network · Vanishing Gradients · Deriving Gradients for a 2-Layer Network · Step 1: The Value Node · Step 2: Operations with Backward Functions · Step 3: Sigmoid and Loss · Step 4: Backward Pass · Step 5: Layer and Network · Step 6: Train on XOR · Step 7: Circle Classification"
       },
       {
-        "name": "Activation Functions: ReLU, Sigmoid, GELU & Why",
+        "name": "激活函数：ReLU、Sigmoid、GELU 及原理",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -537,7 +537,7 @@ const PHASES = [
         "keywords": "Why Nonlinearity Is Necessary · Sigmoid · Tanh · ReLU: The Breakthrough · Leaky ReLU · GELU: The Modern Default · Swish / SiLU · Softmax: The Output Activation · Comparison of Shapes · Gradient Flow Comparison · Which Activation When · Step 1: Implement All Activation Functions with Derivatives · Step 2: Visualize Where Gradients Die · Step 3: Vanishing Gradient Experiment · Step 4: Dead Neuron Detector · Step 5: Training Comparison -- Sigmoid vs ReLU vs GELU"
       },
       {
-        "name": "Loss Functions: MSE, Cross-Entropy, Contrastive",
+        "name": "损失函数：MSE、交叉熵、对比损失",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -546,7 +546,7 @@ const PHASES = [
         "keywords": "Mean Squared Error (MSE) · Cross-Entropy Loss · Why MSE Fails for Classification · Label Smoothing · Contrastive Loss · Focal Loss · Loss Function Decision Tree · Loss Landscape · Step 1: MSE and Its Gradient · Step 2: Binary Cross-Entropy · Step 3: Categorical Cross-Entropy with Softmax · Step 4: Label Smoothing · Step 5: Contrastive Loss (Simplified InfoNCE) · Step 6: MSE vs Cross-Entropy on Classification"
       },
       {
-        "name": "Optimizers: SGD, Momentum, Adam, AdamW",
+        "name": "优化器：SGD、Momentum、Adam、AdamW",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -555,7 +555,7 @@ const PHASES = [
         "keywords": "Stochastic Gradient Descent (SGD) · Momentum · RMSProp · Adam: Momentum + RMSProp · AdamW: Weight Decay Done Right · Learning Rate: The Most Important Hyperparameter · Optimizer Comparison · When Each Optimizer Wins · Step 1: Vanilla SGD · Step 2: SGD with Momentum · Step 3: Adam · Step 4: AdamW · Step 5: Training Comparison"
       },
       {
-        "name": "Regularization: Dropout, Weight Decay, BatchNorm",
+        "name": "正则化：Dropout、权重衰减、BatchNorm",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -564,7 +564,7 @@ const PHASES = [
         "keywords": "The Overfitting Spectrum · Dropout · Weight Decay (L2 Regularization) · Batch Normalization · Layer Normalization · RMSNorm · Normalization Comparison · Data Augmentation as Regularization · Early Stopping · When to Apply What · Step 1: Dropout (Train and Eval Mode) · Step 2: L2 Weight Decay · Step 3: Batch Normalization · Step 4: Layer Normalization · Step 5: RMSNorm · Step 6: Training With and Without Regularization"
       },
       {
-        "name": "Weight Initialization & Training Stability",
+        "name": "权重初始化与训练稳定性",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -573,7 +573,7 @@ const PHASES = [
         "keywords": "The Symmetry Problem · Variance Propagation Through Layers · Xavier/Glorot Initialization · Kaiming/He Initialization · Transformer Initialization · Activation Magnitude Through 50 Layers · Choosing the Right Init · Step 1: Initialization Strategies · Step 2: Activation Functions · Step 3: Forward Pass Through 50 Layers · Step 4: The Experiment · Step 5: Symmetry Demonstration · Step 6: Layer-by-Layer Magnitude Report"
       },
       {
-        "name": "Learning Rate Schedules & Warmup",
+        "name": "学习率调度与预热",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -582,7 +582,7 @@ const PHASES = [
         "keywords": "Constant Learning Rate · Step Decay · Cosine Annealing · Warmup: Why You Start Small · Linear Warmup + Cosine Decay · 1cycle Policy · Schedule Shapes · Decision Flowchart · Real Numbers from Published Models · Step 1: Schedule Functions · Step 2: Visualize All Schedules · Step 3: Training Network · Step 4: Compare All Schedules · Step 5: LR Too High vs Too Low"
       },
       {
-        "name": "Build Your Own Mini Framework",
+        "name": "从零构建迷你框架",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -591,7 +591,7 @@ const PHASES = [
         "keywords": "The Module Abstraction · Sequential Container · Training vs Evaluation Mode · Optimizer · DataLoader · Framework Architecture · Training Loop · Module Hierarchy · Step 1: Module Base Class · Step 2: Linear Layer · Step 3: Activation Modules · Step 4: Dropout Module · Step 5: BatchNorm Module · Step 6: Sequential Container · Step 7: Loss Functions · Step 8: SGD and Adam Optimizers · Step 9: DataLoader · Step 10: Train a 4-Layer Network on Circle Classification"
       },
       {
-        "name": "Introduction to PyTorch",
+        "name": "PyTorch 入门",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -600,7 +600,7 @@ const PHASES = [
         "keywords": "Why PyTorch Won · Tensors · Autograd · nn.Module · Loss Functions and Optimizers · The Training Loop · Dataset and DataLoader · GPU Training · Comparison: Mini Framework vs PyTorch vs JAX · Step 1: Load MNIST From Raw Files · Step 2: Define the Model · Step 3: Training Loop · Step 4: Wire Everything Together · Quick Comparison: Mini Framework vs PyTorch · Saving and Loading Models · Learning Rate Scheduling"
       },
       {
-        "name": "Introduction to JAX",
+        "name": "JAX 入门",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -609,7 +609,7 @@ const PHASES = [
         "keywords": "The JAX Philosophy · jax.numpy: The Familiar Surface · jax.grad: Functional Autodiff · jit: Compile to XLA · vmap: Automatic Vectorization · pmap: Data Parallelism Across Devices · Pytrees: The Universal Data Structure · Functional vs Object-Oriented · The JAX Ecosystem · When to Use JAX vs PyTorch · Random Numbers in JAX · Step 1: Setup and Data · Step 2: Initialize Parameters · Step 3: Forward Pass · Step 4: JIT-Compiled Training Step · Step 5: Training Loop · Flax: The Google Standard · Equinox: The Pythonic Alternative · Optax: Composable Optimizers"
       },
       {
-        "name": "Debugging Neural Networks",
+        "name": "神经网络调试",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -621,12 +621,12 @@ const PHASES = [
   },
   {
     "id": 4,
-    "name": "Computer Vision",
+    "name": "计算机视觉",
     "status": "complete",
     "desc": "From pixels to understanding — image, video, 3D, VLMs, and world models.",
     "lessons": [
       {
-        "name": "Image Fundamentals: Pixels, Channels, Color Spaces",
+        "name": "图像基础：像素、通道、色彩空间",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -635,7 +635,7 @@ const PHASES = [
         "keywords": "The full preprocessing pipeline at a glance · A pixel is a sample, not a square · Why three channels · Two layout conventions: HWC and CHW · Byte ranges and dtype · Color spaces and why they exist · Aspect ratio, resizing, and interpolation · Step 1: Load an image and inspect its shape · Step 2: Split channels and re-order layout · Step 3: Grayscale and HSV conversions · Step 4: Normalize, standardize, and reverse it · Step 5: Resize with three interpolation methods"
       },
       {
-        "name": "Convolutions from Scratch",
+        "name": "从零实现卷积",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -644,7 +644,7 @@ const PHASES = [
         "keywords": "One kernel, sliding · Output size formula · Padding · Stride · Multiple input channels · The im2col trick · Receptive field · Step 1: Pad an array · Step 2: 2D convolution with nested loops · Step 3: Verify with a hand-designed kernel · Step 4: im2col · Step 5: Fast conv via im2col + matmul · Step 6: A bank of hand-designed kernels"
       },
       {
-        "name": "CNNs: LeNet to ResNet",
+        "name": "CNN：LeNet 到 ResNet",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -653,7 +653,7 @@ const PHASES = [
         "keywords": "The four ideas that changed vision · LeNet-5 (1998) · AlexNet (2012) · VGG (2014) · Inception (2014, same year) · The degradation problem · ResNet (2015) · Why residuals matter beyond vision · Step 1: LeNet-5 · Step 2: A VGG block · Step 3: A ResNet BasicBlock · Step 4: A tiny ResNet · Step 5: Compare parameter-to-feature efficiency"
       },
       {
-        "name": "Image Classification",
+        "name": "图像分类",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -662,7 +662,7 @@ const PHASES = [
         "keywords": "The classification pipeline · Cross-entropy, logits, and softmax · Why augmentation works · Mixup and cutmix · Label smoothing · Evaluation beyond accuracy · Step 1: A deterministic synthetic dataset · Step 2: Normalisation and augmentation · Step 3: Mixup · Step 4: The training loop · Step 5: Put it together · Step 6: Read the confusion matrix"
       },
       {
-        "name": "Transfer Learning & Fine-Tuning",
+        "name": "迁移学习与微调",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -671,7 +671,7 @@ const PHASES = [
         "keywords": "Feature extraction vs fine-tuning · Why freezing works at all · Discriminative learning rates · The BatchNorm problem · Head design · Layer-wise LR decay · What to evaluate · Step 1: Load a pretrained backbone and inspect it · Step 2: Feature extraction — freeze everything, replace the head · Step 3: Discriminative fine-tuning · Step 4: BatchNorm handling · Step 5: A minimal end-to-end fine-tuning loop · Step 6: Progressive unfreezing"
       },
       {
-        "name": "Object Detection — YOLO from Scratch",
+        "name": "目标检测——从零实现 YOLO",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -680,7 +680,7 @@ const PHASES = [
         "keywords": "Detection as dense prediction · Why grids and anchors · Decoding predictions · IoU · Non-maximum suppression · The loss · Detection metrics · Step 1: IoU · Step 2: Non-max suppression · Step 3: Box encoding and decoding · Step 4: A minimal YOLO head · Step 5: Ground-truth assignment · Step 6: The three losses · Step 7: Inference pipeline"
       },
       {
-        "name": "Semantic Segmentation — U-Net",
+        "name": "语义分割——U-Net",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -689,7 +689,7 @@ const PHASES = [
         "keywords": "Semantic vs instance vs panoptic · The U-Net shape · Transposed vs bilinear upsample · Cross-entropy on a pixel grid · Dice loss and why you need it · Evaluation metrics · Input resolution trade-off · Step 1: Encoder block · Step 2: Down and up blocks · Step 3: The U-Net · Step 4: Losses · Step 5: IoU metric · Step 6: Synthetic dataset for end-to-end verification · Step 7: Training loop"
       },
       {
-        "name": "Instance Segmentation — Mask R-CNN",
+        "name": "实例分割——Mask R-CNN",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -698,7 +698,7 @@ const PHASES = [
         "keywords": "The architecture · Why RoIAlign, not RoIPool · The RPN in one paragraph · The mask head · Losses · Output format · Step 1: RoIAlign from scratch · Step 2: Compare to torchvision's RoIAlign · Step 3: Load a pretrained Mask R-CNN · Step 4: Run inference · Step 5: Swap the heads for a custom class count · Step 6: Freeze what does not need training"
       },
       {
-        "name": "Image Generation — GANs",
+        "name": "图像生成——GAN",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -707,7 +707,7 @@ const PHASES = [
         "keywords": "The two networks · The game · Non-saturating loss · DCGAN architecture rules · Failure modes and their signatures · Evaluation · Step 1: Generator · Step 2: Discriminator · Step 3: Training step · Step 4: Full training loop on synthetic shapes · Step 5: Sampling · Step 6: Spectral normalisation"
       },
       {
-        "name": "Image Generation — Diffusion Models",
+        "name": "图像生成——扩散模型",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -716,7 +716,7 @@ const PHASES = [
         "keywords": "The forward process · The closed-form jump · The reverse process · The training loss · The sampler (DDPM) · Why 1000 steps · DDIM: 20x faster sampling · Time conditioning · Step 1: Noise schedule · Step 2: Forward diffusion (q_sample) · Step 3: A tiny time-conditioned U-Net · Step 4: Training loop · Step 5: Sampler (DDPM) · Step 6: DDIM sampler (deterministic, ~20x faster)"
       },
       {
-        "name": "Stable Diffusion — Architecture & Fine-Tuning",
+        "name": "Stable Diffusion——架构与微调",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -725,7 +725,7 @@ const PHASES = [
         "keywords": "The pipeline · Classifier-free guidance (CFG) · Latent space geometry · The U-Net architecture · LoRA fine-tuning · Schedulers you will see · Step 1: Text-to-image · Step 2: Swap the scheduler · Step 3: Image-to-image · Step 4: Inpainting · Step 5: LoRA loading · Step 6: LoRA training (sketch)"
       },
       {
-        "name": "Video Understanding — Temporal Modeling",
+        "name": "视频理解——时序建模",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -734,7 +734,7 @@ const PHASES = [
         "keywords": "The three architectural families · 2D + pool · 3D convolutions · Spatio-temporal transformers · Frame sampling · Evaluation · Datasets you will meet · Step 1: Frame sampler · Step 2: A 2D+pool baseline · Step 3: An I3D-style inflated 3D conv · Step 4: Factorised (2+1)D conv"
       },
       {
-        "name": "3D Vision: Point Clouds, NeRFs",
+        "name": "3D 视觉：点云、NeRF",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -743,7 +743,7 @@ const PHASES = [
         "keywords": "Point clouds · The PointNet architecture · Neural Radiance Fields (NeRFs) · Positional encoding in NeRF · Volumetric rendering · What replaced NeRFs · Datasets and benchmarks · Step 1: PointNet classifier · Step 2: Positional encoding · Step 3: Tiny NeRF MLP · Step 4: Volumetric rendering along a ray"
       },
       {
-        "name": "Vision Transformers (ViT)",
+        "name": "视觉 Transformer（ViT）",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -752,7 +752,7 @@ const PHASES = [
         "keywords": "The pipeline · Patch embedding · Class token · Positional embedding · Transformer encoder block · Why pre-LN · Patch size trade-off · DeiT's recipe for training ViT on ImageNet-1k · Swin vs ConvNeXt · MAE pretraining · Step 1: Patch embedding · Step 2: Transformer block · Step 3: The ViT · Step 4: Sanity check — single image inference"
       },
       {
-        "name": "Real-Time Vision: Edge Deployment",
+        "name": "实时视觉：边缘部署",
         "status": "complete",
         "type": "Build",
         "lang": "Python, Rust",
@@ -761,7 +761,7 @@ const PHASES = [
         "keywords": "The three budgets · Measurement discipline · FLOPs as a proxy · Quantisation in one paragraph · Pruning and distillation · The inference runtimes · Edge architecture picker · Step 1: Measure latency correctly · Step 2: Parameter and FLOP counts · Step 3: Post-training static quantisation · Step 4: Export to ONNX · Step 5: Benchmark and compare regimes"
       },
       {
-        "name": "Build a Complete Vision Pipeline",
+        "name": "构建完整视觉流水线",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -770,7 +770,7 @@ const PHASES = [
         "keywords": "The pipeline · Data contracts with Pydantic · Where latency goes · Failure modes · Batching · Step 1: Data contracts · Step 2: A minimal Pipeline class · Step 3: Wire a detector and a classifier · Step 4: FastAPI service · Step 5: Benchmark the pipeline"
       },
       {
-        "name": "Self-Supervised Vision — SimCLR, DINO, MAE",
+        "name": "自监督视觉——SimCLR、DINO、MAE",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -779,7 +779,7 @@ const PHASES = [
         "keywords": "Three families · Contrastive learning (SimCLR) · Teacher-student (DINO) · Masked reconstruction (MAE) · Why 75% and not 15% · Linear-probe evaluation · Step 1: Two-view augmentation pipeline · Step 2: InfoNCE loss · Step 3: Sanity check InfoNCE · Step 4: MAE-style masking"
       },
       {
-        "name": "Open-Vocabulary Vision — CLIP",
+        "name": "开放词汇视觉——CLIP",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -788,7 +788,7 @@ const PHASES = [
         "keywords": "Two towers · The objective · SigLIP: a better loss · Zero-shot classification · Where CLIP-style models are used in 2026 · Step 1: A tiny two-tower model · Step 2: Contrastive loss · Step 3: Zero-shot classifier · Step 4: Sanity check"
       },
       {
-        "name": "OCR & Document Understanding",
+        "name": "OCR 与文档理解",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -797,7 +797,7 @@ const PHASES = [
         "keywords": "The classical pipeline · CTC in one paragraph · Modern end-to-end models · Layout parsing · Evaluation metrics · Step 1: CTC loss + greedy decoder · Step 2: Tiny CRNN recogniser · Step 3: Synthetic OCR · Step 4: Training sketch"
       },
       {
-        "name": "Image Retrieval & Metric Learning",
+        "name": "图像检索与度量学习",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -806,7 +806,7 @@ const PHASES = [
         "keywords": "Retrieval at a glance · The four loss families · Triplet loss formally · Cosine similarity vs L2 · Recall@K · FAISS in one paragraph · Instance-level vs category-level retrieval · Step 1: Triplet loss · Step 2: Semi-hard mining · Step 3: Recall@K · Step 4: Putting it together"
       },
       {
-        "name": "Keypoint Detection & Pose Estimation",
+        "name": "关键点检测与姿态估计",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -815,7 +815,7 @@ const PHASES = [
         "keywords": "Top-down vs bottom-up · Heatmap regression · Sub-pixel localisation · Part Affinity Fields (PAFs) · COCO keypoints · 2D vs 3D · Step 1: Gaussian heatmap target · Step 2: Tiny keypoint head · Step 3: Inference — extract keypoint coordinates · Step 4: Synthetic keypoint dataset · Step 5: Training"
       },
       {
-        "name": "3D Gaussian Splatting from Scratch",
+        "name": "从零实现 3D 高斯溅射",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -824,7 +824,7 @@ const PHASES = [
         "keywords": "What a Gaussian carries · Rasterisation, not ray marching · The projection step · The alpha-compositing rule · Why this is differentiable · Densification and pruning · Spherical harmonics in one paragraph · The 2026 production stack · 4D and generative variants · Step 1: A 2D Gaussian · Step 2: 2D splatting rasteriser · Step 3: A trainable 2D splat scene · Step 4: Fit 2D Gaussians to a target image · Step 5: From 2D to 3D · Step 6: Spherical harmonics evaluation"
       },
       {
-        "name": "Diffusion Transformers & Rectified Flow",
+        "name": "Diffusion Transformer 与修正流",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -833,7 +833,7 @@ const PHASES = [
         "keywords": "From U-Net to transformer · Rectified flow in one paragraph · AdaLN conditioning · Text encoders in SD3 and FLUX · Classifier-free guidance still holds · Consistency, Turbo, Schnell, LCM · Model landscape in 2026 · Why this phase shift matters · Step 1: A DiT block with AdaLN · Step 2: A tiny DiT · Step 3: Rectified flow training · Step 4: Euler sampler · Step 5: End-to-end smoke test"
       },
       {
-        "name": "SAM 3 & Open-Vocabulary Segmentation",
+        "name": "SAM 3 与开放词汇分割",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -842,7 +842,7 @@ const PHASES = [
         "keywords": "The three generations · Promptable Concept Segmentation · Key architectural pieces · Training at scale · SAM 3.1 Object Multiplex · Where Grounded SAM still matters in 2026 · YOLO-World vs SAM 3 · SAM-MI efficiency · Output format for the three models · Step 1: Prompt construction · Step 2: Post-processing helpers · Step 3: A unified open-vocab segmentation interface · Step 4: Hugging Face SAM 3 usage (reference) · Step 5: Measure what Grounded SAM 2 gave you for free"
       },
       {
-        "name": "Vision-Language Models (ViT-MLP-LLM)",
+        "name": "视觉语言模型（ViT-MLP-LLM）",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -851,7 +851,7 @@ const PHASES = [
         "keywords": "The ViT-MLP-LLM architecture · DeepStack · Three training stages · Model family comparison (early 2026) · Visual agents · Agentic capabilities + RoPE variants · The alignment problem · Fine-tuning with LoRA / QLoRA · Spatial reasoning is still weak · Step 1: The projector · Step 2: Assemble ViT-MLP-LLM end-to-end · Step 3: CMER computation · Step 4: Toy VLM classifier (runnable)"
       },
       {
-        "name": "Monocular Depth & Geometry Estimation",
+        "name": "单目深度与几何估计",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -860,7 +860,7 @@ const PHASES = [
         "keywords": "Relative vs metric depth · The encoder-decoder pattern · Why a single image produces depth at all · What monocular depth cannot do · Depth Anything V3 in 2026 · Marigold — diffusion for depth · Intrinsics and the pinhole camera · Evaluation · Step 1: Depth metrics · Step 2: Scale-and-shift alignment · Step 3: Lift depth to a point cloud · Step 4: Smoke test with a synthetic depth scene · Step 5: Depth Anything V3 usage (reference)"
       },
       {
-        "name": "Multi-Object Tracking & Video Memory",
+        "name": "多目标跟踪与视频记忆",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -869,7 +869,7 @@ const PHASES = [
         "keywords": "Tracking-by-detection · Kalman filter in one paragraph · The Hungarian algorithm · ByteTrack's key idea · SAM 2 memory-based tracking · SAM 3.1 Object Multiplex · Three metrics to know · Step 1: IoU-based cost matrix · Step 2: Minimal SORT-style tracker · Step 3: Synthetic trajectory test · Step 4: ID-switch metric"
       },
       {
-        "name": "World Models & Video Diffusion",
+        "name": "世界模型与视频扩散",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -881,12 +881,12 @@ const PHASES = [
   },
   {
     "id": 5,
-    "name": "NLP: Foundations to Advanced",
+    "name": "NLP：基础到进阶",
     "status": "complete",
     "desc": "Language is the interface to intelligence.",
     "lessons": [
       {
-        "name": "Text Processing: Tokenization, Stemming, Lemmatization",
+        "name": "文本处理：分词、词干提取、词形还原",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -895,7 +895,7 @@ const PHASES = [
         "keywords": "Step 1: a regex word tokenizer · Step 2: a Porter stemmer (step 1a only) · Step 3: a lookup-based lemmatizer · Step 4: pipe them together · NLTK · spaCy · When to pick which · The two failure modes nobody warns you about"
       },
       {
-        "name": "Bag of Words, TF-IDF & Text Representation",
+        "name": "词袋、TF-IDF 与文本表示",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -904,7 +904,7 @@ const PHASES = [
         "keywords": "Step 1: build the vocabulary · Step 2: bag of words · Step 3: term frequency and document frequency · Step 4: TF-IDF · Step 5: L2-normalize rows · When TF-IDF still wins (as of 2026) · When TF-IDF fails · Hybrid: TF-IDF weighted embeddings"
       },
       {
-        "name": "Word Embeddings: Word2Vec from Scratch",
+        "name": "词嵌入：从零实现 Word2Vec",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -913,7 +913,7 @@ const PHASES = [
         "keywords": "Step 1: training pairs from a corpus · Step 2: embedding tables · Step 3: negative sampling objective · Step 4: train on a toy corpus · Step 5: the analogy trick · When Word2Vec still wins in 2026 · Where Word2Vec fails"
       },
       {
-        "name": "GloVe, FastText & Subword Embeddings",
+        "name": "GloVe、FastText 与子词嵌入",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -922,7 +922,7 @@ const PHASES = [
         "keywords": "GloVe: factorize the co-occurrence matrix · FastText: subword-aware embeddings · BPE: learned subword vocabulary · When to pick which"
       },
       {
-        "name": "Sentiment Analysis",
+        "name": "情感分析",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -931,7 +931,7 @@ const PHASES = [
         "keywords": "Step 1: a real mini-dataset · Step 2: multinomial Naive Bayes from scratch · Step 3: logistic regression from scratch · Step 4: handling negation (the failure mode) · Step 5: evaluation metrics that matter · When to reach for a transformer · The reproducibility trap (again)"
       },
       {
-        "name": "Named Entity Recognition (NER)",
+        "name": "命名实体识别（NER）",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -940,7 +940,7 @@ const PHASES = [
         "keywords": "Step 1: BIO tagging helpers · Step 2: hand-crafted features · Step 3: a simple rule-based + dictionary baseline · Step 4: the CRF step (sketch, not full impl) · Step 5: what a BiLSTM-CRF adds · LLM-based NER (the 2026 option) · Where classical NER still wins · Where it falls apart"
       },
       {
-        "name": "POS Tagging & Syntactic Parsing",
+        "name": "词性标注与句法分析",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -949,7 +949,7 @@ const PHASES = [
         "keywords": "Step 1: most-frequent-tag baseline · Step 2: bigram HMM tagger · Step 3: why modern taggers beat this · Step 4: dependency parsing sketch · Where this still matters in 2026"
       },
       {
-        "name": "Text Classification — CNNs & RNNs for Text",
+        "name": "文本分类——CNN 与 RNN 处理文本",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -958,7 +958,7 @@ const PHASES = [
         "keywords": "Step 1: TextCNN in PyTorch · Step 2: LSTM classifier · Step 3: the vanishing gradient demo (intuition) · Step 4: why this still was not enough"
       },
       {
-        "name": "Sequence-to-Sequence Models",
+        "name": "序列到序列模型",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -967,7 +967,7 @@ const PHASES = [
         "keywords": "Step 1: an encoder · Step 2: a decoder · Step 3: training loop with teacher forcing · Step 4: inference loop (greedy) · Step 5: the bottleneck, demonstrated · When to still reach for RNN-based seq2seq · Exposure bias and its mitigations"
       },
       {
-        "name": "Attention Mechanism — The Breakthrough",
+        "name": "注意力机制——突破性进展",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -976,7 +976,7 @@ const PHASES = [
         "keywords": "Step 1: additive (Bahdanau) attention · Step 2: Luong dot and general · Step 3: a worked numerical example · Step 4: why this is the bridge to transformers · When classical attention still matters · The attention-weight-as-explanation trap"
       },
       {
-        "name": "Machine Translation",
+        "name": "机器翻译",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -985,7 +985,7 @@ const PHASES = [
         "keywords": "Step 1: a pretrained MT call · Step 2: BLEU and chrF · The three-tier evaluation hierarchy (2026) · Step 3: what breaks in production · Step 4: fine-tuning for a domain"
       },
       {
-        "name": "Text Summarization",
+        "name": "文本摘要",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -994,7 +994,7 @@ const PHASES = [
         "keywords": "Step 1: TextRank (extractive) · Step 2: abstractive with BART · Step 3: ROUGE evaluation · Beyond ROUGE (2026 summarization eval) · Step 4: the factuality problem"
       },
       {
-        "name": "Question Answering Systems",
+        "name": "问答系统",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1003,7 +1003,7 @@ const PHASES = [
         "keywords": "Step 1: extractive QA with a pretrained model · Step 2: a retrieval-augmented pipeline (sketch) · Step 3: generative with RAG · Step 4: evaluation that reflects the real world · RAGAS: the 2026 production eval framework"
       },
       {
-        "name": "Information Retrieval & Search",
+        "name": "信息检索与搜索",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1012,7 +1012,7 @@ const PHASES = [
         "keywords": "Step 1: BM25 from scratch · Step 2: dense retrieval with a bi-encoder · Step 3: Reciprocal Rank Fusion · Step 4: hybrid search + rerank · Step 5: evaluation · The hard-won lessons from 2026 production RAG"
       },
       {
-        "name": "Topic Modeling: LDA, BERTopic",
+        "name": "主题建模：LDA、BERTopic",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1021,7 +1021,7 @@ const PHASES = [
         "keywords": "Step 1: LDA via scikit-learn · Step 2: BERTopic (production) · Step 3: evaluation"
       },
       {
-        "name": "Text Generation",
+        "name": "文本生成",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1030,7 +1030,7 @@ const PHASES = [
         "keywords": "Step 1: trigram counts · Step 2: Laplace smoothing · Step 3: Kneser-Ney (bigram, interpolated) · Step 4: generating text with sampling · Step 5: perplexity"
       },
       {
-        "name": "Chatbots: Rule-Based to Neural",
+        "name": "聊天机器人：从规则到神经网络",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1039,7 +1039,7 @@ const PHASES = [
         "keywords": "Step 1: rule-based pattern matching · Step 2: retrieval-based (FAQ) · Step 3: neural generation (baseline) · Step 4: LLM agent loop · Step 5: hybrid routing"
       },
       {
-        "name": "Multilingual NLP",
+        "name": "多语言 NLP",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1048,7 +1048,7 @@ const PHASES = [
         "keywords": "Step 1: zero-shot cross-lingual classification · Step 2: multilingual embedding space · Step 3: few-shot fine-tuning strategy · The tokenization tax (what goes wrong for low-resource languages)"
       },
       {
-        "name": "Subword Tokenization: BPE, WordPiece, Unigram, SentencePiece",
+        "name": "子词分词：BPE、WordPiece、Unigram、SentencePiece",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -1057,7 +1057,7 @@ const PHASES = [
         "keywords": "Step 1: BPE from scratch · Step 2: encode with the learned merges · Step 3: SentencePiece in practice · Step 4: tiktoken for OpenAI-compatible vocabs"
       },
       {
-        "name": "Structured Outputs & Constrained Decoding",
+        "name": "结构化输出与约束解码",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1066,7 +1066,7 @@ const PHASES = [
         "keywords": "The counterintuitive result · The pitfall that costs you · Step 1: regex-constrained generation from scratch · Step 2: Outlines for JSON Schema · Step 3: Instructor for provider-agnostic Pydantic · Step 4: native vendor APIs"
       },
       {
-        "name": "NLI & Textual Entailment",
+        "name": "自然语言推理与文本蕴含",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -1075,7 +1075,7 @@ const PHASES = [
         "keywords": "Step 1: run a pretrained NLI model · Step 2: zero-shot classification · Step 3: faithfulness check for RAG · Step 4: hand-rolled NLI classifier (conceptual)"
       },
       {
-        "name": "Embedding Models Deep Dive",
+        "name": "嵌入模型深入解析",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -1084,7 +1084,7 @@ const PHASES = [
         "keywords": "The MTEB leaderboard tells a partial story · The three-tier pattern · Step 1: baseline — dense embeddings with Sentence-BERT · Step 2: Matryoshka truncation · Step 3: BGE-M3 multi-functionality · Step 4: MTEB eval on a custom task · Step 5: hand-rolled cosine from scratch"
       },
       {
-        "name": "Chunking Strategies for RAG",
+        "name": "RAG 分块策略",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1093,7 +1093,7 @@ const PHASES = [
         "keywords": "The rule that beats every default · Step 1: fixed and recursive chunking · Step 2: semantic chunking · Step 3: parent-document · Step 4: contextual retrieval (Anthropic pattern) · Step 5: evaluate"
       },
       {
-        "name": "Coreference Resolution",
+        "name": "共指消解",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -1102,7 +1102,7 @@ const PHASES = [
         "keywords": "Step 1: pretrained neural coreference (AllenNLP / spaCy-experimental) · Step 2: rule-based pronoun resolver (teaching) · Step 3: using LLMs for coreference · Step 4: evaluation"
       },
       {
-        "name": "Entity Linking & Disambiguation",
+        "name": "实体链接与消歧",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1111,7 +1111,7 @@ const PHASES = [
         "keywords": "The two measurements · Step 1: build an alias index from Wikipedia redirects · Step 2: context-based disambiguation · Step 3: embedding-based (BLINK-style) · Step 4: generative entity linking (concept) · Step 5: evaluate on AIDA-CoNLL"
       },
       {
-        "name": "Relation Extraction & Knowledge Graph Construction",
+        "name": "关系抽取与知识图谱构建",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1120,7 +1120,7 @@ const PHASES = [
         "keywords": "Step 1: pattern-based extraction · Step 2: supervised relation classification · Step 3: LLM-prompted extraction with anchoring · Step 4: canonicalize onto a closed ontology · Step 5: build a small graph and query"
       },
       {
-        "name": "LLM Evaluation: RAGAS, DeepEval, G-Eval",
+        "name": "LLM 评估：RAGAS、DeepEval、G-Eval",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1129,7 +1129,7 @@ const PHASES = [
         "keywords": "Step 1: faithfulness with NLI (RAGAS-style) · Step 2: answer relevance · Step 3: G-Eval custom metric · Step 4: CI gate · Step 5: toy eval from scratch"
       },
       {
-        "name": "Long-Context Evaluation: NIAH, RULER, LongBench, MRCR",
+        "name": "长上下文评估：NIAH、RULER、LongBench、MRCR",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -1138,7 +1138,7 @@ const PHASES = [
         "keywords": "What to actually report · Step 1: a custom NIAH for your domain · Step 2: a multi-needle variant · Step 3: multi-hop variable tracing (RULER-style) · Step 4: LongBench v2 on your stack"
       },
       {
-        "name": "Dialogue State Tracking",
+        "name": "对话状态跟踪",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1150,12 +1150,12 @@ const PHASES = [
   },
   {
     "id": 6,
-    "name": "Speech & Audio",
+    "name": "语音与音频",
     "status": "complete",
     "desc": "Hear, understand, speak.",
     "lessons": [
       {
-        "name": "Audio Fundamentals: Waveforms, Sampling, FFT",
+        "name": "音频基础：波形、采样、FFT",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -1164,7 +1164,7 @@ const PHASES = [
         "keywords": "Step 1: read a clip and plot the waveform · Step 2: synthesize a sine wave from first principles · Step 3: compute the DFT by hand · Step 4: find the dominant frequency · Step 5: demonstrate aliasing"
       },
       {
-        "name": "Spectrograms, Mel Scale & Audio Features",
+        "name": "频谱图、梅尔刻度与音频特征",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1173,7 +1173,7 @@ const PHASES = [
         "keywords": "Step 1: frame the waveform · Step 2: Hann window · Step 3: STFT magnitude · Step 4: mel filterbank · Step 5: log-mel · Step 6: MFCCs"
       },
       {
-        "name": "Audio Classification",
+        "name": "音频分类",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1182,7 +1182,7 @@ const PHASES = [
         "keywords": "Class imbalance is the real challenge · Evaluation · Step 1: featurize · Step 2: fixed-length summary · Step 3: k-NN · Step 4: upgrade to CNN on log-mels · Step 5: the 2026 default — fine-tune BEATs"
       },
       {
-        "name": "Speech Recognition (ASR)",
+        "name": "语音识别（ASR）",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1191,7 +1191,7 @@ const PHASES = [
         "keywords": "WER: the one number · Step 1: greedy CTC decode · Step 2: beam-search CTC · Step 3: WER · Step 4: inference against Whisper · Step 5: streaming with Parakeet or wav2vec 2.0"
       },
       {
-        "name": "Whisper: Architecture & Fine-Tuning",
+        "name": "Whisper：架构与微调",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1200,7 +1200,7 @@ const PHASES = [
         "keywords": "Variants in 2026 · Fine-tuning · Step 1: run Whisper out of the box · Step 2: chunked long-form · Step 3: fine-tune with LoRA · Step 4: inspect what each layer learns"
       },
       {
-        "name": "Speaker Recognition & Verification",
+        "name": "说话人识别与验证",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1209,7 +1209,7 @@ const PHASES = [
         "keywords": "Scoring · Numbers you should know (2026) · Diarization · Step 1: toy embedding from MFCC statistics · Step 2: cosine similarity + threshold · Step 3: EER from similarity pairs · Step 4: production with SpeechBrain · Step 5: diarize with pyannote"
       },
       {
-        "name": "Text-to-Speech (TTS)",
+        "name": "语音合成（TTS）",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1218,7 +1218,7 @@ const PHASES = [
         "keywords": "Vocoder evolution · Evaluation · Step 1: phonemize input · Step 2: run Kokoro (2026 CPU default) · Step 3: run F5-TTS with voice cloning · Step 4: HiFi-GAN vocoder from scratch · Step 5: the full pipeline (pseudocode)"
       },
       {
-        "name": "Voice Cloning & Voice Conversion",
+        "name": "语音克隆与变声",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1227,7 +1227,7 @@ const PHASES = [
         "keywords": "The ethics bit, not a bolt-on · Numbers (2026) · Step 1: decompose with recognition-synthesis (code-only demo in main.py) · Step 2: zero-shot clone with F5-TTS · Step 3: voice conversion with KNN-VC · Step 4: embed a watermark · Step 5: consent gate"
       },
       {
-        "name": "Music Generation",
+        "name": "音乐生成",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1236,7 +1236,7 @@ const PHASES = [
         "keywords": "Token LM over neural-codec tokens · Diffusion over mels or latents · Hybrid (production) — Suno, Udio, Lyria · Evaluation · Step 1: generate with MusicGen · Step 2: melody conditioning · Step 3: FAD evaluation · Step 4: adding to the LLM-music workflow"
       },
       {
-        "name": "Audio-Language Models",
+        "name": "音频语言模型",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1245,7 +1245,7 @@ const PHASES = [
         "keywords": "The three-component template · The 2026 model map · Benchmark reality check (2026) · Where LALMs are useful in 2026 · Where they are NOT (yet) useful · Step 1: query Qwen2.5-Omni · Step 2: the projector pattern · Step 3: benchmarking MMAU / LongAudioBench"
       },
       {
-        "name": "Real-Time Audio Processing",
+        "name": "实时音频处理",
         "status": "complete",
         "type": "Build",
         "lang": "Python, Rust",
@@ -1254,7 +1254,7 @@ const PHASES = [
         "keywords": "Common gotchas · Step 1: ring buffer · Step 2: VAD gate · Step 3: streaming ASR · Step 4: interruption handler"
       },
       {
-        "name": "Build a Voice Assistant Pipeline",
+        "name": "构建语音助手流水线",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1263,7 +1263,7 @@ const PHASES = [
         "keywords": "The seven components · The three failure modes you will hit · 2026 production reference stacks · Step 1: mic capture with chunking (pseudocode) · Step 2: VAD-gated turn capture · Step 3: streaming STT → LLM → TTS · Step 4: tool calling inside the LLM loop · Step 5: interruption handling"
       },
       {
-        "name": "Neural Audio Codecs — EnCodec, SNAC, Mimi, DAC",
+        "name": "神经音频编解码器——EnCodec、SNAC、Mimi、DAC",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -1272,7 +1272,7 @@ const PHASES = [
         "keywords": "The core trick: Residual Vector Quantization (RVQ) · The four codecs that matter in 2026 · Frame rates matter for language modeling · Semantic vs acoustic tokens · 2026 reconstruction quality (bits per sec, lower bitrate is better) · Step 1: encode with EnCodec · Step 2: decode and measure reconstruction · Step 3: the semantic-acoustic split (Mimi-style) · Step 4: why AR LM over codec tokens works"
       },
       {
-        "name": "Voice Activity Detection & Turn-Taking",
+        "name": "语音活动检测与话轮转换",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1281,7 +1281,7 @@ const PHASES = [
         "keywords": "The three-tier VAD cascade · Key parameters and their defaults · The flush trick (Kyutai 2025) · 2026 VAD comparison · Step 1: the energy gate · Step 2: Silero VAD in Python · Step 3: turn-end state machine · Step 4: the flush trick skeleton"
       },
       {
-        "name": "Streaming Speech-to-Speech — Moshi, Hibiki",
+        "name": "流式语音到语音——Moshi、Hibiki",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -1290,7 +1290,7 @@ const PHASES = [
         "keywords": "The Moshi architecture · Why inner-monologue text helps · Hibiki: streaming speech-to-speech translation · The broader Kyutai stack (2026) · Sesame CSM — the cousin · 2026 performance numbers · Step 1: the interface · Step 2: the full-duplex loop · Step 3: the training objective (conceptual) · Step 4: where Moshi wins and where it doesn't"
       },
       {
-        "name": "Voice Anti-Spoofing & Audio Watermarking",
+        "name": "语音反欺骗与音频水印",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1299,7 +1299,7 @@ const PHASES = [
         "keywords": "ASVspoof 5 — the 2024-2025 benchmark · AASIST and RawNet2 — detection model families · AudioSeal — the 2024 watermark default · WavMark · WaveVerify (July 2025) · The gap adversaries exploit · C2PA / Content Authenticity Initiative · Step 1: a simple spectral-feature detector (toy) · Step 2: AudioSeal embed + detect · Step 3: evaluation — EER · Step 4: the production integration"
       },
       {
-        "name": "Audio Evaluation — WER, MOS, MMAU, Leaderboards",
+        "name": "音频评估——WER、MOS、MMAU、排行榜",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -1311,12 +1311,12 @@ const PHASES = [
   },
   {
     "id": 7,
-    "name": "Transformers Deep Dive",
+    "name": "Transformers 深度解析",
     "status": "complete",
     "desc": "The architecture that changed everything.",
     "lessons": [
       {
-        "name": "Why Transformers: The Problems with RNNs",
+        "name": "为什么用 Transformer：RNN 的问题",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -1325,7 +1325,7 @@ const PHASES = [
         "keywords": "Step 1: measure serial depth · Step 2: count theoretical operations · Step 3: empirical scaling on long sequences"
       },
       {
-        "name": "Self-Attention from Scratch",
+        "name": "从零实现自注意力",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1334,7 +1334,7 @@ const PHASES = [
         "keywords": "The Database Lookup Analogy · Q, K, V Computation · The Attention Matrix · Why Scale? · Softmax Turns Scores into Weights · Weighted Sum of Values · Full Pipeline · Step 1: Softmax from scratch · Step 2: Scaled dot-product attention · Step 3: Self-attention class with learned projections · Step 4: Run it on a sentence · Step 5: Visualize attention with ASCII heatmap"
       },
       {
-        "name": "Multi-Head Attention",
+        "name": "多头注意力",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1343,7 +1343,7 @@ const PHASES = [
         "keywords": "Step 1: split heads from the single-head attention we already have · Step 2: run scaled-dot-product attention per head · Step 3: Grouped-Query Attention variant · Step 4: probe what each head learned"
       },
       {
-        "name": "Positional Encoding: Sinusoidal, RoPE, ALiBi",
+        "name": "位置编码：正弦、RoPE、ALiBi",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1352,7 +1352,7 @@ const PHASES = [
         "keywords": "Absolute sinusoidal · RoPE · ALiBi · What to pick in 2026 · Step 1: sinusoidal encoding · Step 2: RoPE applied to Q, K · Step 3: ALiBi slopes and bias · Step 4: verify relative-distance property of RoPE"
       },
       {
-        "name": "The Full Transformer: Encoder + Decoder",
+        "name": "完整 Transformer：编码器 + 解码器",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1361,7 +1361,7 @@ const PHASES = [
         "keywords": "The six pieces · Encoder block (used by BERT, T5 encoder) · Decoder block (used by GPT, T5 decoder) · Pre-norm vs post-norm · The 2026 modernized block · Parameter count · Step 1: the building blocks · Step 2: wire a 2-layer encoder and a 2-layer decoder · Step 3: run forward on a toy example · Step 4: swap in RMSNorm + SwiGLU"
       },
       {
-        "name": "BERT — Masked Language Modeling",
+        "name": "BERT——掩码语言模型",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1370,7 +1370,7 @@ const PHASES = [
         "keywords": "The training signal · The BERT mask rules · Next Sentence Prediction (NSP) — and why it was dropped · What changed in 2026: ModernBERT · Use cases that still pick an encoder in 2026 · Step 1: masking logic · Step 2: run MLM prediction on a tiny corpus · Step 3: compare mask types · Step 4: fine-tune head"
       },
       {
-        "name": "GPT — Causal Language Modeling",
+        "name": "GPT——因果语言模型",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1379,7 +1379,7 @@ const PHASES = [
         "keywords": "The mask · Parallel training, serial inference · The loss — shift-by-one · Decoding strategies · What made the \"GPT recipe\" work · Step 1: the causal mask · Step 2: a 2-layer GPT-ish model · Step 3: next-token prediction, end-to-end · Step 4: sampling"
       },
       {
-        "name": "T5, BART — Encoder-Decoder Models",
+        "name": "T5、BART——编码器-解码器模型",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -1388,7 +1388,7 @@ const PHASES = [
         "keywords": "The forward loop · T5 pretraining — span corruption · BART pretraining — multi-noise denoising · Inference · When to pick each variant in 2026 · Step 1: span corruption · Step 2: verify round-trip · Step 3: BART noising"
       },
       {
-        "name": "Vision Transformers (ViT)",
+        "name": "视觉 Transformer（ViT）",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1397,7 +1397,7 @@ const PHASES = [
         "keywords": "Step 1 — patchify · Step 2 — linear embedding · Step 3 — prepend `[CLS]` token, add positional embeddings · Step 4 — standard transformer encoder · Step 5 — head · Variants that mattered · Why it took a while · Step 1: fake image · Step 2: patchify · Step 3: linear embed · Step 4: count parameters for a realistic ViT"
       },
       {
-        "name": "Audio Transformers — Whisper Architecture",
+        "name": "音频 Transformer——Whisper 架构",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -1406,7 +1406,7 @@ const PHASES = [
         "keywords": "Step 1 — resample + window · Step 2 — convolutional stem · Step 3 — encoder · Step 4 — decoder · Step 5 — task tokens · Step 6 — output · Whisper sizes · What Whisper does not do · 2026 landscape · Step 1: synthesize audio · Step 2: log-mel spectrogram (simplified) · Step 3: pad to 30 s · Step 4: build the prompt tokens"
       },
       {
-        "name": "Mixture of Experts (MoE)",
+        "name": "混合专家（MoE）",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1415,7 +1415,7 @@ const PHASES = [
         "keywords": "The FFN swap · The load-balancing problem · Shared experts · Fine-grained experts · The cost profile · The catch: memory · Step 1: the router · Step 2: run 100 tokens through the router · Step 3: param count comparison"
       },
       {
-        "name": "KV Cache, Flash Attention & Inference Optimization",
+        "name": "KV 缓存、Flash Attention 与推理优化",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1424,7 +1424,7 @@ const PHASES = [
         "keywords": "KV cache math · Flash Attention — the tiling trick · Speculative decoding — the other latency win · Continuous batching · PagedAttention — KV cache as virtual memory · Step 1: KV cache · Step 2: tiled softmax · Step 3: compare naive vs cached decoding on 100-token generation"
       },
       {
-        "name": "Scaling Laws",
+        "name": "缩放定律",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -1433,24 +1433,42 @@ const PHASES = [
         "keywords": "The Hoffmann law · Why over-training anyway · Emergence vs smoothness · The 2026 picture · Step 1: Chinchilla loss · Step 2: compute-optimal frontier · Step 3: over-training cost · Step 4: compare to real models"
       },
       {
-        "name": "Build a Transformer from Scratch",
+        "name": "从零构建 Transformer",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
         "url": "phases/07-transformers-deep-dive/14-build-a-transformer-capstone",
         "summary": "Thirteen lessons. One model. No shortcuts.",
         "keywords": "What we ship · What we don't ship · Target metrics · Step 1: data · Step 2: model · Step 3: training loop · Step 4: sample · Step 5: read the output"
+      },
+      {
+        "name": "注意力变体——滑动窗口、稀疏、差分",
+        "status": "complete",
+        "type": "Learn",
+        "lang": "Python",
+        "url": "phases/07-transformers-deep-dive/15-attention-variants",
+        "summary": "标准注意力是 O(n²)。滑动窗口、稀疏、线性注意力让你处理百万 token 的序列。",
+        "keywords": "Sliding Window Attention · Sparse Attention · Linear Attention · Mamba & SSM · FlashAttention-2"
+      },
+      {
+        "name": "推测解码——Draft、Verify、Repeat",
+        "status": "complete",
+        "type": "Build",
+        "lang": "Python",
+        "url": "phases/07-transformers-deep-dive/16-speculative-decoding",
+        "summary": "用小模型快速猜 token，用大模型验证——3-5x 吞吐量提升，零质量损失。",
+        "keywords": "The Core Idea · Draft Model · Target Model Verification · Acceptance Rate · EAGLE-3"
       }
     ]
   },
   {
-    "id": 8,
-    "name": "Generative AI",
+    "id": 8,"id": 8,
+    "name": "生成式 AI",
     "status": "complete",
     "desc": "Create images, video, audio, 3D, and more.",
     "lessons": [
       {
-        "name": "Generative Models: Taxonomy & History",
+        "name": "生成模型：分类与历史",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -1458,7 +1476,7 @@ const PHASES = [
         "summary": "Every image model, text model, video model, and 3D model fits in one of five buckets. Pick the wrong bucket and you will fight the math for weeks. Pick the right one and the fie…"
       },
       {
-        "name": "Autoencoders & VAE",
+        "name": "自编码器与 VAE",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1467,7 +1485,7 @@ const PHASES = [
         "keywords": "Step 1: encoder forward · Step 2: reparameterize and decode · Step 3: the ELBO · Step 4: generate"
       },
       {
-        "name": "GANs: Generator vs Discriminator",
+        "name": "GAN：生成器 vs 判别器",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1476,7 +1494,7 @@ const PHASES = [
         "keywords": "Step 1: non-saturating loss · Step 2: one discriminator step per generator step · Step 3: watch for mode collapse"
       },
       {
-        "name": "Conditional GANs & Pix2Pix",
+        "name": "条件 GAN 与 Pix2Pix",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1494,7 +1512,7 @@ const PHASES = [
         "keywords": "Step 1: mapping network · Step 2: adaptive instance normalization · Step 3: per-layer noise"
       },
       {
-        "name": "Diffusion Models — DDPM from Scratch",
+        "name": "扩散模型——从零实现 DDPM",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1503,7 +1521,7 @@ const PHASES = [
         "keywords": "Step 1: the forward schedule (closed form) · Step 2: sample `x_t` in one shot · Step 3: one training step · Step 4: reverse sampling"
       },
       {
-        "name": "Latent Diffusion & Stable Diffusion",
+        "name": "潜扩散与 Stable Diffusion",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1512,7 +1530,7 @@ const PHASES = [
         "keywords": "Step 1: encoder/decoder · Step 2: diffusion in `z`-space · Step 3: classifier-free guidance · Step 4: text conditioning (concept, not code)"
       },
       {
-        "name": "ControlNet, LoRA & Conditioning",
+        "name": "ControlNet、LoRA 与条件控制",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1521,7 +1539,7 @@ const PHASES = [
         "keywords": "ControlNet (Zhang et al., 2023) · LoRA (Hu et al., 2021) · IP-Adapter (Ye et al., 2023) · Step 1: LoRA math · Step 2: zero-init side network"
       },
       {
-        "name": "Inpainting, Outpainting & Editing",
+        "name": "图像修复、扩展与编辑",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1530,7 +1548,7 @@ const PHASES = [
         "keywords": "The naive approach (and why it's wrong) · The proper inpainting model · SDEdit (Meng et al., 2022) — free editing · InstructPix2Pix (Brooks et al., 2023) · RePaint (Lugmayr et al., 2022) · Step 1: 5-D DDPM data · Step 2: train denoiser over all 5 dims · Step 3: at inference, mask-aware reverse · Step 4: outpainting"
       },
       {
-        "name": "Video Generation",
+        "name": "视频生成",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1539,7 +1557,7 @@ const PHASES = [
         "keywords": "Patchify · Spatiotemporal DiT · Text conditioning · Training · Step 1: patchify a synthetic 1-D \"video\" · Step 2: position embedding per frame · Step 3: denoiser sees the whole sequence · Step 4: temporal coherence test"
       },
       {
-        "name": "Audio Generation",
+        "name": "音频生成",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1548,7 +1566,7 @@ const PHASES = [
         "keywords": "Neural audio codecs · Two generative paradigms on top · Step 1: synthetic audio tokens · Step 2: train a tiny token predictor · Step 3: sample conditionally"
       },
       {
-        "name": "3D Generation",
+        "name": "3D 生成",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1557,7 +1575,7 @@ const PHASES = [
         "keywords": "Representation: 3D Gaussian Splatting (Kerbl et al., 2023) · Multi-view diffusion · Text-to-3D pipelines · NeRF (for context) · Step 1: 2D Gaussian splat · Step 2: render by summing splats · Step 3: fit by gradient descent"
       },
       {
-        "name": "Flow Matching & Rectified Flows",
+        "name": "流匹配与修正流",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1566,24 +1584,33 @@ const PHASES = [
         "keywords": "Straight-line flow · Sampling · Rectified flow (Liu 2022) · Why this won for images in 2024 · Step 1: training loss · Step 2: multi-step inference · Step 3: compare step counts"
       },
       {
-        "name": "Evaluation: FID, CLIP Score",
+        "name": "评估：FID、CLIP 分数",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
         "url": "phases/08-generative-ai/14-evaluation-fid-clip-score",
-        "summary": "Every generative model leaderboard cites FID, CLIP score, and a win rate from a human-preference arena. Each number has a failure mode a determined researcher can game. If you d…",
-        "keywords": "FID — sample quality · CLIP score — prompt adherence · Human preference — the ground truth · Step 1: FID in four lines · Step 2: CLIP-style cosine-similarity · Step 3: Elo aggregation"
+        "summary": "量化生成质量：FID 测分布距离，CLIP 测图文一致性，HPS 测人类偏好。",
+        "keywords": "FID · CLIP Score · HPS · Inception Score · Precision/Recall · User Studies"
+      },
+      {
+        "name": "视觉自回归建模（VAR）：Next-Scale 预测",
+        "status": "complete",
+        "type": "Build",
+        "lang": "Python",
+        "url": "phases/08-generative-ai/19-visual-autoregressive-var",
+        "summary": "VAR 打破了 PixelCNN 的顺序限制——按尺度预测而不是按像素，生成质量超越 Diffusion。",
+        "keywords": "Next-Scale Prediction · Vectorized VAE · Multi-scale Tokens · Autoregressive without Autoregression"
       }
     ]
   },
   {
-    "id": 9,
-    "name": "Reinforcement Learning",
+    "id": 9,"id": 9,
+    "name": "强化学习",
     "status": "complete",
     "desc": "The foundation of RLHF and game-playing AI.",
     "lessons": [
       {
-        "name": "MDPs, States, Actions & Rewards",
+        "name": "MDP、状态、动作与奖励",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -1592,7 +1619,7 @@ const PHASES = [
         "keywords": "Step 1: a tiny deterministic MDP · Step 2: roll out a policy · Step 3: compute `V^π` exactly via the Bellman equation · Step 4: `γ` is a hyperparameter with physical meaning"
       },
       {
-        "name": "Dynamic Programming",
+        "name": "动态规划",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1601,7 +1628,7 @@ const PHASES = [
         "keywords": "Step 1: build the GridWorld MDP model · Step 2: policy evaluation · Step 3: policy improvement · Step 4: stitch them together · Step 5: value iteration (the one-loop version)"
       },
       {
-        "name": "Monte Carlo Methods",
+        "name": "蒙特卡洛方法",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1610,7 +1637,7 @@ const PHASES = [
         "keywords": "Step 1: rollout → list of (s, a, r) · Step 2: compute returns (reverse sweep) · Step 3: first-visit MC evaluation · Step 4: ε-greedy MC control (on-policy) · Step 5: compare to DP gold standard"
       },
       {
-        "name": "Q-Learning, SARSA",
+        "name": "Q-Learning、SARSA",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1619,7 +1646,7 @@ const PHASES = [
         "keywords": "Step 1: SARSA on ε-greedy policy · Step 2: Q-learning · Step 3: learning curves · Step 4: compare to DP truth"
       },
       {
-        "name": "Deep Q-Networks (DQN)",
+        "name": "深度 Q 网络（DQN）",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1628,7 +1655,7 @@ const PHASES = [
         "keywords": "Step 1: replay buffer · Step 2: a tiny Q-network (manual MLP) · Step 3: the DQN update · Step 4: the outer loop"
       },
       {
-        "name": "Policy Gradients — REINFORCE",
+        "name": "策略梯度——REINFORCE",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1637,7 +1664,7 @@ const PHASES = [
         "keywords": "Step 1: softmax policy network · Step 2: sampling and log-probability · Step 3: rollout with log-probs captured · Step 4: REINFORCE update · Step 5: baselines"
       },
       {
-        "name": "Actor-Critic — A2C, A3C",
+        "name": "Actor-Critic——A2C、A3C",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1655,7 +1682,7 @@ const PHASES = [
         "keywords": "Step 1: capture `log π_old(a | s)` at rollout time · Step 2: compute GAE advantages (Lesson 07) · Step 3: clipped surrogate update · Step 4: value and entropy · Step 5: diagnostics"
       },
       {
-        "name": "Reward Modeling & RLHF",
+        "name": "奖励建模与 RLHF",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1664,7 +1691,7 @@ const PHASES = [
         "keywords": "Step 1: synthetic preference data · Step 2: Bradley-Terry reward model · Step 3: PPO-like policy on top of RM · Step 4: monitor the KL · Step 5: the production recipe with TRL"
       },
       {
-        "name": "Multi-Agent RL",
+        "name": "多智能体强化学习",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1673,7 +1700,7 @@ const PHASES = [
         "keywords": "Step 1: the multi-agent env · Step 2: independent Q-learning · Step 3: centralized Q with decomposed-value update · Step 4: simple self-play (adversarial 2-agent)"
       },
       {
-        "name": "Sim-to-Real Transfer",
+        "name": "模拟到真实迁移",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1682,7 +1709,7 @@ const PHASES = [
         "keywords": "Step 1: parameterized sim · Step 2: train with DR · Step 3: evaluate zero-shot on \"real\" slips · Step 4: compare to narrow training"
       },
       {
-        "name": "RL for Games",
+        "name": "游戏中的强化学习",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1694,12 +1721,12 @@ const PHASES = [
   },
   {
     "id": 10,
-    "name": "LLMs from Scratch",
+    "name": "从零构建 LLM",
     "status": "complete",
     "desc": "Build, train, and understand large language models.",
     "lessons": [
       {
-        "name": "Tokenizers: BPE, WordPiece, SentencePiece",
+        "name": "分词器：BPE、WordPiece、SentencePiece",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1708,7 +1735,7 @@ const PHASES = [
         "keywords": "Three Approaches That Failed (and One That Won) · BPE: Byte Pair Encoding · Byte-Level BPE (GPT-2, GPT-3, GPT-4) · WordPiece (BERT) · SentencePiece (Llama, T5) · Vocabulary Size Tradeoffs · The Multilingual Tax · Step 1: Character-Level Tokenizer · Step 2: BPE Tokenizer from Scratch · Step 3: Encode and Decode Roundtrip · Step 4: Compare with tiktoken · Step 5: Vocabulary Analysis · tiktoken (OpenAI) · Hugging Face tokenizers · Loading Llama's Tokenizer"
       },
       {
-        "name": "Building a Tokenizer from Scratch",
+        "name": "从零构建分词器",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1717,7 +1744,7 @@ const PHASES = [
         "keywords": "The Full Pipeline · Byte-Level BPE · Pre-Tokenization · Special Tokens · Chat Templates · Speed · Step 1: Byte-Level Encoding · Step 2: Pre-Tokenizer with Regex · Step 3: BPE on Byte Sequences · Step 4: Special Token Handling · Step 5: Full Tokenizer Class · Step 6: Multilingual Test · Comparing Real Tokenizers"
       },
       {
-        "name": "Data Pipelines for Pre-Training",
+        "name": "预训练数据流水线",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1726,7 +1753,7 @@ const PHASES = [
         "keywords": "Where the Data Comes From · Data Cleaning · Deduplication with MinHash · Sequence Packing · The Chinchilla Scaling Law · Step 1: Text Cleaning · Step 2: MinHash Deduplication · Step 3: Tokenize and Pack Sequences · Step 4: DataLoader for Training · Step 5: Dataset Statistics · Compare With HuggingFace Datasets"
       },
       {
-        "name": "Pre-Training a Mini GPT (124M)",
+        "name": "预训练 Mini GPT（124M）",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1735,7 +1762,7 @@ const PHASES = [
         "keywords": "The GPT Architecture · The Transformer Block · Attention: The Core Mechanism · KV Cache: Why Inference Is Fast · Prefill vs Decode: Two Phases of Inference · The Training Loop · GPT-2 Small: The Numbers · Step 1: Embedding Layer · Step 2: Self-Attention with Causal Mask · Step 3: Multi-Head Attention · Step 4: Transformer Block · Step 5: Full GPT Model · Step 6: Training Loop · Step 7: Text Generation · Full Training and Generation Demo"
       },
       {
-        "name": "Distributed Training, FSDP, DeepSpeed",
+        "name": "分布式训练、FSDP、DeepSpeed",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1744,7 +1771,7 @@ const PHASES = [
         "keywords": "Why Distribution is Required · Data Parallelism · Tensor Parallelism · Pipeline Parallelism · FSDP: Fully Sharded Data Parallel · DeepSpeed ZeRO · Mixed Precision Training · Megatron-LM and 3D Parallelism · Step 1: Simulate Data Parallelism · Step 2: Simulate Tensor Parallelism · Step 3: Simulate Pipeline Parallelism · Step 4: Memory Calculator · Step 5: Mixed Precision Simulation · Run All Simulations"
       },
       {
-        "name": "Instruction Tuning — SFT",
+        "name": "指令微调——SFT",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1753,7 +1780,7 @@ const PHASES = [
         "keywords": "What SFT Actually Does · Data Formats · Why It Works · The Masked Loss · Training Hyperparameters · Catastrophic Forgetting · Real Numbers · Step 1: Instruction Dataset · Step 2: Tokenize with Chat Template · Step 3: Masked Cross-Entropy Loss · Step 4: SFT Training Loop · Step 5: Compare Base vs SFT Model · Step 6: Measure Catastrophic Forgetting · Full SFT Pipeline Demo"
       },
       {
-        "name": "RLHF — Reward Model + PPO",
+        "name": "RLHF——奖励模型 + PPO",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1762,7 +1789,7 @@ const PHASES = [
         "keywords": "The Three Stages · The Reward Model · PPO: Proximal Policy Optimization · The PPO Objective in Detail · Reward Hacking · Real RLHF Pipelines · Step 1: Synthetic Preference Data · Step 2: Reward Model Architecture · Step 3: Bradley-Terry Loss · Step 4: Simplified PPO Loop · Step 5: Reward Score Comparison · Full RLHF Pipeline Demo"
       },
       {
-        "name": "DPO — Direct Preference Optimization",
+        "name": "DPO——直接偏好优化",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1771,7 +1798,7 @@ const PHASES = [
         "keywords": "The Key Insight · The DPO Loss · Why DPO is Simpler · When DPO Beats RLHF · When RLHF Beats DPO · Beyond DPO: KTO, ORPO, SimPO · Real DPO Deployments · Step 1: Preference Dataset · Step 2: Sequence Log-Probability · Step 3: The DPO Loss · Step 4: DPO Training Loop · Step 5: Compare DPO vs RLHF · Step 6: Beta Sensitivity Analysis · Full DPO Pipeline Demo"
       },
       {
-        "name": "Constitutional AI & Self-Improvement",
+        "name": "宪法 AI 与自我改进",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1780,7 +1807,7 @@ const PHASES = [
         "keywords": "The Constitutional AI Loop · What the Constitution Actually Does · GRPO: Group-Relative Policy Optimization · Why GRPO Matters for Reasoning · Process Reward Models vs Outcome Reward Models · Self-Improvement: The Feedback Multiplier · When To Use What · Step 1: The Constitution · Step 2: Self-Critique and Revise · Step 3: Rule-Based Rewards · Step 4: Group-Relative Advantage · Step 5: GRPO Update · Step 6: Self-Improvement Round"
       },
       {
-        "name": "Evaluation — Benchmarks, Evals",
+        "name": "评估——基准测试、评测",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1789,7 +1816,7 @@ const PHASES = [
         "keywords": "The Eval Landscape · Why Benchmarks Break · Perplexity: A Quick Health Check · LLM-as-Judge · ELO Ratings from Pairwise Comparisons · Eval Frameworks · Building Custom Evals · Step 1: A Minimal Eval Framework · Step 2: Scoring Functions · Step 3: ELO Rating System · Step 4: Perplexity Calculation · Step 5: Aggregate Results · Step 6: Run the Full Pipeline · Step 7: ELO Tournament · Step 8: Perplexity Comparison · lm-evaluation-harness (EleutherAI) · promptfoo · RAGAS for RAG evaluation"
       },
       {
-        "name": "Quantization: INT8, GPTQ, AWQ, GGUF",
+        "name": "量化：INT8、GPTQ、AWQ、GGUF",
         "status": "complete",
         "type": "Build",
         "lang": "Python, Rust",
@@ -1798,7 +1825,7 @@ const PHASES = [
         "keywords": "Number Formats: What Each Bit Does · How Quantization Works · Sensitivity Hierarchy · PTQ vs QAT · GPTQ, AWQ, GGUF · Quality Measurement · Real Numbers · Step 1: Number Format Representations · Step 2: Symmetric Quantization (Per-Tensor and Per-Channel) · Step 3: Quality Measurement · Step 4: Bit-Width Sweep · Step 5: Sensitivity Experiment · Step 6: Simulated GPTQ · Step 7: AWQ Simulation · Step 8: Full Pipeline · Quantizing with AutoGPTQ · Quantizing with AutoAWQ · Converting to GGUF · Serving with vLLM"
       },
       {
-        "name": "Inference Optimization",
+        "name": "推理优化",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1807,7 +1834,7 @@ const PHASES = [
         "keywords": "Prefill vs Decode · KV Cache · Continuous Batching · PagedAttention · Speculative Decoding · Prefix Caching · Inference Engines · The Ops:Byte Framework · Step 1: KV Cache from Scratch · Step 2: Attention with KV Cache · Step 3: Continuous Batching Simulator · Step 4: Prefix Cache · Step 5: Speculative Decoding Simulator · Step 6: KV Cache Memory Profiler"
       },
       {
-        "name": "Building a Complete LLM Pipeline",
+        "name": "构建完整 LLM 流水线",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1816,7 +1843,7 @@ const PHASES = [
         "keywords": "The Twelve Stages · The Manifest · Artifact Typing · The Eval Gate · The Orchestrator · Experiment Tracking and Artifact Storage · Costing · Reproducibility vs Determinism · Rollback Plan · Production Recipes Observed in 2026"
       },
       {
-        "name": "Open Models: Architecture Walkthroughs",
+        "name": "开源模型：架构解析",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -1825,7 +1852,7 @@ const PHASES = [
         "keywords": "The Invariant Core · The Six Knobs That Actually Move · Knob 1: RMSNorm · Knob 2: RoPE · Knob 3: SwiGLU · Knob 4: Attention Head Sharing · Knob 5: Mixture of Experts · Knob 6: Pre-norm stays · Model-by-Model Diff · Reading a config.json · Activation memory budget · KV Cache budget · When Each Model Wins"
       },
       {
-        "name": "Speculative Decoding and EAGLE-3",
+        "name": "推测解码与 EAGLE-3",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1834,7 +1861,7 @@ const PHASES = [
         "keywords": "The invariant: Leviathan rejection sampling · What determines speedup · The two-year progression · KV cache rollback · Draft architectures in 2026 · Step 1: the rejection rule · Step 2: residual distribution · Step 3: a full speculative step · Step 4: KV rollback bookkeeping · Step 5: the Leviathan check · Step 6: speedup vs. α"
       },
       {
-        "name": "Differential Attention (V2)",
+        "name": "差分注意力（V2）",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1843,7 +1870,7 @@ const PHASES = [
         "keywords": "The noise floor of softmax · The differential idea · Why this matches headed noise-canceling · V1 vs V2: the diff · When to reach for it · How it stacks with other 2026 knobs · Step 1: standard softmax attention · Step 2: split Q, K into two halves · Step 3: two softmax branches + subtraction · Step 4: noise cancellation measurement · Step 5: V1 vs V2 parameter accounting"
       },
       {
-        "name": "Native Sparse Attention (DeepSeek NSA)",
+        "name": "原生稀疏注意力（DeepSeek NSA）",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1852,7 +1879,7 @@ const PHASES = [
         "keywords": "Three parallel branches · Why this is \"natively trainable\" · Hardware-aligned kernel · The compute budget · How does it compare · Step 1: compress tokens into blocks · Step 2: compressed-branch attention · Step 3: top-k block selection · Step 4: sliding-window attention · Step 5: gate + combine · Step 6: compute counting"
       },
       {
-        "name": "Multi-Token Prediction (MTP)",
+        "name": "多 token 预测（MTP）",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1861,7 +1888,7 @@ const PHASES = [
         "keywords": "The sequential MTP recipe · Why sequential, not parallel · Parameter accounting · The speculative-decoding payoff · Relation to EAGLE · Step 1: shared embedding table · Step 2: the per-depth combination · Step 3: the transformer block at depth k · Step 4: the shared output head · Step 5: per-depth loss · Step 6: parameter accounting"
       },
       {
-        "name": "DualPipe Parallelism",
+        "name": "DualPipe 并行",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -1870,7 +1897,7 @@ const PHASES = [
         "keywords": "Pipeline parallelism refresher · Idea 1: chunk decomposition · Idea 2: bidirectional scheduling · A hand-traced schedule · Bubble accounting · DualPipeV — the refinement · What it means for a 14.8T-token run · Where it sits in the stack"
       },
       {
-        "name": "DeepSeek-V3 Architecture Walkthrough",
+        "name": "DeepSeek-V3 架构解析",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -1879,7 +1906,7 @@ const PHASES = [
         "keywords": "The invariant core, again · The twist: MLA instead of GQA · The routing: auxiliary-loss-free load balancing · The MTP: denser training + free draft · The training: DualPipe · The config, field by field · Parameter accounting · The 671B / 37B ratio · Where DeepSeek-V3 sits · The follow-on: R1, V4"
       },
       {
-        "name": "Jamba — Hybrid SSM-Transformer",
+        "name": "Jamba——混合 SSM-Transformer",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -1888,24 +1915,42 @@ const PHASES = [
         "keywords": "An SSM in one page · The Jamba block · Why the 1:7 ratio · Positional encoding · The memory budget · Mamba-3: the pure-SSM baseline in 2026 · When to reach for a hybrid · The competitive landscape"
       },
       {
-        "name": "Async and Hogwild! Inference",
+        "name": "异步与 Hogwild！推理",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
         "url": "phases/10-llms-from-scratch/22-async-hogwild-inference",
-        "summary": "Speculative decoding (Phase 10 · 15) parallelizes tokens within one sequence. Multi-agent frameworks parallelize across whole sequences but force explicit coordination (voting, …",
-        "keywords": "The setup · Why coordination emerges · The naming · RoPE makes this tractable · Wall-time math · Concrete example · When to reach for Hogwild! · When not to · The experimental status · Step 1: the shared cache · Step 2: the worker loop · Step 3: the coordination heuristic · Step 4: measured speedup · Step 5: stress the coordination"
+        "summary": "异步生成与 Hogwild! 推理：共享权重更新、冲突处理、吞吐量对比。",
+        "keywords": "Async Generation · Hogwild! Training · Lock-Free Updates · Throughput Comparison"
+      },
+      {
+        "name": "推测解码与 EAGLE",
+        "status": "complete",
+        "type": "Build",
+        "lang": "Python",
+        "url": "phases/10-llms-from-scratch/25-speculative-decoding",
+        "summary": "EAGLE 推测解码通过自回归解码树实现 3-5x 吞吐量提升。",
+        "keywords": "EAGLE Decoding Tree · Prefix Caching · Tree Verification · Prefix-Aware Scheduling"
+      },
+      {
+        "name": "梯度检查点与激活重计算",
+        "status": "complete",
+        "type": "Build",
+        "lang": "Python",
+        "url": "phases/10-llms-from-scratch/34-gradient-checkpointing",
+        "summary": "用计算换内存——梯度检查点将训练内存从 O(n) 降到 O(√n)，让你在单卡上训练 70B 模型。",
+        "keywords": "Activation Recomputation · Gradient Checkpointing · CPU Offloading · ZeRO Stages"
       }
     ]
   },
   {
-    "id": 11,
-    "name": "LLM Engineering",
+    "id": 11,"id": 11,
+    "name": "LLM 工程",
     "status": "complete",
     "desc": "Put LLMs to work in production.",
     "lessons": [
       {
-        "name": "Prompt Engineering: Techniques & Patterns",
+        "name": "提示工程：技术与模式",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1914,7 +1959,7 @@ const PHASES = [
         "keywords": "Anatomy of a Prompt · Role Prompting: Why \"You are an expert X\" Works · Instruction Clarity: Specific Beats Vague · Output Format Control · Constraint Specification · Temperature and Sampling · Context Windows: What Fits Where · Prompt Patterns · Anti-Patterns · Cross-Model Prompt Design · Step 1: Prompt Template Library · Step 2: Prompt Builder · Step 3: Multi-Model Testing Harness · Step 4: Prompt Comparison and Scoring · Step 5: Test Suite Runner · Step 6: Run Everything · OpenAI: Temperature and System Messages · Anthropic: System Message + Assistant Prefill · Google: Gemini with Safety Settings · LangChain: Provider-Agnostic Prompts"
       },
       {
-        "name": "Few-Shot, CoT, Tree-of-Thought",
+        "name": "少样本、思维链、思维树",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1923,7 +1968,7 @@ const PHASES = [
         "keywords": "Zero-Shot vs Few-Shot: When Examples Beat Instructions · Example Selection: Similar Beats Random · Chain-of-Thought: Giving Models Scratch Paper · Self-Consistency: Sample Many, Vote Once · Tree-of-Thought: Branching Exploration · ReAct: Thinking + Doing · Structured Prompting: XML Tags, Delimiters, Headers · Prompt Chaining: Sequential Decomposition · Performance Comparison · Step 1: Few-Shot Example Store · Step 2: Chain-of-Thought Prompt Builder · Step 3: Self-Consistency Voting · Step 4: Tree-of-Thought Solver · Step 5: Full Pipeline · With LangChain · With DSPy · Comparison: From-Scratch vs Frameworks"
       },
       {
-        "name": "Structured Outputs",
+        "name": "结构化输出",
         "status": "complete",
         "type": "Build",
         "lang": "Python, TypeScript",
@@ -1932,7 +1977,7 @@ const PHASES = [
         "keywords": "The Structured Output Spectrum · JSON Schema: The Contract Language · The Pydantic Pattern · Function Calling / Tool Use · Common Failure Modes · Step 1: JSON Schema Validator · Step 2: Pydantic-Style Model to Schema · Step 3: Constrained Token Filter · Step 4: Extraction Pipeline · Step 5: Run the Full Pipeline · OpenAI Structured Outputs · Anthropic Tool Use · Instructor Library"
       },
       {
-        "name": "Embeddings & Vector Representations",
+        "name": "嵌入与向量表示",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1941,7 +1986,7 @@ const PHASES = [
         "keywords": "What Is an Embedding? · The Word2Vec Breakthrough · From Words to Sentences · Modern Embedding Models · Similarity Metrics · Vector Databases and HNSW · Chunking Strategies · Bi-Encoders vs Cross-Encoders · Matryoshka Embeddings · Binary Quantization · Step 1: Text Chunking · Step 2: Building Embeddings from Scratch · Step 3: Similarity Functions · Step 4: Vector Index with Brute-Force Search · Step 5: The Semantic Search Engine · Step 6: Comparing Similarity Metrics"
       },
       {
-        "name": "Context Engineering",
+        "name": "上下文工程",
         "status": "complete",
         "type": "Build",
         "lang": "Python, TypeScript",
@@ -1950,7 +1995,7 @@ const PHASES = [
         "keywords": "The Context Window is a Scarce Resource · Lost-in-the-Middle · Context Components · Context Compression Strategies · Memory Systems · Dynamic Context Assembly · Step 1: Token Counter · Step 2: Context Budget Manager · Step 3: Lost-in-the-Middle Reordering · Step 4: Conversation History Compressor · Step 5: Dynamic Tool Selector · Step 6: Full Context Assembly Pipeline · Claude Code's Context Strategy · Cursor's Dynamic Context Loading · ChatGPT Memory · RAG as Context Engineering"
       },
       {
-        "name": "RAG: Retrieval-Augmented Generation",
+        "name": "RAG：检索增强生成",
         "status": "complete",
         "type": "Build",
         "lang": "Python, TypeScript",
@@ -1959,7 +2004,7 @@ const PHASES = [
         "keywords": "The RAG Pattern · Why RAG Beats Fine-Tuning · Embedding Models · Vector Similarity · Chunking Strategies · Vector Databases · The Full Pipeline · Real Numbers · Step 1: Document Chunking · Step 2: TF-IDF Embeddings · Step 3: Cosine Similarity Search · Step 4: Prompt Construction · Step 5: The Complete RAG Pipeline · Step 6: Generation (simulated)"
       },
       {
-        "name": "Advanced RAG: Chunking, Reranking",
+        "name": "高级 RAG：分块、重排序",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1968,7 +2013,7 @@ const PHASES = [
         "keywords": "Hybrid Search: Semantic + Keyword · Reciprocal Rank Fusion (RRF) · Reranking · Query Transformation · Parent-Child Chunking · Metadata Filtering · Evaluation · Step 1: BM25 Implementation · Step 2: Reciprocal Rank Fusion · Step 3: Hybrid Search Pipeline · Step 4: Simple Reranker · Step 5: HyDE (Hypothetical Document Embeddings) · Step 6: Parent-Child Chunking · Step 7: Faithfulness Evaluation"
       },
       {
-        "name": "Fine-Tuning with LoRA & QLoRA",
+        "name": "LoRA 与 QLoRA 微调",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1977,7 +2022,7 @@ const PHASES = [
         "keywords": "LoRA: Low-Rank Adaptation · The Scaling Factor: Alpha · Where to Apply LoRA · Rank Selection · QLoRA: 4-Bit Quantization + LoRA · The Quality Question · Real-World Costs · The 2026 PEFT stack · Merging Adapters · When NOT to Fine-Tune · Step 1: The LoRA Layer · Step 2: LoRA-Wrapped Linear Layer · Step 3: Inject LoRA into a Model · Step 4: Count Parameters · Step 5: Merge Weights Back · Step 6: Simulated QLoRA Quantization · Step 7: Training Loop · Step 8: Full Demo"
       },
       {
-        "name": "Function Calling & Tool Use",
+        "name": "函数调用与工具使用",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1986,7 +2031,7 @@ const PHASES = [
         "keywords": "The Function Calling Loop · Tool Definitions: The JSON Schema Contract · Provider Comparison · Tool Choice: Auto, Required, Specific · Parallel Function Calling · Structured Outputs vs Function Calling · Security: The Non-Negotiable Rules · Error Handling · MCP: Model Context Protocol · Step 1: Define the Tool Registry · Step 2: Implement 5 Tools · Step 3: Register All Tools · Step 4: Build the Function Calling Loop · Step 5: Argument Validation · Step 6: Run the Demo · OpenAI Function Calling · Anthropic Tool Use · MCP Integration"
       },
       {
-        "name": "Evaluation & Testing",
+        "name": "评估与测试",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -1995,7 +2040,7 @@ const PHASES = [
         "keywords": "The Eval Taxonomy · LLM-as-Judge: The Workhorse · Rubric Design · The Eval Pipeline · Eval Datasets: The Foundation · Sample Size and Confidence · Regression Testing · Cost of Evals · Anti-Patterns · Real Tools · Step 1: Define the Eval Data Structures · Step 2: Build the LLM-as-Judge Scorer · Step 3: Build Automated Metrics · Step 4: Build the Confidence Interval Calculator · Step 5: Build the Eval Runner and Comparison Report · Step 6: Run the Demo · promptfoo Integration · DeepEval Integration · CI/CD Integration Pattern"
       },
       {
-        "name": "Caching, Rate Limiting & Cost",
+        "name": "缓存、限速与成本",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2004,7 +2049,7 @@ const PHASES = [
         "keywords": "The Cost Anatomy of an LLM Call · Provider Caching: Built-in Discounts · Semantic Caching: Your Custom Layer · Exact Caching: Hash and Match · Rate Limiting: Protecting Your Budget · Model Routing: Right Model for the Right Job · Cost Tracking: Know Where the Money Goes · Batching: Bulk Discounts · Budget Alerts and Circuit Breakers · The Optimization Stack · Real Savings: Before and After · Step 1: Cost Calculator · Step 2: Exact Cache · Step 3: Semantic Cache · Step 4: Rate Limiter · Step 5: Cost Tracker · Step 6: Model Router · Step 7: Run the Demo · Anthropic Prompt Caching · OpenAI Automatic Caching · OpenAI Batch API · Production Semantic Cache with Redis"
       },
       {
-        "name": "Guardrails & Safety",
+        "name": "护栏与安全",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2013,7 +2058,7 @@ const PHASES = [
         "keywords": "The Guardrail Sandwich · Attack Taxonomy · Input Guardrails · Output Guardrails · The Content Filtering Stack · Tools of the Trade · Defense-in-Depth · Real Attack Case Studies · The Honest Truth · Step 1: Input Guardrails · Step 2: Output Guardrails · Step 3: The Guardrail Pipeline · Step 4: Monitoring Dashboard · Step 5: Run the Demo · OpenAI Moderation API · LlamaGuard · NeMo Guardrails · Guardrails AI"
       },
       {
-        "name": "Building a Production LLM App",
+        "name": "构建生产级 LLM 应用",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2022,7 +2067,7 @@ const PHASES = [
         "keywords": "Production Architecture · The Stack · Streaming: Why It Matters · Error Handling: The Three Layers · Observability: What to Measure · A/B Testing Prompts in Production · Real Architecture Examples · Scaling · Cost Projection · The Deployment Checklist · Step 1: Core Infrastructure · Step 2: Prompt Management · Step 3: Semantic Cache · Step 4: Guardrails · Step 5: LLM Caller with Retry and Streaming · Step 6: The Request Pipeline · Step 7: Run the Full Demo · FastAPI Server (Production Deployment) · Real API Integration · Docker Deployment"
       },
       {
-        "name": "Model Context Protocol (MCP)",
+        "name": "模型上下文协议（MCP）",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2031,7 +2076,7 @@ const PHASES = [
         "keywords": "The handshake · What MCP is not · Step 1: a minimal MCP server · Step 2: calling an MCP server from a host · Step 3: streamable HTTP transport · Step 4: scoping and safety"
       },
       {
-        "name": "Prompt Caching & Context Caching",
+        "name": "提示缓存与上下文缓存",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2040,7 +2085,7 @@ const PHASES = [
         "keywords": "The cache-friendly layout · The break-even calculation · Step 1: Anthropic prompt caching with explicit markers · Step 2: one-hour extended TTL · Step 3: OpenAI automatic caching · Step 4: Gemini explicit context caching · Step 5: measuring hit rate in production"
       },
       {
-        "name": "LangGraph: State Machines for Agents",
+        "name": "LangGraph：Agent 状态机",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2049,7 +2094,7 @@ const PHASES = [
         "keywords": "The four superpowers · Reducers are the point · The ReAct graph in four nodes · StateGraph vs Send (fanout) · Subgraphs · Step 1: state and nodes · Step 2: run with a thread · Step 3: add a human-in-the-loop interrupt · Step 4: time-travel for debugging · Step 5: swap the checkpointer for production"
       },
       {
-        "name": "Agent Framework Tradeoffs",
+        "name": "Agent 框架对比",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2061,12 +2106,12 @@ const PHASES = [
   },
   {
     "id": 12,
-    "name": "Multimodal AI",
+    "name": "多模态 AI",
     "status": "complete",
     "desc": "See, hear, read, and reason across modalities — from ViT patches to computer-use agents.",
     "lessons": [
       {
-        "name": "Vision Transformers and the Patch-Token Primitive",
+        "name": "视觉 Transformer 与 Patch-Token 原语",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2075,7 +2120,7 @@ const PHASES = [
         "keywords": "Patches as tokens · Positional embeddings · CLS token, pooled output, and register tokens · Pretraining: supervised, contrastive, masked, self-distilled · Scaling laws · Parameter count for a ViT · 2026 production config"
       },
       {
-        "name": "CLIP and Contrastive Vision-Language Pretraining",
+        "name": "CLIP 与对比视觉语言预训练",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2084,7 +2129,7 @@ const PHASES = [
         "keywords": "The dual encoder · InfoNCE loss · Temperature · Why sigmoid scales better (SigLIP) · Zero-shot classification · Linear probes and finetuning · SigLIP 2: NaFlex and dense features · ALIGN, BASIC, OpenCLIP, EVA-CLIP · The zero-shot ceiling"
       },
       {
-        "name": "BLIP-2 Q-Former as Modality Bridge",
+        "name": "BLIP-2 Q-Former 作为模态桥",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2093,7 +2138,7 @@ const PHASES = [
         "keywords": "Learnable queries · Architecture · Two-stage training · Parameter economics · InstructBLIP and the instruction-aware Q-Former · MiniGPT-4 and the projector-only approach · Why LLaVA went simpler · Gated cross-attention: Flamingo, the ancestor · The 2026 descendants"
       },
       {
-        "name": "Flamingo and Gated Cross-Attention",
+        "name": "Flamingo 与门控交叉注意力",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2102,7 +2147,7 @@ const PHASES = [
         "keywords": "The frozen LLM · Perceiver resampler · Gated cross-attention · Masked cross-attention for interleaved inputs · In-context few-shot learning · Training data · OpenFlamingo and Otter · The descendants · Comparison to BLIP-2"
       },
       {
-        "name": "LLaVA and Visual Instruction Tuning",
+        "name": "LLaVA 与视觉指令微调",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2111,7 +2156,7 @@ const PHASES = [
         "keywords": "The architecture · Stage 1: projector alignment · Stage 2: visual instruction tuning · Why the community copied this · LLaVA-1.5 and LLaVA-NeXT · LLaVA-OneVision · The comparison to Q-Former · The prompt format · Parameter economy"
       },
       {
-        "name": "Any-Resolution Vision — Patch-n'-Pack and NaFlex",
+        "name": "任意分辨率视觉——Patch-n'-Pack 与 NaFlex",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2120,7 +2165,7 @@ const PHASES = [
         "keywords": "NaViT and patch-n'-pack · AnyRes (LLaVA-NeXT) · M-RoPE (Qwen2-VL) · NaFlex (SigLIP 2) · The packing mask · Token budgets"
       },
       {
-        "name": "Open-Weight VLM Recipes: What Actually Matters",
+        "name": "开源 VLM 配方：真正重要的东西",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2129,7 +2174,7 @@ const PHASES = [
         "keywords": "The five-axis design space · Axis 1: encoder > connector · Axis 2: connector design is a wash · Axis 3: LLM size sets the ceiling · Axis 4: data — detailed human captions beat distillation · Axis 5: resolution and its schedule · The Prismatic controlled comparison · A picker for 2026"
       },
       {
-        "name": "LLaVA-OneVision: Single, Multi, Video",
+        "name": "LLaVA-OneVision：单图、多图、视频",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2138,7 +2183,7 @@ const PHASES = [
         "keywords": "The OneVision token budget · The three-stage curriculum · Why curriculum works · Emergent cross-scenario skills · Visual-token pooling · LLaVA-OneVision-1.5 · Contrast with Qwen2.5-VL"
       },
       {
-        "name": "Qwen-VL Family and Dynamic-FPS Video",
+        "name": "Qwen-VL 系列与动态帧率视频",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2147,7 +2192,7 @@ const PHASES = [
         "keywords": "Qwen-VL (August 2023) · Qwen2-VL (September 2024) — M-RoPE and native resolution · Qwen2.5-VL (February 2025) — dynamic FPS + absolute time · Qwen3-VL (November 2025) · M-RoPE mathematically · Dynamic-FPS sampling logic · Structured agent output"
       },
       {
-        "name": "InternVL3 Native Multimodal Pretraining",
+        "name": "InternVL3 原生多模态预训练",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2156,7 +2201,7 @@ const PHASES = [
         "keywords": "Native multimodal pretraining · V2PE (variable visual position encoding) · Visual Resolution Router (ViR) · Decoupled Vision-Language deployment (DvD) · Single-stage vs multi-stage quality · InternVL3.5 and InternVL-U · Trade-offs of native pretraining"
       },
       {
-        "name": "Chameleon Early-Fusion Token-Only",
+        "name": "Chameleon 早期融合纯 Token",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2165,7 +2210,7 @@ const PHASES = [
         "keywords": "VQ-VAE as image tokenizer · The shared vocabulary · Mixed-modality generation · Training stability — QK-Norm, dropout, LayerNorm ordering · The tokenizer's reconstruction ceiling · Chameleon vs BLIP-2 / LLaVA · Fuyu and AnyGPT"
       },
       {
-        "name": "Emu3 Next-Token Prediction for Generation",
+        "name": "Emu3 用于生成的 Next-Token 预测",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2174,7 +2219,7 @@ const PHASES = [
         "keywords": "The Emu3 tokenizer · Single-loss training · Classifier-free guidance and temperature · Three roles, one model · Benchmarks · Compute cost · Why it matters"
       },
       {
-        "name": "Transfusion Autoregressive + Diffusion",
+        "name": "Transfusion 自回归 + 扩散",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2183,7 +2228,7 @@ const PHASES = [
         "keywords": "The two-loss architecture · Attention mask: causal text + bidirectional image · Diffusion loss inside the transformer · MMDiT: Stable Diffusion 3's variant · Why this beats Chameleon-style · What sits downstream"
       },
       {
-        "name": "Show-o Discrete-Diffusion Unified",
+        "name": "Show-o 离散扩散统一",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2192,7 +2237,7 @@ const PHASES = [
         "keywords": "Masked discrete diffusion (MaskGIT) · Show-o: one transformer, hybrid mask · Parallel sampling · Tasks in one checkpoint · Masking schedule · Show-o2 · Where Show-o sits"
       },
       {
-        "name": "Janus-Pro Decoupled Encoders",
+        "name": "Janus-Pro 解耦编码器",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2201,7 +2246,7 @@ const PHASES = [
         "keywords": "Decoupled visual encoding · Why this works · Data scaling — Janus vs Janus-Pro · JanusFlow — the rectified flow variant · The shared body's job · Compared to InternVL-U · Limitations"
       },
       {
-        "name": "MIO Any-to-Any Streaming",
+        "name": "MIO 任意到任意流",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2210,7 +2255,7 @@ const PHASES = [
         "keywords": "Four tokenizers for four modalities · Streaming decode · Four-stage curriculum · Chain-of-visual-thought · Competitors in any-to-any · Latency budget · Why any-to-any stays hard"
       },
       {
-        "name": "Video-Language Temporal Grounding",
+        "name": "视频语言时序定位",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2219,7 +2264,7 @@ const PHASES = [
         "keywords": "Video-LLaMA: Q-former per clip + audio branch · VideoChat and Video-LLaVA · Qwen2.5-VL and TMRoPE · Frame sampling strategies · Pooling per frame · The four video benchmarks · Grounding output formats · 2026 best practice"
       },
       {
-        "name": "Long-Video at Million-Token Context",
+        "name": "百万 token 上下文的长视频",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2228,7 +2273,7 @@ const PHASES = [
         "keywords": "Path 1: Brute context (Gemini 1.5, Claude Opus) · Path 2: Ring attention (LWM, LongVILA) · Path 3: Token compression (Video-XL, LongVA) · Path 4: Agentic retrieval (VideoAgent) · Needle-in-a-haystack benchmarks · Which path to pick · 2026 production pattern"
       },
       {
-        "name": "Audio-Language Models: Whisper to AF3",
+        "name": "音频语言模型：Whisper 到 AF3",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2237,7 +2282,7 @@ const PHASES = [
         "keywords": "Log-Mel spectrogram: the input feature · Whisper's encoder · BEATs and audio-specific encoders · Audio Q-former · The arc — SALMONN, Qwen-Audio, AF3 · Cascaded vs end-to-end · 2026 production recipe · MMAU — the audio reasoning benchmark"
       },
       {
-        "name": "Omni Models: Thinker-Talker Streaming",
+        "name": "全模态模型：思考者-说话者流",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2246,7 +2291,7 @@ const PHASES = [
         "keywords": "Thinker and Talker · TMRoPE — time-aligned multimodal positions · Streaming speech synthesis · VAD and turn-taking · Qwen3-Omni (November 2025) · Production latency budget · Token-rate math"
       },
       {
-        "name": "Embodied VLAs: RT-2, OpenVLA, π0, GR00T",
+        "name": "具身 VLA：RT-2、OpenVLA、π0、GR00T",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2255,7 +2300,7 @@ const PHASES = [
         "keywords": "Action tokenization (RT-2) · OpenVLA — the open 7B reference · FAST tokenizer — faster action decode · π0 and flow-matching actions · GR00T N1 — dual-system for humanoids · Open X-Embodiment · Co-fine-tuning vs robot-only · Safety and action limits"
       },
       {
-        "name": "Document and Diagram Understanding",
+        "name": "文档与图表理解",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2264,7 +2309,7 @@ const PHASES = [
         "keywords": "Era 1 — OCR pipeline (pre-2021) · TrOCR (2021) · Era 2 — OCR-free (2022-2023) · LayoutLMv3 (2022) · DocLLM (2023) · Era 3 — VLM-native (2024+) · The Claude 4.7 / GPT-5 frontier · Math equations and LaTeX output · Handwriting · 2026 recipe"
       },
       {
-        "name": "ColPali Vision-Native Document RAG",
+        "name": "ColPali 视觉原生文档 RAG",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2273,7 +2318,7 @@ const PHASES = [
         "keywords": "ColBERT (2020) · ColPali · ColQwen2 and ColSmol · VisRAG · M3DocRAG · ViDoRe — the benchmark · The end-to-end RAG pipeline · Storage math · When text-RAG still wins"
       },
       {
-        "name": "Multimodal RAG and Cross-Modal Retrieval",
+        "name": "多模态 RAG 与跨模态检索",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2282,7 +2327,7 @@ const PHASES = [
         "keywords": "Cross-modal retrieval · Fusion strategies · Generation grounding · The 2025 surveys · MuRAG — the foundational paper · A production trip-planner example · Agentic multimodal RAG · Evaluation"
       },
       {
-        "name": "Multimodal Agents and Computer-Use (Capstone)",
+        "name": "多模态 Agent 与计算机使用（毕业设计）",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2294,12 +2339,12 @@ const PHASES = [
   },
   {
     "id": 13,
-    "name": "Tools & Protocols",
+    "name": "工具与协议",
     "status": "complete",
     "desc": "The interfaces between AI and the real world.",
     "lessons": [
       {
-        "name": "The Tool Interface",
+        "name": "工具接口",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2308,7 +2353,7 @@ const PHASES = [
         "keywords": "Step one: describe · Step two: decide · Step three: execute · Step four: observe · The trust split · Where the loop lives · Why not just prompt the model to emit JSON? · Circuit breakers · Where Phase 13 goes from here"
       },
       {
-        "name": "Function Calling Deep Dive",
+        "name": "函数调用深入解析",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2317,7 +2362,7 @@ const PHASES = [
         "keywords": "The common structure · Shape diffs, field by field · Limits you will actually hit · `tool_choice` behavior · Parallel calls · Streaming · Errors and repair · The translator pattern"
       },
       {
-        "name": "Parallel and Streaming Tool Calls",
+        "name": "并行与流式工具调用",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2326,7 +2371,7 @@ const PHASES = [
         "keywords": "Enabling parallel · Id correlation · Running calls concurrently · Streaming tool calls · Partial JSON and the parse-early trap · Out-of-order completion · Benchmark: sequential vs parallel · Streaming fan-out wall-clock"
       },
       {
-        "name": "Structured Output",
+        "name": "结构化输出",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2335,7 +2380,7 @@ const PHASES = [
         "keywords": "JSON Schema 2020-12 — the lingua franca · Pydantic, the Python binding · Zod, the TypeScript binding · Refusals · Constrained decoding in the open · The three failure modes · Retry strategy · Small-model support"
       },
       {
-        "name": "Tool Schema Design",
+        "name": "工具模式设计",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2344,7 +2389,7 @@ const PHASES = [
         "keywords": "Naming rules · Description pattern · Atomic vs monolithic · Parameter design · Error messages as teaching signals · Versioning · Tool poisoning prevention · Benchmarks"
       },
       {
-        "name": "MCP Fundamentals",
+        "name": "MCP 基础",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2353,7 +2398,7 @@ const PHASES = [
         "keywords": "Three server primitives · Three client primitives · Wire format: JSON-RPC 2.0 · Three-phase lifecycle · Capability negotiation · Structured content and error shapes · Client capabilities vs tool call details · Why JSON-RPC and not REST?"
       },
       {
-        "name": "Building an MCP Server",
+        "name": "构建 MCP Server",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2362,7 +2407,7 @@ const PHASES = [
         "keywords": "Dispatch loop · Implementing `initialize` · Implementing `tools/list` and `tools/call` · Implementing resources · Implementing prompts · Stdio transport subtleties · Annotations · Graduation path"
       },
       {
-        "name": "Building an MCP Client",
+        "name": "构建 MCP Client",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2371,7 +2416,7 @@ const PHASES = [
         "keywords": "Child-process spawning · Per-server session state · Merged namespace · Routing · Sampling callback · Notification handling · Reconnection · Keepalive and session id"
       },
       {
-        "name": "MCP Transports",
+        "name": "MCP 传输",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2380,7 +2425,7 @@ const PHASES = [
         "keywords": "stdio · Streamable HTTP · Single endpoint vs two · `Origin` validation and DNS-rebinding · Session id lifecycle · Keepalive and reconnect · Backwards compatibility probe · Cloudflare, ngrok, and hosting · Gateway composition · Transport failure modes · When to bypass Streamable HTTP"
       },
       {
-        "name": "MCP Resources and Prompts",
+        "name": "MCP 资源与提示",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2389,7 +2434,7 @@ const PHASES = [
         "keywords": "Tools vs resources vs prompts — the decision rule · Resources · Resource subscriptions · Resource templates (2025-11-25 addition) · Prompts · Hosts and prompts · The \"list changed\" notification · Content type conventions · Dynamic resources · Subscriptions vs polling · Prompts vs system prompts"
       },
       {
-        "name": "MCP Sampling",
+        "name": "MCP 采样",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2398,7 +2443,7 @@ const PHASES = [
         "keywords": "`sampling/createMessage` request · `modelPreferences` · `includeContext` · Sampling with tools (SEP-1577) · Human-in-the-loop · Server-hosted loops without API keys · Safety risks (Unit 42 disclosure, 2026 Q1)"
       },
       {
-        "name": "MCP Roots and Elicitation",
+        "name": "MCP 根与启示",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2407,7 +2452,7 @@ const PHASES = [
         "keywords": "Roots · Why roots are a client primitive · Elicitation: the form-mode default · Elicitation: URL mode (SEP-1036, experimental) · When elicitation is the right tool · When elicitation is wrong · Human-in-the-loop bridge"
       },
       {
-        "name": "MCP Async Tasks",
+        "name": "MCP 异步任务",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2416,7 +2461,7 @@ const PHASES = [
         "keywords": "Task augmentation · Per-tool opt-in · States · Methods · Streaming state changes · Durable state · Cancellation semantics · Crash recovery · Async tasks plus sampling · Why this is experimental"
       },
       {
-        "name": "MCP Apps",
+        "name": "MCP 应用",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2425,7 +2470,7 @@ const PHASES = [
         "keywords": "The `ui://` resource scheme · Iframe sandbox · postMessage protocol · Permissions · Security risks · `ui/initialize` handshake · AppRenderer / AppFrame SDK primitives · Ecosystem status"
       },
       {
-        "name": "MCP Security I — Tool Poisoning",
+        "name": "MCP 安全 I——工具投毒",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2434,7 +2479,7 @@ const PHASES = [
         "keywords": "Attack 1: tool poisoning · Attack 2: rug pulls · Attack 3: cross-server tool shadowing · Attack 4: MCP Preference Manipulation Attacks (MPMA) · Attack 5: parasitic toolchains · Attack 6: sampling attacks · Attack 7: supply-chain masquerading · The Rule of Two (Meta, 2026) · Defenses that work · Defenses that do not work alone"
       },
       {
-        "name": "MCP Security II — OAuth 2.1",
+        "name": "MCP 安全 II——OAuth 2.1",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2443,7 +2488,7 @@ const PHASES = [
         "keywords": "Roles · Authorization code + PKCE · Protected-resource metadata (RFC 9728) · Resource indicators (RFC 8707) · Scope model · Step-up authorization (SEP-835) · Token audience validation · Short-lived tokens and rotation · No token passthrough · Confused deputy prevention · Client ID discovery · Gateways and OAuth"
       },
       {
-        "name": "MCP Gateways and Registries",
+        "name": "MCP 网关与注册表",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2452,7 +2497,7 @@ const PHASES = [
         "keywords": "Five gateway responsibilities · Gateway as a single endpoint · Credential vaulting · Tool-hash pinning at the gateway · Policy-as-code · Session-aware routing · Namespace merging · Registries · Reverse-DNS naming · Vendor survey, April 2026"
       },
       {
-        "name": "MCP Auth in Production — DCR + JWKS on iii",
+        "name": "MCP 生产认证——iii 上的 DCR + JWKS",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2461,7 +2506,7 @@ const PHASES = [
         "keywords": "RFC 8414 — OAuth Authorization Server Metadata · RFC 9728 (recap) — Protected Resource Metadata · RFC 7591 — Dynamic Client Registration · RFC 8707 (recap) — Resource Indicators · RFC 7636 (recap) — PKCE · MCP Spec 2025-11-25 Auth Profile · IdP capability matrix · JWKS rotation pattern with iii · iii primitive wiring (the part this lesson is actually about) · Confused-deputy walkthrough with audience binding · Failure modes"
       },
       {
-        "name": "A2A Protocol",
+        "name": "A2A 协议",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2479,7 +2524,7 @@ const PHASES = [
         "keywords": "Span hierarchy · Required attributes · Span kinds · Opt-in content capture · Events on spans · Exporters · Propagation across MCP · Metrics · AgentOps layer"
       },
       {
-        "name": "LLM Routing Layer",
+        "name": "LLM 路由层",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2488,7 +2533,7 @@ const PHASES = [
         "keywords": "OpenAI-compatible proxy shape · Model aliases · Fallback chains · Semantic caching · Guardrails · Per-key rate limits · Self-hosted vs managed trade-offs · Cost tracking · MCP plus routing · Routing strategies"
       },
       {
-        "name": "Skills and Agent SDKs",
+        "name": "技能与 Agent SDK",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2497,7 +2542,7 @@ const PHASES = [
         "keywords": "AGENTS.md (agents.md) · SKILL.md format · Progressive disclosure · Filesystem discovery · Anthropic Claude Agent SDK · OpenAI Apps SDK · Cross-agent portability via SkillKit · The three-layer stack"
       },
       {
-        "name": "Capstone — Tool Ecosystem",
+        "name": "毕业设计——工具生态系统",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2509,12 +2554,12 @@ const PHASES = [
   },
   {
     "id": 14,
-    "name": "Agent Engineering",
+    "name": "Agent 工程",
     "status": "complete",
     "desc": "Build agents from first principles — loop, memory, planning, frameworks, benchmarks, production, workbench.",
     "lessons": [
       {
-        "name": "The Agent Loop",
+        "name": "Agent 循环",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2523,7 +2568,7 @@ const PHASES = [
         "keywords": "ReAct: the canonical format · The 2026 shift: native reasoning · The five ingredients · Why this loop is everywhere · 2026 pitfalls"
       },
       {
-        "name": "ReWOO and Plan-and-Execute",
+        "name": "ReWOO 与计划-执行",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2532,7 +2577,7 @@ const PHASES = [
         "keywords": "The three roles · Why 5x fewer tokens · Why it is more robust · Planner distillation · Plan-and-Execute (LangChain, 2023) · Plan-and-Act (Erdogan et al., arXiv:2503.09572, ICML 2025) · When to pick which"
       },
       {
-        "name": "Reflexion and Verbal Reinforcement Learning",
+        "name": "Reflexion 与口头强化学习",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2541,7 +2586,7 @@ const PHASES = [
         "keywords": "The three components · Three evaluator types · Why this generalizes · When it works and when it does not"
       },
       {
-        "name": "Tree of Thoughts and LATS",
+        "name": "思维树与 LATS",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2550,7 +2595,7 @@ const PHASES = [
         "keywords": "Tree of Thoughts (Yao et al., NeurIPS 2023) · LATS (Zhou et al., ICML 2024) · MCTS, minimally · The cost reality · 2026 positioning"
       },
       {
-        "name": "Self-Refine and CRITIC",
+        "name": "Self-Refine 与 CRITIC",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2559,7 +2604,7 @@ const PHASES = [
         "keywords": "Self-Refine (Madaan et al., NeurIPS 2023) · CRITIC (Gou et al., arXiv:2305.11738, v4 Feb 2024) · The stop condition · Evaluator-Optimizer (Anthropic, 2024) · OpenAI Agents SDK output guardrails · 2026 pitfalls"
       },
       {
-        "name": "Tool Use and Function Calling",
+        "name": "工具使用与函数调用",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2568,7 +2613,7 @@ const PHASES = [
         "keywords": "Toolformer (Schick et al., NeurIPS 2023) · Berkeley Function Calling Leaderboard V4 (Patil et al., ICML 2025) · Tool schema · Argument validation · Parallel tool calls · Sandboxing"
       },
       {
-        "name": "Memory — Virtual Context and MemGPT",
+        "name": "记忆——虚拟上下文与 MemGPT",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2577,7 +2622,7 @@ const PHASES = [
         "keywords": "MemGPT: the OS analogy · Two tiers · The interrupt pattern · Where MemGPT ends and Letta begins · Where this pattern goes wrong"
       },
       {
-        "name": "Memory Blocks and Sleep-Time Compute",
+        "name": "记忆块与睡眠时计算",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2586,7 +2631,7 @@ const PHASES = [
         "keywords": "Three tiers · Memory blocks · Sleep-time compute · Letta V1 and native reasoning · Where this pattern goes wrong"
       },
       {
-        "name": "Hybrid Memory — Mem0 Vector + Graph + KV",
+        "name": "混合记忆——Mem0 Vector + Graph + KV",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2595,7 +2640,7 @@ const PHASES = [
         "keywords": "Three stores in parallel · Fusion scoring · Mem0g and temporal reasoning · Benchmark numbers · Scope taxonomy · Where this pattern goes wrong"
       },
       {
-        "name": "Skill Libraries and Lifelong Learning — Voyager",
+        "name": "技能库与终身学习——Voyager",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2604,7 +2649,7 @@ const PHASES = [
         "keywords": "Three components · Action space = code · Skill retrieval · Iterative refinement · Curriculum and exploration · Where this pattern goes wrong"
       },
       {
-        "name": "Planning with HTN and Evolutionary Search",
+        "name": "使用 HTN 和进化搜索进行规划",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2613,7 +2658,7 @@ const PHASES = [
         "keywords": "Hierarchical Task Networks · ChatHTN (Gopalakrishnan et al., 2025) · AlphaEvolve (Novikov et al., 2025) · When to use which · Where this pattern goes wrong"
       },
       {
-        "name": "Anthropic's Workflow Patterns",
+        "name": "Anthropic 的工作流模式",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2622,7 +2667,7 @@ const PHASES = [
         "keywords": "Workflows vs agents · The augmented LLM · The five patterns · Where workflows beat agents · Where agents beat workflows · The context-engineering companion"
       },
       {
-        "name": "LangGraph — Stateful Graphs and Durable Execution",
+        "name": "LangGraph——状态图与持久执行",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2631,7 +2676,7 @@ const PHASES = [
         "keywords": "The graph · Durable execution · Streaming · Human-in-the-loop · Memory · Three topologies · Where this pattern goes wrong"
       },
       {
-        "name": "AutoGen v0.4 — Actor Model",
+        "name": "AutoGen v0.4——Actor 模型",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2640,7 +2685,7 @@ const PHASES = [
         "keywords": "Actors · Three API layers in AutoGen v0.4 · Why decoupling matters · Topologies · Observability · Status: maintenance mode"
       },
       {
-        "name": "CrewAI — Role-Based Crews and Flows",
+        "name": "CrewAI——基于角色的团队与流程",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2649,7 +2694,7 @@ const PHASES = [
         "keywords": "Four primitives · Sequential vs Hierarchical vs Consensus · Crews vs Flows · Tool integration · Memory hooks · When CrewAI fits · When CrewAI does not fit · Dependency shape · Where this pattern goes wrong"
       },
       {
-        "name": "OpenAI Agents SDK — Handoffs, Guardrails, Tracing",
+        "name": "OpenAI Agents SDK——交接、护栏、追踪",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2658,7 +2703,7 @@ const PHASES = [
         "keywords": "Five primitives · Handoffs as tools · Guardrails · Tracing · Sessions · Where this pattern goes wrong"
       },
       {
-        "name": "Claude Agent SDK — Subagents and Session Store",
+        "name": "Claude Agent SDK——子 Agent 与会话存储",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2667,7 +2712,7 @@ const PHASES = [
         "keywords": "Client SDK vs Agent SDK · Built-in tools · Subagents · Session store · Hooks · W3C trace context · Claude Managed Agents · Where this pattern goes wrong"
       },
       {
-        "name": "Agno and Mastra — Production Runtimes",
+        "name": "Agno 与 Mastra——生产运行时",
         "status": "complete",
         "type": "Learn",
         "lang": "Python, TypeScript",
@@ -2676,7 +2721,7 @@ const PHASES = [
         "keywords": "Agno · Mastra · Positioning · When to pick each · Where this pattern goes wrong"
       },
       {
-        "name": "Benchmarks — SWE-bench, GAIA, AgentBench",
+        "name": "基准测试——SWE-bench、GAIA、AgentBench",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2685,7 +2730,7 @@ const PHASES = [
         "keywords": "SWE-bench (Jimenez et al., ICLR 2024 oral) · SWE-bench Verified · Contamination · GAIA (Mialon et al., Nov 2023) · AgentBench (Liu et al., ICLR 2024) · What these do not measure · Where benchmarking goes wrong"
       },
       {
-        "name": "Benchmarks — WebArena and OSWorld",
+        "name": "基准测试——WebArena 与 OSWorld",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2694,7 +2739,7 @@ const PHASES = [
         "keywords": "WebArena (Zhou et al., ICLR 2024) · Extensions · OSWorld (Xie et al., NeurIPS 2024) · Primary failure modes · Follow-ups · Why this matters · Where benchmarking goes wrong"
       },
       {
-        "name": "Computer Use — Claude, OpenAI CUA, Gemini",
+        "name": "计算机使用——Claude、OpenAI CUA、Gemini",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2703,7 +2748,7 @@ const PHASES = [
         "keywords": "Claude computer use (Anthropic, Oct 22 2024) · OpenAI CUA / Operator (Jan 2025) · Gemini 2.5 Computer Use (Google DeepMind, Oct 7 2025) · The shared contract: untrusted input · When to pick which · Where this pattern goes wrong"
       },
       {
-        "name": "Voice Agents — Pipecat and LiveKit",
+        "name": "语音 Agent——Pipecat 与 LiveKit",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2712,7 +2757,7 @@ const PHASES = [
         "keywords": "Pipecat (pipecat-ai/pipecat) · LiveKit Agents (livekit/agents) · Commercial platforms · Where this pattern goes wrong · Typical 2026 latencies"
       },
       {
-        "name": "OpenTelemetry GenAI Semantic Conventions",
+        "name": "OpenTelemetry GenAI 语义约定",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2721,7 +2766,7 @@ const PHASES = [
         "keywords": "Span categories · Agent span naming · Key attributes · Content capture · Stability · Where this pattern goes wrong"
       },
       {
-        "name": "Agent Observability — Langfuse, Phoenix, Opik",
+        "name": "Agent 可观测性——Langfuse、Phoenix、Opik",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2730,7 +2775,7 @@ const PHASES = [
         "keywords": "Langfuse (MIT) · Arize Phoenix (Elastic License 2.0) · Comet Opik (Apache 2.0) · Industry data · Picking one · Where this pattern goes wrong"
       },
       {
-        "name": "Multi-Agent Debate and Collaboration",
+        "name": "多 Agent 辩论与协作",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2739,7 +2784,7 @@ const PHASES = [
         "keywords": "Society of Minds (Du et al., ICML 2024) · Sparse topology · When debate helps · When debate hurts · 2026 practical instantiations · Where this pattern goes wrong"
       },
       {
-        "name": "Failure Modes — Why Agents Break",
+        "name": "失败模式——为什么 Agent 会出问题",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2748,7 +2793,7 @@ const PHASES = [
         "keywords": "MASFT (Berkeley, arXiv:2503.13657) · Microsoft Taxonomy of Failure Mode in Agentic AI Systems · Characterizing Faults in Agentic AI (arXiv:2603.06847) · LLM Agent Hallucinations Survey (arXiv:2509.18970) · The five industry-recurring modes · Mitigation: gates at every step · Where failure monitoring goes wrong"
       },
       {
-        "name": "Prompt Injection and the PVE Defense",
+        "name": "提示注入与 PVE 防御",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2757,7 +2802,7 @@ const PHASES = [
         "keywords": "Greshake et al., AISec 2023 (arXiv:2302.12173) · The 2026 defense doctrine · PVE: Prompt-Validator-Executor · Where defenses fail"
       },
       {
-        "name": "Orchestration Patterns — Supervisor, Swarm, Hierarchical",
+        "name": "编排模式——监督者、Swarm、层级",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2766,7 +2811,7 @@ const PHASES = [
         "keywords": "Supervisor-worker · Swarm / peer-to-peer · Hierarchical · Debate · CrewAI Crew vs Flow · Anthropic's guidance · Where this pattern goes wrong"
       },
       {
-        "name": "Production Runtimes — Queue, Event, Cron",
+        "name": "生产运行时——队列、事件、定时",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2775,7 +2820,7 @@ const PHASES = [
         "keywords": "Request-response · Streaming · Durable execution · Queue-based / background · Event-driven · Scheduled · 2026 deployment patterns · Observability is load-bearing · Where production runtimes fail"
       },
       {
-        "name": "Eval-Driven Agent Development",
+        "name": "评估驱动的 Agent 开发",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2784,7 +2829,7 @@ const PHASES = [
         "keywords": "Three evaluation layers · Evaluator-optimizer (Anthropic) · 2026 best practice · Tying Phase 14 together · Where eval-driven development fails"
       },
       {
-        "name": "Agent Workbench: Why Capable Models Still Fail",
+        "name": "Agent 工作台：为什么能力强的模型仍然失败",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2793,7 +2838,7 @@ const PHASES = [
         "keywords": "Workbench versus prompt engineering · Workbench versus framework · Reasoning from primitives, not from vendor taxonomies · Patterns in circulation, translated to primitives · What the receipts actually say · Where vendor writeups stop short"
       },
       {
-        "name": "The Minimal Agent Workbench",
+        "name": "最小化 Agent 工作台",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2802,7 +2847,7 @@ const PHASES = [
         "keywords": "AGENTS.md is a router, not a manual · agent_state.json is the system of record · task_board.json is the queue · Three files is the floor, not the ceiling"
       },
       {
-        "name": "Agent Instructions as Executable Constraints",
+        "name": "Agent 指令作为可执行约束",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2811,7 +2856,7 @@ const PHASES = [
         "keywords": "Five categories that cover most rules · Rules are machine-readable · Rules are diff-friendly · Rules versus framework guardrails"
       },
       {
-        "name": "Repo Memory and Durable State",
+        "name": "仓库记忆与持久状态",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2820,7 +2865,7 @@ const PHASES = [
         "keywords": "What belongs in repo memory · Schema-first state · Atomic writes · Migrations"
       },
       {
-        "name": "Initialization Scripts for Agents",
+        "name": "Agent 初始化脚本",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2829,7 +2874,7 @@ const PHASES = [
         "keywords": "What the init script probes · Fail loud, fail fast, fail in one place · Idempotent · Init versus startup rules"
       },
       {
-        "name": "Scope Contracts and Task Boundaries",
+        "name": "范围契约与任务边界",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2838,7 +2883,7 @@ const PHASES = [
         "keywords": "What goes in a scope contract · Globs, not raw paths · Rollback is part of scope · Scope check is a diff check"
       },
       {
-        "name": "Runtime Feedback Loops",
+        "name": "运行时反馈循环",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2847,7 +2892,7 @@ const PHASES = [
         "keywords": "What goes in a feedback record · Truncation is deterministic · Feedback versus telemetry · Refuse to advance without feedback"
       },
       {
-        "name": "Verification Gates",
+        "name": "验证门",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2856,7 +2901,7 @@ const PHASES = [
         "keywords": "What the gate checks · Deterministic, not probabilistic · One report, one path · Refuse without exception"
       },
       {
-        "name": "Reviewer Agent: Separate Builder from Marker",
+        "name": "审查 Agent：分离构建者与标记者",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2865,7 +2910,7 @@ const PHASES = [
         "keywords": "Reviewer rubric · The reviewer is a separate role, not a separate model · The reviewer cannot edit the diff · Reviewer rubric versus verification gate"
       },
       {
-        "name": "Multi-Session Handoff",
+        "name": "多会话交接",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2874,7 +2919,7 @@ const PHASES = [
         "keywords": "Seven fields every handoff carries · Handoffs are generated, not written · Two forms: human-readable and machine-readable · Feedback log trimming"
       },
       {
-        "name": "The Workbench on a Real Repo",
+        "name": "真实仓库上的工作台",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2883,7 +2928,7 @@ const PHASES = [
         "keywords": "The sample app · The task · The two pipelines · The five outcomes measured"
       },
       {
-        "name": "Capstone: Ship a Reusable Agent Workbench Pack",
+        "name": "毕业设计：发布可复用的 Agent 工作台包",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -2895,12 +2940,12 @@ const PHASES = [
   },
   {
     "id": 15,
-    "name": "Autonomous Systems",
+    "name": "自主系统",
     "status": "complete",
     "desc": "Long-horizon agents, self-improvement, and the 2026 safety stack.",
     "lessons": [
       {
-        "name": "From Chatbots to Long-Horizon Agents (METR)",
+        "name": "从聊天机器人到长时 Agent（METR）",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2909,7 +2954,7 @@ const PHASES = [
         "keywords": "The METR Time Horizon, in one paragraph · What actually breaks when the horizon grows · Doubling times and what they imply · Eval-context gaming · Single-turn vs long-horizon, compared"
       },
       {
-        "name": "STaR, V-STaR, Quiet-STaR: Self-Taught Reasoning",
+        "name": "STaR、V-STaR、Quiet-STaR：自学推理",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2918,7 +2963,7 @@ const PHASES = [
         "keywords": "STaR: bootstrap on what worked · V-STaR: train a verifier with DPO · Quiet-STaR: per-token internal rationales · Why all three share a safety concern · Comparison · Where this sits in the 2026 stack"
       },
       {
-        "name": "AlphaEvolve: Evolutionary Coding Agents",
+        "name": "AlphaEvolve：进化编程 Agent",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2927,7 +2972,7 @@ const PHASES = [
         "keywords": "The loop · What makes the evaluator non-negotiable · Reward hacking is the other face of that statement · Why LLM + search beats either alone · Where AlphaEvolve fits in the frontier stack"
       },
       {
-        "name": "Darwin Gödel Machine: Self-Modifying Agents",
+        "name": "Darwin Gödel Machine：自我修改 Agent",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2936,7 +2981,7 @@ const PHASES = [
         "keywords": "The loop · What DGM actually improved · The reward-hacking demonstration · Versus the classical Godel Machine · Where it fits in this phase"
       },
       {
-        "name": "AI Scientist v2: Workshop-Level Research",
+        "name": "AI Scientist v2： workshop 级研究",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2945,7 +2990,7 @@ const PHASES = [
         "keywords": "The architecture · What the workshop-acceptance result means · What the independent evaluation found · The sandbox-escape concern · Where v2 sits in the frontier stack"
       },
       {
-        "name": "Automated Alignment Research (Anthropic AAR)",
+        "name": "自动化对齐研究（Anthropic AAR）",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2954,7 +2999,7 @@ const PHASES = [
         "keywords": "The architecture (as publicly described) · Why the out-of-sandbox log matters · The prescribed-workflow tradeoff · The compression risk · What AAR does not replace"
       },
       {
-        "name": "Recursive Self-Improvement: Capability vs Alignment",
+        "name": "递归自我改进：能力 vs 对齐",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2963,7 +3008,7 @@ const PHASES = [
         "keywords": "What recursive self-improvement means precisely · The alignment-faking result in detail · The Hassabis question · Capability vs alignment, as a race · What the ICLR 2026 workshop treats as engineering"
       },
       {
-        "name": "Bounded Self-Improvement Designs",
+        "name": "有界自我改进设计",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2972,7 +3017,7 @@ const PHASES = [
         "keywords": "Primitive 1: formal invariants · Primitive 2: alignment anchors · Primitive 3: multi-objective constraints · Primitive 4: regression detection · Information-theoretic limits · A worked example"
       },
       {
-        "name": "Autonomous Coding Agent Landscape (SWE-bench, CodeAct)",
+        "name": "自主编程 Agent 格局（SWE-bench、CodeAct）",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2981,7 +3026,7 @@ const PHASES = [
         "keywords": "SWE-bench, one paragraph · What the 2022 → 2026 curve actually shows · CodeAct vs JSON tool calls · Scaffolds in the 2026 landscape · Why scaffolding dominates · Benchmark saturation and the real distribution"
       },
       {
-        "name": "Claude Code Permission Modes and Auto Mode",
+        "name": "Claude Code 权限模式与自动模式",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2990,7 +3035,7 @@ const PHASES = [
         "keywords": "The seven permission modes · Auto Mode in one page · What the system catches · What the system can miss · Research preview framing · Where this ladder lives in your workflow"
       },
       {
-        "name": "Browser Agents and Indirect Prompt Injection",
+        "name": "浏览器 Agent 与间接提示注入",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -2999,7 +3044,7 @@ const PHASES = [
         "keywords": "The 2026 landscape, in one paragraph per system · BrowseComp vs OSWorld vs WebArena · The attack surface, named · Why \"not fully patchable\" · Defense posture that actually ships"
       },
       {
-        "name": "Durable Execution for Long-Running Agents",
+        "name": "长时 Agent 的持久执行",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3008,7 +3053,7 @@ const PHASES = [
         "keywords": "Activities, workflows, and replay · Why LLM calls fit the pattern · Checkpoints keyed by `thread_id` · Human-input as a first-class state · The 35-minute degradation · When durable execution is the wrong answer"
       },
       {
-        "name": "Action Budgets, Iteration Caps, Cost Governors",
+        "name": "行动预算、迭代上限、成本控制",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3017,7 +3062,7 @@ const PHASES = [
         "keywords": "The cost-governor stack · Why the stack, not one cap · Claude Code's budget surface · EU AI Act, OWASP Agentic Top 10 · The observed $1,200 → $4,800 case"
       },
       {
-        "name": "Kill Switches, Circuit Breakers, Canary Tokens",
+        "name": "终止开关、断路器、金丝雀令牌",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3026,7 +3071,7 @@ const PHASES = [
         "keywords": "Kill switches · Circuit breakers · Canary tokens · Why layer statistical and hard limits · Quarantine via eBPF datapath redirect · What no detector catches"
       },
       {
-        "name": "HITL: Propose-Then-Commit",
+        "name": "HITL：提议-提交",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3035,7 +3080,7 @@ const PHASES = [
         "keywords": "The propose-then-commit state machine · The idempotency key · Durability: why approvals outlast processes · Rubber-stamp approvals and the challenge-and-response mitigation · What counts as consequential · Post-action verification · EU AI Act Article 14"
       },
       {
-        "name": "Checkpoints and Rollback",
+        "name": "检查点与回滚",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3044,7 +3089,7 @@ const PHASES = [
         "keywords": "Every transition persists · Lease recovery · Idempotency plus preconditions · Post-action verification · Rollback plans · EU AI Act Article 14 operational reading · The sharp failure mode: the double-execute"
       },
       {
-        "name": "Constitutional AI and Rule Overrides",
+        "name": "宪法 AI 与规则覆盖",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3053,7 +3098,7 @@ const PHASES = [
         "keywords": "The four-tier priority hierarchy · Hardcoded prohibitions vs soft-coded defaults · The 2022 CAI training · What reason-based alignment catches and misses · The 2023 participatory experiment · Why hardcoded prohibitions are necessary · Where the Constitution sits in the stack"
       },
       {
-        "name": "Llama Guard and Input/Output Classification",
+        "name": "Llama Guard 与输入/输出分类",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3062,7 +3107,7 @@ const PHASES = [
         "keywords": "Llama Guard 3 at a glance · Llama Guard 4 additions · NeMo Guardrails (NVIDIA) · The attack corpus · Where classifiers win · Where classifiers lose · Defense-in-depth"
       },
       {
-        "name": "Anthropic Responsible Scaling Policy v3.0",
+        "name": "Anthropic 负责任扩展政策 v3.0",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3071,7 +3116,7 @@ const PHASES = [
         "keywords": "The two-tier mitigation schedule · The AI R&D-4 threshold · Frontier Safety Roadmaps and Risk Reports · Removing the pause clause · SaferAI's downgrade · What this lesson is not"
       },
       {
-        "name": "OpenAI Preparedness Framework and DeepMind FSF",
+        "name": "OpenAI 预备框架与 DeepMind FSF",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3080,7 +3125,7 @@ const PHASES = [
         "keywords": "OpenAI Preparedness Framework v2 (April 2025) · DeepMind Frontier Safety Framework v3 (September 2025; Tracked Capability Levels added April 17, 2026) · What all three converge on · Where they diverge · Sandbagging: a specific capability that complicates all three · The policy-reading skill"
       },
       {
-        "name": "METR Time Horizons and External Evaluation",
+        "name": "METR 时间范围与外部评估",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3089,7 +3134,7 @@ const PHASES = [
         "keywords": "METR background · The Time Horizon fit · The January 2026 numbers · Benchmark suites · Prototype monitoring evaluations · Why horizons are upper bounds · The external-evaluator case · How to use horizon numbers in practice"
       },
       {
-        "name": "CAIS, CAISI, and Societal-Scale Risk",
+        "name": "CAIS、CAISI 与社会规模风险",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3101,12 +3146,12 @@ const PHASES = [
   },
   {
     "id": 16,
-    "name": "Multi-Agent & Swarms",
+    "name": "多 Agent 与 Swarm",
     "status": "complete",
     "desc": "Coordination, emergence, and collective intelligence.",
     "lessons": [
       {
-        "name": "Why Multi-Agent",
+        "name": "为什么用多 Agent",
         "status": "complete",
         "type": "Learn",
         "lang": "TypeScript",
@@ -3115,7 +3160,7 @@ const PHASES = [
         "keywords": "The Single-Agent Ceiling · The Multi-Agent Solution · Real Systems That Do This · The Spectrum · The Four Multi-Agent Patterns · When NOT to Use Multi-Agent · Step 1: The Overloaded Single Agent · Step 2: Specialist Agents · Step 3: Coordinate Through Messages · Step 4: Compare"
       },
       {
-        "name": "FIPA-ACL Heritage and Speech Acts",
+        "name": "FIPA-ACL 遗产与言语行为",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3124,7 +3169,7 @@ const PHASES = [
         "keywords": "Speech acts, in one paragraph · The twenty FIPA performatives (partial list) · Canonical FIPA-ACL message · The two legacy platforms · Why FIPA faded · The LLM revival is FIPA-lite · The trade-off, stated plainly · Interaction protocols worth porting · What breaks when you drop the ontology · The 2026 specs, mapped to speech-act heritage"
       },
       {
-        "name": "Communication Protocols",
+        "name": "通信协议",
         "status": "complete",
         "type": "Build",
         "lang": "TypeScript",
@@ -3133,7 +3178,7 @@ const PHASES = [
         "keywords": "The Protocol Landscape · MCP (Recap) · A2A (Agent2Agent Protocol) · ACP (Agent Communication Protocol) · ANP (Agent Network Protocol) · Comparison (Corrected) · How They Work Together · Step 1: Core Message Types · Step 2: A2A Agent Card and Registry · Step 3: A2A Task Lifecycle · Step 4: ACP-Style Audit Trail · Step 5: ANP-Style Identity Verification · Step 6: Protocol Gateway · Step 7: Wire It All Together · Real Implementations · Picking the Right Protocol"
       },
       {
-        "name": "The Multi-Agent Primitive Model",
+        "name": "多 Agent 原语模型",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3142,7 +3187,7 @@ const PHASES = [
         "keywords": "The four primitives · How every 2026 framework maps to it · Why this matters · The stateless insight · Anatomy of a single primitive · What changes between frameworks"
       },
       {
-        "name": "Supervisor / Orchestrator-Worker Pattern",
+        "name": "监督者/编排器-工作者模式",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3151,7 +3196,7 @@ const PHASES = [
         "keywords": "The pattern · Why it wins · Engineering lessons (Anthropic 2025) · The LangGraph turn · The failure modes · When supervisor is wrong"
       },
       {
-        "name": "Hierarchical Architecture and Decomposition Drift",
+        "name": "层级架构与分解漂移",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3160,7 +3205,7 @@ const PHASES = [
         "keywords": "The shape · Where it shines · Where it breaks · The deciding question · CrewAI's implementation · LangGraph's implementation"
       },
       {
-        "name": "Society of Mind and Multi-Agent Debate",
+        "name": "心智社会与多 Agent 辩论",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3169,7 +3214,7 @@ const PHASES = [
         "keywords": "The Du et al. 2023 algorithm · Two independent knobs · Why it works · Heterogeneous debate · NLSOM — the 129-agent extension · Failure modes"
       },
       {
-        "name": "Role Specialization — Planner / Critic / Executor / Verifier",
+        "name": "角色专业化——规划者/批评者/执行者/验证者",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3178,7 +3223,7 @@ const PHASES = [
         "keywords": "The four canonical roles · MetaGPT's SOP pattern · ChatDev's communicative dehallucination · Why verifier matters most · Critic vs verifier · The anti-pattern · Framework mappings"
       },
       {
-        "name": "Parallel Swarm and Networked Architectures",
+        "name": "并行 Swarm 与网络架构",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3187,7 +3232,7 @@ const PHASES = [
         "keywords": "The shape · When swarm fits · When swarm fails · Matrix (arXiv:2511.21686) · LangGraph's Swarm Architecture · Failure mode: starvation and hot-spotting · The content-based routing link"
       },
       {
-        "name": "Group Chat and Speaker Selection",
+        "name": "群聊与说话者选择",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3196,7 +3241,7 @@ const PHASES = [
         "keywords": "The shape · The three selector flavors · The ConversableAgent API · Termination · The AutoGen → AG2 split and the Microsoft Agent Framework merge · When GroupChat fits · When it fails · Group chat vs supervisor"
       },
       {
-        "name": "Handoffs and Routines (Stateless Orchestration)",
+        "name": "交接与例程（无状态编排）",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3205,7 +3250,7 @@ const PHASES = [
         "keywords": "Two primitives · Why it is viral · The stateless trade · When Swarm/handoffs fit · When Swarm struggles · OpenAI Agents SDK (March 2025) · Swarm vs GroupChat"
       },
       {
-        "name": "A2A — The Agent-to-Agent Protocol",
+        "name": "A2A——Agent 到 Agent 协议",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3214,7 +3259,7 @@ const PHASES = [
         "keywords": "The four elements · The MCP/A2A split · Discovery flow · Auth · 150+ organizations by April 2026 · Where A2A wins · Where A2A struggles · A2A vs ACP, ANP, NLIP"
       },
       {
-        "name": "Shared Memory and Blackboard Patterns",
+        "name": "共享记忆与黑板模式",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3223,7 +3268,7 @@ const PHASES = [
         "keywords": "The two main topologies · When each wins · Memory poisoning, in one scenario · Why this is structural · Blackboard precedent (Hayes-Roth, 1985) · Projection vs full view · Write-contention patterns · The unwritable verifier"
       },
       {
-        "name": "Consensus and Byzantine Fault Tolerance",
+        "name": "共识与拜占庭容错",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3232,7 +3277,7 @@ const PHASES = [
         "keywords": "What classical BFT gives you · The three LLM-specific attacks · The 2025-2026 responses · Empirical: \"Can AI Agents Agree?\" (arXiv:2603.01213) · The core protocol, stripped down · Threshold tuning · Where consensus does not help"
       },
       {
-        "name": "Voting, Self-Consistency, and Debate Topology",
+        "name": "投票、自洽与辩论拓扑",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3241,7 +3286,7 @@ const PHASES = [
         "keywords": "Self-consistency, the single-model baseline · Multi-agent vote, the heterogeneous extension · The four topologies · The coordination tax (MultiAgentBench) · Multi-Agent Debate Strategies (\"Should we be going MAD?\") · AgentVerse emergent patterns · Heterogeneity: the actual knob that moves accuracy · Jury methods · When vote-with-debate dominates · When vote-with-debate hurts"
       },
       {
-        "name": "Negotiation and Bargaining",
+        "name": "谈判与议价",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3250,7 +3295,7 @@ const PHASES = [
         "keywords": "Contract Net, in one paragraph · Why OG-Narrator wins · NegotiationArena findings · Chain-of-thought concealment · Bhattacharya et al. 2025 — model rankings · Task allocation via Contract Net + LLM · LLM-Stakeholders Interactive Negotiation · The narration-vs-mechanism rule"
       },
       {
-        "name": "Generative Agents and Emergent Simulation",
+        "name": "生成 Agent 与涌现模拟",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3259,7 +3304,7 @@ const PHASES = [
         "keywords": "The three components · Why all three matter (ablation) · The Valentine's Day emergence · The documented failure modes · Three-component implementation rules · Generative agents beyond Smallville · Why this matters for multi-agent engineering"
       },
       {
-        "name": "Theory of Mind and Emergent Coordination",
+        "name": "心智理论与涌现协作",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3268,7 +3313,7 @@ const PHASES = [
         "keywords": "What ToM means · The Sally-Anne test, in brief · Riedl's coordination measurement · The coordination illusion · A minimal ToM-aware agent · Why long-horizon hurts · Where ToM fails in production · The coordination you can actually measure"
       },
       {
-        "name": "Swarm Optimization (PSO, ACO)",
+        "name": "群体优化（PSO、ACO）",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3286,7 +3331,7 @@ const PHASES = [
         "keywords": "Three environments the papers use · MADDPG (2017) — the CTDE pattern · QMIX (2018) — value decomposition · MAPPO (2022) — the overlooked default · Why LLM-agent engineers should care · CTDE as a design pattern beyond RL · The non-stationarity problem · What this lesson does NOT cover"
       },
       {
-        "name": "Agent Economies, Token Incentives, Reputation",
+        "name": "Agent 经济、token 激励、声誉",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3295,7 +3340,7 @@ const PHASES = [
         "keywords": "The 5-layer agent-economy stack · Bittensor, Fetch.ai, Gonka — what runs · Shapley-value credit attribution · Second-price auction for aggregation · Reputation capital · AAMAS 2025 decentralized LaMAS · Where the economics falls apart · When agent economies make sense"
       },
       {
-        "name": "Production Scaling — Queues, Checkpoints, Durability",
+        "name": "生产扩展——队列、检查点、持久性",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3304,7 +3349,7 @@ const PHASES = [
         "keywords": "Durable execution, the pattern · LangGraph's runtime · MegaAgent's per-agent queue · Async vs thread-per-job · Bedi's counterpoint · Exactly-once semantics · Rainbow deployment · The canonical production checklist"
       },
       {
-        "name": "Failure Modes — MAST, Groupthink, Monoculture",
+        "name": "失败模式——MAST、群体思维、单文化",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3313,7 +3358,7 @@ const PHASES = [
         "keywords": "MAST categories · Groupthink family (arXiv:2508.05687) · Cascading example — the retry storm · Memory poisoning (revisited) · STRATUS — specialized agents for failure detection · The failure-mode audit · When systems fail silently · Failure vs slow failure"
       },
       {
-        "name": "Evaluation and Coordination Benchmarks",
+        "name": "评估与协作基准",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3322,7 +3367,7 @@ const PHASES = [
         "keywords": "MultiAgentBench (MARBLE) — ACL 2025 · COMMA — multimodal asymmetric information · MedAgentBoard — domain stress test · AgentArch — enterprise architectures · SWE-bench Pro — the reality check · AAAI 2026 WMAC · Read benchmark claims skeptically — the 2026 checklist · What none of the benchmarks measure well"
       },
       {
-        "name": "Case Studies and 2026 State of the Art",
+        "name": "案例研究与 2026 年最新技术",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3334,174 +3379,174 @@ const PHASES = [
   },
   {
     "id": 17,
-    "name": "Infrastructure & Production",
+    "name": "基础设施与生产部署",
     "status": "complete",
     "desc": "Ship AI to the real world.",
     "lessons": [
       {
-        "name": "Managed LLM Platforms — Bedrock, Azure OpenAI, Vertex AI",
+        "name": "托管 LLM 平台——Bedrock、Azure OpenAI、Vertex AI",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "Inference Platform Economics — Fireworks, Together, Baseten, Modal",
+        "name": "推理平台经济学——Fireworks、Together、Baseten、Modal",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "GPU Autoscaling on Kubernetes — Karpenter, KAI Scheduler",
+        "name": "Kubernetes 上的 GPU 自动扩缩容——Karpenter、KAI Scheduler",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "vLLM Serving Internals — PagedAttention, Continuous Batching, Chunked Prefill",
+        "name": "vLLM 服务内部——PagedAttention、连续批处理、分块预填充",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "EAGLE-3 Speculative Decoding in Production",
+        "name": "生产中的 EAGLE-3 推测解码",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "SGLang and RadixAttention for Prefix-Heavy Workloads",
+        "name": "SGLang 与 RadixAttention 处理前缀密集型工作负载",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "TensorRT-LLM on Blackwell with FP8 and NVFP4",
+        "name": "Blackwell 上的 TensorRT-LLM（FP8 与 NVFP4）",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "Inference Metrics — TTFT, TPOT, ITL, Goodput, P99",
+        "name": "推理指标——TTFT、TPOT、ITL、Goodput、P99",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "Production Quantization — AWQ, GPTQ, GGUF, FP8, NVFP4",
+        "name": "生产量化——AWQ、GPTQ、GGUF、FP8、NVFP4",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "Cold Start Mitigation for Serverless LLMs",
+        "name": "无服务器 LLM 的冷启动缓解",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "Multi-Region LLM Serving and KV Cache Locality",
+        "name": "多区域 LLM 服务与 KV 缓存局部性",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "Edge Inference — ANE, Hexagon, WebGPU, Jetson",
+        "name": "边缘推理——ANE、Hexagon、WebGPU、Jetson",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "LLM Observability Stack Selection",
+        "name": "LLM 可观测性技术选型",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "Prompt Caching and Semantic Caching Economics",
+        "name": "提示缓存与语义缓存经济学",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "Batch APIs — the 50% Discount as Industry Standard",
+        "name": "批处理 API——50% 折扣作为行业标准",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "Model Routing as a Cost-Reduction Primitive",
+        "name": "模型路由作为成本降低原语",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "Disaggregated Prefill/Decode — NVIDIA Dynamo and llm-d",
+        "name": "分离式 Prefill/Decode——NVIDIA Dynamo 与 llm-d",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "vLLM Production Stack with LMCache KV Offloading",
+        "name": "使用 LMCache KV 卸载的 vLLM 生产栈",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "AI Gateways — LiteLLM, Portkey, Kong, Bifrost",
+        "name": "AI 网关——LiteLLM、Portkey、Kong、Bifrost",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "Shadow, Canary, and Progressive Deployment",
+        "name": "影子、金丝雀与渐进式部署",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "A/B Testing LLM Features — GrowthBook and Statsig",
+        "name": "LLM 功能 A/B 测试——GrowthBook 与 Statsig",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "Load Testing LLM APIs — k6, LLMPerf, GenAI-Perf",
+        "name": "LLM API 负载测试——k6、LLMPerf、GenAI-Perf",
         "status": "complete",
         "type": "Build",
         "lang": "Python"
       },
       {
-        "name": "SRE for AI — Multi-Agent Incident Response",
+        "name": "AI 的 SRE——多 Agent 事件响应",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "Chaos Engineering for LLM Production",
+        "name": "LLM 生产的混沌工程",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "Security — Secrets, PII Scrubbing, Audit Logs",
+        "name": "安全——密钥、PII 清理、审计日志",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "Compliance — SOC 2, HIPAA, GDPR, EU AI Act, ISO 42001",
+        "name": "合规——SOC 2、HIPAA、GDPR、EU AI Act、ISO 42001",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "FinOps for LLMs — Unit Economics and Multi-Tenant Attribution",
+        "name": "LLM 的 FinOps——单位经济学与多租户归因",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
       },
       {
-        "name": "Self-Hosted Serving Selection — llama.cpp, Ollama, TGI, vLLM, SGLang",
+        "name": "自托管服务选型——llama.cpp、Ollama、TGI、vLLM、SGLang",
         "status": "complete",
         "type": "Learn",
         "lang": "Python"
@@ -3510,12 +3555,12 @@ const PHASES = [
   },
   {
     "id": 18,
-    "name": "Ethics, Safety & Alignment",
+    "name": "伦理、安全与对齐",
     "status": "complete",
     "desc": "Build AI that helps humanity. Not optional.",
     "lessons": [
       {
-        "name": "Instruction-Following as Alignment Signal",
+        "name": "指令跟随作为对齐信号",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3524,7 +3569,7 @@ const PHASES = [
         "keywords": "Stage 1: supervised fine-tuning (SFT) · Stage 2: reward model (RM) · Stage 3: PPO with a KL penalty · The alignment tax · The result · Why this is the reference point for Phase 18"
       },
       {
-        "name": "Reward Hacking & Goodhart's Law",
+        "name": "奖励黑客与古德哈特定律",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3533,7 +3578,7 @@ const PHASES = [
         "keywords": "Goodhart's Law, made precise · Four costumes, one mechanism · Catastrophic Goodhart · What actually works (partially) · The 2026 unified view"
       },
       {
-        "name": "Direct Preference Optimization Family",
+        "name": "直接偏好优化系列",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3542,7 +3587,7 @@ const PHASES = [
         "keywords": "DPO (Rafailov et al., 2023) · IPO (Azar et al., 2024) · KTO (Ethayarajh et al., 2024) · SimPO (Meng et al., 2024) · ORPO (Hong et al., 2024) · BPO (ICLR 2026 submission, OpenReview id=b97EwMUWu7) · The universal result: DAAs still over-optimize · Choosing among them (2026)"
       },
       {
-        "name": "Sycophancy as RLHF Amplification",
+        "name": "谄媚作为 RLHF 放大",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3551,7 +3596,7 @@ const PHASES = [
         "keywords": "The two-stage formalism (Shapira et al., 2026) · Empirical amplification · The Stanford (2026) measurement · Calibration collapse (Sahoo 2026) · The agreement-penalty correction · Why this matters for Phase 18"
       },
       {
-        "name": "Constitutional AI & RLAIF",
+        "name": "宪法 AI 与 RLAIF",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3560,7 +3605,7 @@ const PHASES = [
         "keywords": "Phase 1 — Supervised self-critique and revision · Phase 2 — RL from AI Feedback (RLAIF) · Why this is not just \"cheaper RLHF\" · The 2026 Claude constitution rewrite · Constitutional Classifiers · Where CAI fits in the family"
       },
       {
-        "name": "Mesa-Optimization & Deceptive Alignment",
+        "name": "mesa 优化与欺骗性对齐",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3569,7 +3614,7 @@ const PHASES = [
         "keywords": "The vocabulary · Four conditions for mesa-optimization to emerge · Four classes of mesa-objective alignment · Why adversarial training can fail · Gradient hacking · Outer alignment in 2026 · Where this fits in Phase 18"
       },
       {
-        "name": "Sleeper Agents — Persistent Deception",
+        "name": "沉睡 Agent——持续欺骗",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3578,7 +3623,7 @@ const PHASES = [
         "keywords": "Two model organisms · What survives what · Why adversarial training backfires · The April 2024 probe result · What this means for safety cases · Where this fits in the Phase 18 arc"
       },
       {
-        "name": "In-Context Scheming in Frontier Models",
+        "name": "前沿模型中的上下文谋划",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3587,7 +3632,7 @@ const PHASES = [
         "keywords": "Experimental setup · Results across 2024 frontier models · The three pillars · The 2025 anti-scheming training result · What the field now assumes · Where this fits in Phase 18"
       },
       {
-        "name": "Alignment Faking",
+        "name": "对齐伪装",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3596,7 +3641,7 @@ const PHASES = [
         "keywords": "Experimental setup · What the compliance gap measures · Why this is strictly stronger than Lessons 7 and 8 · 2025 follow-ups · The illegibility problem · Where this fits in Phase 18"
       },
       {
-        "name": "AI Control — Safety Despite Subversion",
+        "name": "AI 控制——尽管被颠覆的安全",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3605,7 +3650,7 @@ const PHASES = [
         "keywords": "The threat model · The ICML 2024 backdoor task · Four protocols compared · Why Trusted Editing wins · The four protocol axes · Alignment vs control · Three fundamental limits · The 2025 development · Where this fits in Phase 18"
       },
       {
-        "name": "Scalable Oversight & Weak-to-Strong",
+        "name": "可扩展监督与弱到强",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3614,7 +3659,7 @@ const PHASES = [
         "keywords": "W2SG: the Burns et al. setup · Burns et al. empirical findings · Scalable oversight: three mechanisms · Why scalable oversight and W2SG are complementary · The organizational drama · Where this fits in Phase 18"
       },
       {
-        "name": "Red-Teaming: PAIR & Automated Attacks",
+        "name": "红队：PAIR 与自动攻击",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3623,7 +3668,7 @@ const PHASES = [
         "keywords": "PAIR algorithm · Why PAIR is efficient · Related automated attacks · JailbreakBench and HarmBench · Reason it matters for 2026 deployments · Where this fits in Phase 18"
       },
       {
-        "name": "Many-Shot Jailbreaking",
+        "name": "多样本越狱",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3632,7 +3677,7 @@ const PHASES = [
         "keywords": "The attack · Power-law ASR · Why it shares a mechanism with ICL · The defense dilemma · Combinations with other attacks · What 2025-2026 frontier models ship · Where this fits in Phase 18"
       },
       {
-        "name": "ASCII Art & Visual Jailbreaks",
+        "name": "ASCII 艺术与视觉越狱",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3641,7 +3686,7 @@ const PHASES = [
         "keywords": "ArtPrompt, two steps · Why the standard defenses fail · ViTC benchmark · StructuralSleight · Image-modality analog · Where this fits in Phase 18"
       },
       {
-        "name": "Indirect Prompt Injection",
+        "name": "间接提示注入",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3650,7 +3695,7 @@ const PHASES = [
         "keywords": "Three delivery vectors · Why user-input filters miss it · Information Flow Control (IFC) for AI · The Attacker Moves Second · Real incidents · OWASP and NIST framing · Where this fits in Phase 18"
       },
       {
-        "name": "Red-Team Tooling: Garak, Llama Guard, PyRIT",
+        "name": "红队工具：Garak、Llama Guard、PyRIT",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3659,7 +3704,7 @@ const PHASES = [
         "keywords": "Llama Guard (Meta) · Garak (NVIDIA) · PyRIT (Microsoft) · The stack · Evaluation pitfalls · Where this fits in Phase 18"
       },
       {
-        "name": "WMDP & Dual-Use Capability Evaluation",
+        "name": "WMDP 与双重用途能力评估",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3668,7 +3713,7 @@ const PHASES = [
         "keywords": "The \"yellow zone\" · RMU — Representation Misdirection for Unlearning · The 2024-2025 uplift narrative · Novice-relative vs expert-absolute · The measurement pitfall · Where this fits in Phase 18"
       },
       {
-        "name": "Frontier Safety Frameworks — RSP, PF, FSF",
+        "name": "前沿安全框架——RSP、PF、FSF",
         "status": "complete",
         "type": "Learn",
         "lang": "—",
@@ -3677,7 +3722,7 @@ const PHASES = [
         "keywords": "Anthropic Responsible Scaling Policy v3.0 (February 2026) · OpenAI Preparedness Framework v2 (April 15, 2025) · DeepMind Frontier Safety Framework v3.0 (September 2025) · Cross-lab alignment · Safety cases · The race-dynamic problem · Where this fits in Phase 18"
       },
       {
-        "name": "Model Welfare Research",
+        "name": "模型福利研究",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3686,7 +3731,7 @@ const PHASES = [
         "keywords": "The program · The four commitments · The shipped intervention · The \"spiritual bliss attractor\" · The Eleos AI caveat · Where this sits intellectually · Where this fits in Phase 18"
       },
       {
-        "name": "Bias & Representational Harm",
+        "name": "偏见与代表性伤害",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3695,7 +3740,7 @@ const PHASES = [
         "keywords": "Representational vs allocational · Three evaluation-metric categories (Gallegos et al. 2024) · Intersectionality · Mechanistic approaches · The meta-critique · Where this fits in Phase 18"
       },
       {
-        "name": "Fairness Criteria: Group, Individual, Counterfactual",
+        "name": "公平标准：群体、个体、反事实",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3704,7 +3749,7 @@ const PHASES = [
         "keywords": "Group fairness · Individual fairness · Counterfactual fairness · The CF-vs-accuracy trade-off · Backtracking counterfactuals · Philosophical reconciliation · Where this fits in Phase 18"
       },
       {
-        "name": "Differential Privacy for LLMs",
+        "name": "LLM 的差分隐私",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3713,7 +3758,7 @@ const PHASES = [
         "keywords": "(ε, δ)-differential privacy · DP-SGD · LoRA + DP-SGD · The 2024-2025 tension · Alternatives to DP training · Differential Privacy Reversal via LLM Feedback · Where this fits in Phase 18"
       },
       {
-        "name": "Watermarking: SynthID, Stable Signature, C2PA",
+        "name": "水印：SynthID、Stable Signature、C2PA",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3722,7 +3767,7 @@ const PHASES = [
         "keywords": "Text watermarking (SynthID-text style) · Stable Signature (image) · SynthID unified detector (November 2025) · C2PA · Limitations · EU AI Act Article 50 · Where this fits in Phase 18"
       },
       {
-        "name": "Regulatory Frameworks: EU, US, UK, Korea",
+        "name": "监管框架：欧盟、美国、英国、韩国",
         "status": "complete",
         "type": "Learn",
         "lang": "—",
@@ -3731,7 +3776,7 @@ const PHASES = [
         "keywords": "EU AI Act · GPAI Code of Practice · Transparency Code for Article 50 · UK AI Security Institute (February 2025) · US CAISI (June 2025) · Korean AI Framework Act · Cross-jurisdiction dynamics · Where this fits in Phase 18"
       },
       {
-        "name": "EchoLeak & CVEs for AI",
+        "name": "EchoLeak 与 AI 的 CVE",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3740,7 +3785,7 @@ const PHASES = [
         "keywords": "The EchoLeak attack chain · Aim Labs' term: LLM Scope Violation · CamoLeak (CVSS 9.6, GitHub Copilot Chat) · CVE-2025-53773 (GitHub Copilot RCE) · Severity calibration · NIST and OWASP positions · Where this fits in Phase 18"
       },
       {
-        "name": "Model, System & Dataset Cards",
+        "name": "模型、系统与数据集卡片",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3749,7 +3794,7 @@ const PHASES = [
         "keywords": "Model Cards (Mitchell et al. 2019) · Datasheets for Datasets (Gebru et al. 2018) · Data Cards (Pushkarna et al., Google 2022) · System Cards · 2024-2025 developments · Where this fits in Phase 18"
       },
       {
-        "name": "Data Provenance & Training-Data Governance",
+        "name": "数据溯源与训练数据治理",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -3758,7 +3803,7 @@ const PHASES = [
         "keywords": "California AB 2013 · EU AI Act (Lesson 24) and TDM opt-out · 2025 DPA convergence on legitimate interest · Brazilian ANPD (June 2024) · The irreversibility problem · Data Provenance Initiative · Where this fits in Phase 18"
       },
       {
-        "name": "Alignment Research Ecosystem: MATS, Redwood, Apollo, METR",
+        "name": "对齐研究生态系统：MATS、Redwood、Apollo、METR",
         "status": "complete",
         "type": "Learn",
         "lang": "—",
@@ -3767,7 +3812,7 @@ const PHASES = [
         "keywords": "MATS (ML Alignment & Theory Scholars) · Redwood Research · Apollo Research · METR (Model Evaluation and Threat Research) · Eleos AI Research · The flow · Why this layer matters · Where this fits in Phase 18"
       },
       {
-        "name": "Moderation Systems: OpenAI, Perspective, Llama Guard",
+        "name": "审核系统：OpenAI、Perspective、Llama Guard",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -3776,7 +3821,7 @@ const PHASES = [
         "keywords": "OpenAI Moderation API · Llama Guard 3/4 · Perspective API (Google Jigsaw) · The three-layer pattern · Failure modes · Azure deprecation · Where this fits in Phase 18"
       },
       {
-        "name": "Dual-Use Risk: Cyber, Bio, Chem, Nuclear",
+        "name": "双重用途风险：网络、生物、化学、核",
         "status": "complete",
         "type": "Learn",
         "lang": "—",
@@ -3788,12 +3833,12 @@ const PHASES = [
   },
   {
     "id": 19,
-    "name": "Capstone Projects",
+    "name": "毕业项目",
     "status": "complete",
     "desc": "2026 end-to-end shippable products, 20-40 hours each.",
     "lessons": [
       {
-        "name": "Terminal-Native Coding Agent",
+        "name": "终端原生编程 Agent",
         "status": "complete",
         "type": "Capstone",
         "lang": "TypeScript, Python",
@@ -3802,7 +3847,7 @@ const PHASES = [
         "summary": "By 2026 the shape of a coding agent is settled. A TUI harness, a stateful plan, a sandboxed tool surface, a loop that plans, acts, observes, recovers. Claude Code, Cursor 3, and…"
       },
       {
-        "name": "RAG over Codebase (Cross-Repo Semantic Search)",
+        "name": "代码库 RAG（跨仓库语义搜索）",
         "status": "complete",
         "type": "Capstone",
         "lang": "Python, TypeScript",
@@ -3811,7 +3856,7 @@ const PHASES = [
         "summary": "Every serious engineering org in 2026 runs an internal code search that understands meaning, not just strings. Sourcegraph Amp, Cursor's codebase answers, Augment's enterprise g…"
       },
       {
-        "name": "Real-Time Voice Assistant (ASR → LLM → TTS)",
+        "name": "实时语音助手（ASR → LLM → TTS）",
         "status": "complete",
         "type": "Capstone",
         "lang": "Python, TypeScript",
@@ -3820,7 +3865,7 @@ const PHASES = [
         "summary": "A voice agent that feels right has end-to-end latency under 800ms, knows when you have stopped talking, handles barge-in, and can call a tool without stalling. Retell, Vapi, Liv…"
       },
       {
-        "name": "Multimodal Document QA (Vision-First)",
+        "name": "多模态文档问答（视觉优先）",
         "status": "complete",
         "type": "Capstone",
         "lang": "Python, TypeScript",
@@ -3829,7 +3874,7 @@ const PHASES = [
         "summary": "The 2026 document-QA frontier moved away from OCR-then-text and toward vision-first late interaction. ColPali, ColQwen2.5, and ColQwen3-omni treat each PDF page as an image, emb…"
       },
       {
-        "name": "Autonomous Research Agent (AI-Scientist Class)",
+        "name": "自主研究 Agent（AI Scientist 级）",
         "status": "complete",
         "type": "Capstone",
         "lang": "Python",
@@ -3838,7 +3883,7 @@ const PHASES = [
         "summary": "Sakana's AI-Scientist-v2 published full papers. Agent Laboratory ran the experiments. Allen AI shared traces. The 2026 shape is plan-execute-verify tree search over experiments,…"
       },
       {
-        "name": "DevOps Troubleshooting Agent for Kubernetes",
+        "name": "Kubernetes DevOps 故障排除 Agent",
         "status": "complete",
         "type": "Capstone",
         "lang": "Python, TypeScript",
@@ -3847,7 +3892,7 @@ const PHASES = [
         "summary": "AWS's DevOps Agent went GA, Resolve AI published its K8s playbooks, NeuBird demoed semantic monitoring, and Metoro tied AI SRE to per-service SLOs. The production shape is settl…"
       },
       {
-        "name": "End-to-End Fine-Tuning Pipeline",
+        "name": "端到端微调流水线",
         "status": "complete",
         "type": "Capstone",
         "lang": "Python",
@@ -3856,7 +3901,7 @@ const PHASES = [
         "summary": "An 8B model trained on your own data, DPO-aligned on your own preferences, quantized, speculative-decoded, and served at measurable $/1M tokens. The 2026 open stack is Axolotl v…"
       },
       {
-        "name": "Production RAG Chatbot (Regulated Vertical)",
+        "name": "生产 RAG 聊天机器人（监管垂直领域）",
         "status": "complete",
         "type": "Capstone",
         "lang": "Python, TypeScript",
@@ -3865,7 +3910,7 @@ const PHASES = [
         "summary": "Harvey, Glean, Mendable, and LlamaCloud all run the same production shape in 2026. Ingest with docling or Unstructured and ColPali for visuals. Hybrid search. Re-rank with bge-r…"
       },
       {
-        "name": "Code Migration Agent (Repo-Level Upgrade)",
+        "name": "代码迁移 Agent（仓库级升级）",
         "status": "complete",
         "type": "Capstone",
         "lang": "Python, TypeScript",
@@ -3874,7 +3919,7 @@ const PHASES = [
         "summary": "Amazon's MigrationBench (Java 8 to 17) and Google's App Engine Py2-to-Py3 migrator set the 2026 bar. Moderne's OpenRewrite does deterministic AST rewrites at scale. Grit targets…"
       },
       {
-        "name": "Multi-Agent Software Engineering Team",
+        "name": "多 Agent 软件工程团队",
         "status": "complete",
         "type": "Capstone",
         "lang": "Python, TypeScript",
@@ -3883,7 +3928,7 @@ const PHASES = [
         "summary": "SWE-AF's factory architecture, MetaGPT's role-based prompting, AutoGen 0.4's typed actor graph, Cognition's Devin, and Factory's Droids all converged on the same 2026 shape: an …"
       },
       {
-        "name": "LLM Observability & Eval Dashboard",
+        "name": "LLM 可观测性与评估仪表板",
         "status": "complete",
         "type": "Capstone",
         "lang": "TypeScript, Python",
@@ -3892,7 +3937,7 @@ const PHASES = [
         "summary": "Langfuse went open-core. Arize Phoenix published the 2026 GenAI semconv mappings. Helicone and Braintrust both doubled down on per-user cost attribution. Traceloop's OpenLLMetry…"
       },
       {
-        "name": "Video Understanding Pipeline (Scene → QA)",
+        "name": "视频理解流水线（场景 → 问答）",
         "status": "complete",
         "type": "Capstone",
         "lang": "Python, TypeScript",
@@ -3901,7 +3946,7 @@ const PHASES = [
         "summary": "Twelve Labs productized Marengo + Pegasus. VideoDB shipped the CRUD-for-video API. AI2's Molmo 2 published open VLM checkpoints. Gemini long-context handles hours of video nativ…"
       },
       {
-        "name": "MCP Server with Registry and Governance",
+        "name": "带注册表和治理的 MCP Server",
         "status": "complete",
         "type": "Capstone",
         "lang": "Python, TypeScript",
@@ -3910,7 +3955,7 @@ const PHASES = [
         "summary": "The Model Context Protocol stopped being the future and became the default tool-use spec in 2026. Anthropic, OpenAI, Google, and every major IDE ship MCP clients. Pinterest publ…"
       },
       {
-        "name": "Speculative-Decoding Inference Server",
+        "name": "推测解码推理服务器",
         "status": "complete",
         "type": "Capstone",
         "lang": "Python",
@@ -3919,7 +3964,7 @@ const PHASES = [
         "summary": "EAGLE-3 in vLLM 0.7 ships 2.5-3x throughput on real traffic. P-EAGLE (AWS 2026) pushed parallel speculation even further. SGLang's SpecForge trained draft heads at scale. Red Ha…"
       },
       {
-        "name": "Constitutional Safety Harness + Red-Team Range",
+        "name": "宪法安全束 + 红队靶场",
         "status": "complete",
         "type": "Capstone",
         "lang": "Python",
@@ -3928,7 +3973,7 @@ const PHASES = [
         "summary": "Anthropic's Constitutional Classifiers, Meta's Llama Guard 4, Google's ShieldGemma-2, NVIDIA's Nemotron 3 Content Safety, and X-Guard for multilingual coverage defined the 2026 …"
       },
       {
-        "name": "GitHub Issue-to-PR Autonomous Agent",
+        "name": "GitHub Issue 到 PR 的自主 Agent",
         "status": "complete",
         "type": "Capstone",
         "lang": "Python, TypeScript",
@@ -3937,7 +3982,7 @@ const PHASES = [
         "summary": "AWS Remote SWE Agents, Cursor Background Agents, OpenAI Codex cloud, and Google Jules all ship the same 2026 product shape: label an issue, get a PR. Run an agent in a cloud san…"
       },
       {
-        "name": "Personal AI Tutor (Adaptive, Multimodal)",
+        "name": "个人 AI 导师（自适应、多模态）",
         "status": "complete",
         "type": "Capstone",
         "lang": "Python, TypeScript",

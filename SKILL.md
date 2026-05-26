@@ -6,7 +6,7 @@
 
 - **原文**: 435 节课，20 个阶段，~320 小时，Python/TypeScript/Rust/Julia
 - **目标**: 将课程文档、代码注释、网站 UI 全面中文化
-- **进度**: Phase 0（环境搭建）12/12 课 ✅、Phase 1（数学基础）22/22 课 ✅
+- **进度**: 全部 20 个阶段 435 课已完成 ✅
 - **网站**: 首页/课程页/索引/术语表/路线图 全部中文化 ✅
 - **data.js**: 手动维护（不再用 build.js 自动生成），已翻译 Phase 0-1 课程名
 - **对照翻译**: 英文原版已放在本仓库 `original/` 目录下，无需额外克隆
@@ -29,8 +29,25 @@ zh/
 │   └── ...
 ├── phases/                           # ← 中文翻译（目标）
 │   ├── 00-setup-and-tooling/          # Phase 0（12课全部完成）
-│   ├── 01-数学基础/                    # Phase 1（7/22 课完成）
-│   └── ... (待翻译)
+│   ├── 01-数学基础/                    # Phase 1（22课全部完成）
+│   ├── 02-机器学习基础/                # Phase 2
+│   ├── 03-深度学习核心/                # Phase 3
+│   ├── 04-计算机视觉/                  # Phase 4
+│   ├── 05-NLP基础到进阶/               # Phase 5
+│   ├── 06-语音与音频/                  # Phase 6
+│   ├── 07-Transformers深度解析/       # Phase 7
+│   ├── 08-生成式AI/                    # Phase 8
+│   ├── 09-强化学习/                    # Phase 9
+│   ├── 10-从零构建LLM/                # Phase 10
+│   ├── 11-LLM工程/                     # Phase 11
+│   ├── 12-多模态AI/                    # Phase 12
+│   ├── 13-工具与协议/                  # Phase 13
+│   ├── 14-Agent工程/                   # Phase 14
+│   ├── 15-自主系统/                    # Phase 15
+│   ├── 16-多Agent与Swarm/              # Phase 16
+│   ├── 17-基础设施与生产部署/          # Phase 17
+│   ├── 18-伦理安全与对齐/              # Phase 18
+│   └── 19-毕业项目/                    # Phase 19
 └── site/                             # ← 中文网站（目标）
     ├── index.html                     # 首页（已翻译导航/UI）
     ├── lesson.html                    # 课程页（支持加载 docs/zh.md）
@@ -238,6 +255,10 @@ git push origin master
 | 21 | 图论与机器学习 | ✅ |
 | 22 | 随机过程 | ✅ |
 
+### Phase 2-19 — 全部完成
+
+Phase 2 至 Phase 19 共 383 课已全部完成并部署至网站。课程名已翻译为中文存储在 `site/data.js` 中。
+
 ### 网站翻译
 
 | 页面 | 状态 | 说明 |
@@ -247,5 +268,5 @@ git push origin master
 | catalog.html | ✅ | 课程索引，链接指向 Gitee |
 | glossary.html | ✅ | 83 个术语全部中文化 |
 | prereqs.html | ✅ | 路线图已翻译 |
-| data.js | ✅ | Phase 0-1 课程名已翻译，**手动维护** |
+| data.js | ✅ | **手动维护**，Phase 0-19 全部阶段名和课程名已翻译 |
 | build.js | ✅ | 已改 Gitee + zh.md（备用）|
