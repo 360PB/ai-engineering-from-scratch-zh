@@ -3951,419 +3951,419 @@ const PHASES = [
 
 const GLOSSARY = [
   {
-    "term": "Agent",
-    "says": "An autonomous AI that thinks and acts on its own",
-    "means": "A while loop where an LLM decides what tool to call next, executes it, sees the result, and repeats"
+    "term": "Agent（智能体）",
+    "says": "一个能自主思考和行动的 AI",
+    "means": "一个 while 循环：LLM 决定下一步调用什么工具，执行它，看到结果，然后重复"
   },
   {
-    "term": "Attention",
-    "says": "How the AI focuses on important parts",
-    "means": "A mechanism where every token computes a weighted sum of all other tokens' values, with weights determined by how relevant they are (via dot product of query and key vectors)"
+    "term": "Attention（注意力机制）",
+    "says": "AI 如何聚焦于重要部分",
+    "means": "一种机制：每个 token 计算所有其他 token 值的加权和，权重由相关性决定（通过 query 和 key 向量的点积）"
   },
   {
-    "term": "Alignment",
-    "says": "Making AI safe",
-    "means": "The technical challenge of making an AI system's behavior match human intentions, values, and preferences, including edge cases the designer didn't anticipate"
+    "term": "Alignment（对齐）",
+    "says": "让 AI 变安全",
+    "means": "让 AI 系统的行为匹配人类意图、价值观和偏好的技术挑战，包括设计者未预料到的边缘情况"
   },
   {
-    "term": "Autoregressive",
-    "says": "The AI generates one word at a time",
-    "means": "A model that predicts the next token conditioned on all previous tokens, then feeds that prediction back as input for the next step. GPT, LLaMA, and Claude are all autoregressive."
+    "term": "Autoregressive（自回归）",
+    "says": "AI 一次生成一个词",
+    "means": "一种模型，基于所有之前的 token 预测下一个 token，然后将该预测反馈为下一步的输入。GPT、LLaMA 和 Claude 都是自回归模型。"
   },
   {
-    "term": "Activation Function",
-    "says": "The nonlinear thing between layers",
-    "means": "A function applied after each linear layer that introduces nonlinearity. Without it, stacking any number of linear layers collapses to a single linear transformation. ReLU, GELU, and SiLU are the most common. The choice directly affects whether gradients flow during training."
+    "term": "Activation Function（激活函数）",
+    "says": "层与层之间的非线性东西",
+    "means": "在每个线性层之后应用的函数，引入非线性。没有它，堆叠任意多层线性层都会坍缩为单一的线性变换。ReLU、GELU 和 SiLU 最常见。选择直接影响训练时梯度是否能流动。"
   },
   {
-    "term": "Adam (Optimizer)",
-    "says": "The default optimizer",
-    "means": "Adaptive Moment Estimation. Combines momentum (first moment) with adaptive learning rates per parameter (second moment). Has bias correction for early steps. Works well across most tasks without much tuning."
+    "term": "Adam（优化器）",
+    "says": "默认优化器",
+    "means": "自适应矩估计。将动量（一阶矩）与每个参数的自适应学习率（二阶矩）结合。对早期步骤有偏差校正。在大多数任务上无需过多调参即可工作良好。"
   },
   {
     "term": "AdamW",
-    "says": "Adam but better",
-    "means": "Adam with decoupled weight decay. In standard Adam, L2 regularization gets scaled by the adaptive learning rate per parameter, which is not what you want. AdamW applies weight decay directly to the weights, independent of the gradient statistics. The default optimizer for training transformers."
+    "says": "Adam 的改进版",
+    "means": "解耦权重衰减的 Adam。标准 Adam 中，L2 正则化会被每个参数的自适应学习率缩放，这不是你想要的效果。AdamW 将权重衰减直接应用于权重，独立于梯度统计。训练 transformer 的默认优化器。"
   },
   {
-    "term": "Autograd",
-    "says": "Automatic gradients",
-    "means": "A system that records operations on tensors and automatically computes gradients via reverse-mode differentiation. PyTorch's autograd builds a computation graph on-the-fly (dynamic graph), while JAX uses function transformations (grad). This is what makes backpropagation practical -- you write the forward pass, and the framework computes all the derivatives."
+    "term": "Autograd（自动求导）",
+    "says": "自动计算梯度",
+    "means": "一种记录张量运算并通过反向模式微分自动计算梯度的系统。PyTorch 的 autograd 动态构建计算图，而 JAX 使用函数变换（grad）。这让反向传播变得实用——你写前向传播，框架计算所有导数。"
   },
   {
-    "term": "Batch Size",
-    "says": "How many examples at once",
-    "means": "The number of training examples processed in one forward/backward pass before updating weights. Larger batches give more stable gradient estimates but use more memory. Typical values: 32-512 for training, larger for inference. Batch size interacts with learning rate -- double the batch, double the LR (linear scaling rule)."
+    "term": "Batch Size（批次大小）",
+    "says": "一次处理多少样本",
+    "means": "在一次前向/反向传播中处理的训练样本数，之后更新权重。更大的批次给出更稳定的梯度估计但占用更多内存。典型值：训练时 32-512，推理时更大。批次大小与学习率相互作用——翻倍批次，翻倍学习率（线性缩放规则）。"
   },
   {
-    "term": "Backpropagation",
-    "says": "How neural networks learn",
-    "means": "An algorithm that computes how much each weight contributed to the error by applying the chain rule backward through the network, then adjusts weights proportionally"
+    "term": "Backpropagation（反向传播）",
+    "says": "神经网络如何学习",
+    "means": "一种算法，通过网络反向应用链式法则，计算每个权重对误差的贡献程度，然后按比例调整权重"
   },
   {
-    "term": "Context Window",
-    "says": "How much the AI can remember",
-    "means": "The maximum number of tokens (input + output) that fit in a single API call. Not memory — it's a fixed-size buffer that resets every call"
+    "term": "Context Window（上下文窗口）",
+    "says": "AI 能记住多少",
+    "means": "单次 API 调用能容纳的最大 token 数（输入 + 输出）。不是记忆——它是一个固定大小的缓冲区，每次调用都会重置"
   },
   {
-    "term": "Chain of Thought (CoT)",
-    "says": "Making the AI think step by step",
-    "means": "A prompting technique where you ask the model to show its reasoning steps, which improves accuracy on multi-step problems because each step conditions the next token generation"
+    "term": "Chain of Thought / CoT（思维链）",
+    "says": "让 AI 一步步思考",
+    "means": "一种提示技术，要求模型展示推理步骤，这能提高多步问题的准确率，因为每一步都为下一步的 token 生成提供条件"
   },
   {
-    "term": "CNN (Convolutional Neural Network)",
-    "says": "Image AI",
-    "means": "A neural network that uses convolution operations (sliding filters over the input) to detect local patterns. Stacking convolutions detects increasingly complex features: edges, textures, objects."
+    "term": "CNN / 卷积神经网络",
+    "says": "图像 AI",
+    "means": "一种使用卷积运算（在输入上滑动滤波器）来检测局部模式的神经网络。堆叠卷积可以检测越来越复杂的特征：边缘、纹理、物体。"
   },
   {
     "term": "CUDA",
-    "says": "GPU programming",
-    "means": "NVIDIA's parallel computing platform. Lets you run matrix operations on thousands of GPU cores simultaneously. PyTorch and TensorFlow use CUDA under the hood."
+    "says": "GPU 编程",
+    "means": "NVIDIA 的并行计算平台。让你同时在数千个 GPU 核心上运行矩阵运算。PyTorch 和 TensorFlow 底层都使用 CUDA。"
   },
   {
-    "term": "Chunking",
-    "says": "Splitting documents into pieces",
-    "means": "Breaking text into segments before embedding for retrieval. Chunk size determines the granularity of search results. Too small: loses context. Too large: dilutes relevance. Common strategies: fixed-size with overlap, sentence-based, or semantic splitting. Typical chunk size: 256-512 tokens with 10-20% overlap."
+    "term": "Chunking（分块）",
+    "says": "把文档切成碎片",
+    "means": "在嵌入用于检索之前将文本分割成片段。块大小决定搜索结果的粒度。太小：丢失上下文。太大：稀释相关性。常用策略：固定大小重叠、基于句子、或语义分割。典型块大小：256-512 个 token，重叠 10-20%。"
   },
   {
-    "term": "Contrastive Learning",
-    "says": "Learning by comparison",
-    "means": "Training by pulling similar pairs closer and pushing dissimilar pairs apart in embedding space. CLIP uses this: matching image-text pairs vs non-matching ones."
+    "term": "Contrastive Learning（对比学习）",
+    "says": "通过比较来学习",
+    "means": "通过在嵌入空间中将相似样本对拉近、将不相似样本对推远来训练。CLIP 使用这种方法：匹配图像-文本对 vs 非匹配对。"
   },
   {
-    "term": "Cosine Similarity",
-    "says": "How similar two vectors are",
-    "means": "The cosine of the angle between two vectors: dot(a, b) / (||a|| * ||b||). Ranges from -1 (opposite) to 1 (identical direction). Ignores magnitude, only cares about direction. The standard similarity metric for embeddings and semantic search."
+    "term": "Cosine Similarity（余弦相似度）",
+    "says": "两个向量有多相似",
+    "means": "两个向量夹角的余弦：dot(a, b) / (||a|| * ||b||)。范围从 -1（相反方向）到 1（相同方向）。忽略模长，只关心方向。嵌入和语义搜索的标准相似度指标。"
   },
   {
-    "term": "Cross-Entropy",
-    "says": "The classification loss",
-    "means": "Measures the difference between two probability distributions. For classification: -sum(y_true * log(y_pred)). For language models: the negative log probability of the correct next token. Lower is better. Perplexity is just exp(cross-entropy)."
+    "term": "Cross-Entropy（交叉熵）",
+    "says": "分类损失函数",
+    "means": "衡量两个概率分布之间的差异。分类任务：-sum(y_true * log(y_pred))。语言模型：正确下一个 token 的负对数概率。越低越好。困惑度就是 exp(交叉熵)。"
   },
   {
-    "term": "Data Augmentation",
-    "says": "Making more training data",
-    "means": "Creating modified copies of existing data (rotate images, add noise, paraphrase text) to increase training set diversity without collecting new data. Reduces overfitting."
+    "term": "Data Augmentation（数据增强）",
+    "says": "制造更多训练数据",
+    "means": "创建现有数据的修改副本（旋转图像、添加噪声、改写文本）以增加训练集多样性，无需收集新数据。减少过拟合。"
   },
   {
-    "term": "Decoder",
-    "says": "The output part",
-    "means": "In transformers, a decoder uses causal (masked) self-attention so each position can only attend to earlier positions. GPT is decoder-only. BERT is encoder-only. T5 is encoder-decoder."
+    "term": "Decoder（解码器）",
+    "says": "输出部分",
+    "means": "在 transformer 中，解码器使用因果（掩码）自注意力，让每个位置只能关注到前面的位置。GPT 是仅解码器。BERT 是仅编码器。T5 是编码器-解码器。"
   },
   {
-    "term": "Diffusion Model",
-    "says": "AI that generates images from noise",
-    "means": "A model trained to reverse a gradual noising process — it learns to predict and remove noise, and at generation time starts from pure noise and iteratively denoises"
+    "term": "Diffusion Model（扩散模型）",
+    "says": "从噪声生成图像的 AI",
+    "means": "一种训练来逆转逐步加噪过程的模型——它学习预测并去除噪声，生成时从纯噪声开始并逐步去噪"
   },
   {
-    "term": "DPO (Direct Preference Optimization)",
-    "says": "A simpler RLHF",
-    "means": "A training method that skips the reward model entirely — it directly optimizes the language model to prefer the better response in pairs of human preferences"
+    "term": "DPO / 直接偏好优化",
+    "says": "更简单的 RLHF",
+    "means": "一种完全跳过奖励模型的训练方法——直接优化语言模型，使其在人类偏好对中更倾向于更好的回答"
   },
   {
-    "term": "Dropout",
-    "says": "Randomly turning off neurons",
-    "means": "During training, randomly set a fraction of activations to zero. Forces the network to not rely on any single neuron. Turned off during inference. Simple but effective regularization."
+    "term": "Dropout（随机失活）",
+    "says": "随机关闭神经元",
+    "means": "训练期间，随机将一部分激活值设为零。迫使网络不依赖任何单个神经元。推理时关闭。简单但有效的正则化方法。"
   },
   {
-    "term": "Eigenvalue",
-    "says": "Some math thing for PCA",
-    "means": "For a matrix A, an eigenvalue lambda satisfies Av = lambda*v for some vector v. It tells you how much the matrix scales vectors in that direction. Large eigenvalues = directions of high variance in your data."
+    "term": "Eigenvalue（特征值）",
+    "says": "PCA 用到的数学概念",
+    "means": "对于矩阵 A，特征值 lambda 满足 Av = lambda*v（对某个向量 v）。它告诉你矩阵在该方向上缩放向量的程度。大特征值 = 数据中高方差的方向。"
   },
   {
-    "term": "Embedding",
-    "says": "Some AI magic that turns words into numbers",
-    "means": "A learned mapping from discrete items (words, images, users) to dense vectors in continuous space, where similar items end up close together"
+    "term": "Embedding（嵌入）",
+    "says": "把词语变成数字的 AI 魔法",
+    "means": "一种从离散项目（词、图像、用户）到连续空间中稠密向量的学习映射，相似的项目最终距离很近"
   },
   {
-    "term": "Encoder",
-    "says": "The input part",
-    "means": "In transformers, an encoder uses bidirectional self-attention so each position can attend to all positions. BERT is encoder-only. Good for understanding tasks (classification, NER) but not generation."
+    "term": "Encoder（编码器）",
+    "says": "输入部分",
+    "means": "在 transformer 中，编码器使用双向自注意力，让每个位置可以关注所有位置。BERT 是仅编码器。适合理解任务（分类、命名实体识别），但不适合生成。"
   },
   {
-    "term": "Epoch",
-    "says": "One pass through the data",
-    "means": "Exactly that. One complete pass through every example in the training set. Multiple epochs = seeing the data multiple times. More epochs can improve learning but risks overfitting."
+    "term": "Epoch（轮次）",
+    "says": "完整遍历一遍数据",
+    "means": "正是如此。训练集中每个样本都完整经过一次。多轮 = 数据被看到多次。更多轮次可以提高学习效果，但有过拟合风险。"
   },
   {
-    "term": "Feature",
-    "says": "A column in your data",
-    "means": "An individual measurable property of the data. In classical ML, you engineer features by hand. In deep learning, the network learns features automatically from raw data."
+    "term": "Feature（特征）",
+    "says": "数据中的一列",
+    "means": "数据的单个可测量属性。在经典机器学习中，你手工设计特征。在深度学习中，网络自动从原始数据中学习特征。"
   },
   {
-    "term": "Few-Shot",
-    "says": "Give the AI some examples first",
-    "means": "Including a small number of input-output examples in the prompt before asking the model to perform a task. Typically 3-5 examples. The model pattern-matches on these examples to understand the desired format and behavior. Contrast with zero-shot (no examples) and fine-tuning (thousands of examples baked into weights)."
+    "term": "Few-Shot（少样本）",
+    "says": "先给 AI 一些示例",
+    "means": "在要求模型执行任务前，在提示中包含少量输入-输出示例。通常 3-5 个示例。模型通过这些示例进行模式匹配，理解期望的格式和行为。与零样本（无示例）和微调（数千个示例固化到权重中）形成对比。"
   },
   {
-    "term": "Fine-tuning",
-    "says": "Training the AI on your data",
-    "means": "Starting with a pre-trained model's weights and continuing training on a smaller, task-specific dataset. Only updates existing weights, doesn't add new knowledge from scratch"
+    "term": "Fine-tuning（微调）",
+    "says": "用你的数据训练 AI",
+    "means": "从预训练模型的权重开始，在更小的任务特定数据集上继续训练。只更新现有权重，不会从头添加新知识"
   },
   {
-    "term": "Function Calling",
-    "says": "AI that can use tools",
-    "means": "A structured way for LLMs to request execution of external functions. You define tools with JSON Schema descriptions, the model outputs a structured JSON object specifying which function to call with what arguments, your code executes it, and the result goes back to the model. Not the same as agents -- function calling is the mechanism, agents are the loop."
+    "term": "Function Calling（函数调用）",
+    "says": "AI 能使用工具",
+    "means": "LLM 请求执行外部函数的结构化方式。你用 JSON Schema 描述定义工具，模型输出结构化 JSON 对象指明调用哪个函数及参数，你的代码执行它，结果返回给模型。与智能体不同——函数调用是机制，智能体是循环。"
   },
   {
-    "term": "Guardrails",
-    "says": "Safety filters for AI",
-    "means": "Input/output validation layers around an LLM that detect and block harmful content, prompt injection attempts, PII leakage, or off-topic responses. Typically a pipeline: input filter -> LLM -> output filter. Can be rule-based (regex, keyword lists) or model-based (classifier that scores safety)."
+    "term": "Guardrails（护栏）",
+    "says": "AI 的安全过滤器",
+    "means": "围绕 LLM 的输入/输出验证层，检测并拦截有害内容、提示注入攻击、个人信息泄露或离题回复。通常是流水线：输入过滤器 -> LLM -> 输出过滤器。可以基于规则（正则、关键词列表）或基于模型（给安全性打分的分类器）。"
   },
   {
     "term": "GPT",
-    "says": "ChatGPT\" or \"The AI",
-    "means": "Generative Pre-trained Transformer — a specific architecture that predicts the next token using a decoder-only transformer trained on large text corpora"
+    "says": "ChatGPT 或那个 AI",
+    "means": "生成式预训练 Transformer——一种特定架构，使用在大型文本语料上训练的仅解码器 transformer 来预测下一个 token"
   },
   {
-    "term": "GAN (Generative Adversarial Network)",
-    "says": "Two AIs fighting each other",
-    "means": "A generator network tries to create realistic data while a discriminator network tries to tell real from fake. They train together: the generator gets better at fooling the discriminator, and the discriminator gets better at detecting fakes."
+    "term": "GAN / 生成对抗网络",
+    "says": "两个 AI 互相博弈",
+    "means": "生成器网络试图创建逼真的数据，判别器网络试图分辨真假。它们一起训练：生成器越来越擅长欺骗判别器，判别器越来越擅长识别假货。"
   },
   {
-    "term": "Gradient",
-    "says": "The slope",
-    "means": "A vector of partial derivatives pointing in the direction of steepest increase. In ML, you go opposite to the gradient (gradient descent) to minimize the loss."
+    "term": "Gradient（梯度）",
+    "says": "斜率",
+    "means": "指向最陡增长方向的偏导数向量。在机器学习中，你沿梯度的反方向走（梯度下降）来最小化损失。"
   },
   {
-    "term": "Gradient Descent",
-    "says": "How AI improves",
-    "means": "An optimization algorithm that adjusts parameters in the direction that reduces the loss function most steeply, like walking downhill in a high-dimensional landscape"
+    "term": "Gradient Descent（梯度下降）",
+    "says": "AI 如何改进",
+    "means": "一种优化算法，沿最陡降低损失函数的方向调整参数，就像在高维景观中往山下走"
   },
   {
-    "term": "Hyperparameter",
-    "says": "Settings you tune",
-    "means": "Values set before training that control the training process itself: learning rate, batch size, number of layers, dropout rate. Unlike model parameters (weights), these aren't learned from data."
+    "term": "Hyperparameter（超参数）",
+    "says": "你调节的设置",
+    "means": "训练前设置的值，控制训练过程本身：学习率、批次大小、层数、 dropout 率。与模型参数（权重）不同，这些不是从数据中学到的。"
   },
   {
-    "term": "Hallucination",
-    "says": "The AI is lying\" or \"making things up",
-    "means": "The model generates plausible-sounding text that isn't grounded in its training data or the given context — it's pattern-completing, not fact-retrieving"
+    "term": "Hallucination（幻觉）",
+    "says": "AI 在撒谎或编造",
+    "means": "模型生成了听起来合理但没有根植于其训练数据或给定上下文的文本——它是在补全模式，而非检索事实"
   },
   {
-    "term": "Inference",
-    "says": "Running the AI",
-    "means": "Using a trained model to make predictions on new data. No weight updates happen. This is what you do in production: send input, get output."
+    "term": "Inference（推理）",
+    "says": "运行 AI",
+    "means": "使用训练好的模型对新数据进行预测。不更新权重。这就是你在生产环境做的事：发送输入，获取输出。"
   },
   {
-    "term": "Inductive Bias",
-    "says": "Never heard of it",
-    "means": "The assumptions built into a model's architecture. CNNs assume local patterns matter (convolution). RNNs assume order matters (sequential processing). Transformers assume everything might relate to everything (attention). The right bias helps the model learn faster from less data."
+    "term": "Inductive Bias（归纳偏置）",
+    "says": "没听说过",
+    "means": "内置于模型架构中的假设。CNN 假设局部模式重要（卷积）。RNN 假设顺序重要（顺序处理）。Transformer 假设任何东西都可能与其他东西相关（注意力）。正确的偏置帮助模型从更少数据中学习更快。"
   },
   {
     "term": "JAX",
-    "says": "Google's ML framework",
-    "means": "A NumPy-compatible library that adds automatic differentiation (grad), JIT compilation (jit), automatic vectorization (vmap), and multi-device parallelism (pmap). Unlike PyTorch's object-oriented style, JAX is purely functional -- no hidden state, no in-place mutation. Used by Google DeepMind for AlphaFold, Gemini, and large-scale research."
+    "says": "Google 的机器学习框架",
+    "means": "一个兼容 NumPy 的库，增加了自动微分（grad）、JIT 编译（jit）、自动向量化（vmap）和多设备并行（pmap）。与 PyTorch 的面向对象风格不同，JAX 是纯函数式的——没有隐藏状态，没有原地修改。Google DeepMind 用于 AlphaFold、Gemini 和大规模研究。"
   },
   {
-    "term": "KV Cache",
-    "says": "Makes inference faster",
-    "means": "During autoregressive generation, caching the key and value matrices from previous tokens so you don't recompute them at each step. Trades memory for speed. Essential for fast LLM inference."
+    "term": "KV Cache（键值缓存）",
+    "says": "让推理更快",
+    "means": "自回归生成期间，缓存之前 token 的 key 和 value 矩阵，这样就不必在每一步重新计算。用内存换速度。快速 LLM 推理的必备技术。"
   },
   {
-    "term": "Latent Space",
-    "says": "The hidden representation",
-    "means": "A compressed, learned representation space where similar inputs map to nearby points. Autoencoders, VAEs, and diffusion models all work in latent space. It's lower-dimensional than the input but captures the important structure."
+    "term": "Latent Space（隐空间）",
+    "says": "隐藏表示",
+    "means": "一种压缩的、学习到的表示空间，相似输入映射到相近的点。自编码器、VAE 和扩散模型都在隐空间中工作。它比输入维度更低，但捕获了重要的结构。"
   },
   {
-    "term": "Learning Rate",
-    "says": "How fast the AI learns",
-    "means": "A scalar that controls step size during gradient descent. Too high: overshoots the minimum and diverges. Too low: converges too slowly or gets stuck. The single most important hyperparameter."
+    "term": "Learning Rate（学习率）",
+    "says": "AI 学得多快",
+    "means": "控制梯度下降步长的标量。太高：越过最小值并发散。太低：收敛太慢或卡住。最重要的超参数。"
   },
   {
-    "term": "LLM (Large Language Model)",
-    "says": "AI\" or \"the brain",
-    "means": "A transformer-based neural network trained to predict the next token in a sequence, with billions of parameters, trained on internet-scale text data"
+    "term": "LLM / 大语言模型",
+    "says": "AI 或那个大脑",
+    "means": "一种基于 transformer 的神经网络，训练来预测序列中的下一个 token，拥有数十亿参数，在互联网规模的文本数据上训练"
   },
   {
-    "term": "LoRA (Low-Rank Adaptation)",
-    "says": "Efficient fine-tuning",
-    "means": "Instead of updating all weights, insert small low-rank matrices alongside the original weights. Only these small matrices are trained, reducing memory by 10-100x"
+    "term": "LoRA / 低秩适配",
+    "says": "高效微调",
+    "means": "不更新所有权重，而是在原始权重旁边插入小的低秩矩阵。只训练这些小的矩阵，内存减少 10-100 倍"
   },
   {
-    "term": "Loss Function",
-    "says": "How wrong the AI is",
-    "means": "A function that measures the gap between predicted and actual output. Training minimizes this function. MSE for regression, cross-entropy for classification, contrastive loss for embeddings. The choice of loss function defines what \"good\" means to the model."
+    "term": "Loss Function（损失函数）",
+    "says": "AI 错得多离谱",
+    "means": "衡量预测输出与实际输出之间差距的函数。训练就是最小化这个函数。回归用 MSE，分类用交叉熵，嵌入用对比损失。损失函数的选择定义了模型眼中什么是\"好\"。"
   },
   {
-    "term": "Mixed Precision",
-    "says": "Training trick for speed",
-    "means": "Using float16 for forward pass and most operations (faster, less memory) but keeping float32 for gradient accumulation and weight updates (more precise). Gets 2x speedup with negligible accuracy loss."
+    "term": "Mixed Precision（混合精度）",
+    "says": "加速训练的技巧",
+    "means": "前向传播和大部分运算使用 float16（更快、更省内存），但梯度累积和权重更新保持 float32（更精确）。获得 2 倍加速，精度损失可忽略。"
   },
   {
-    "term": "MoE (Mixture of Experts)",
-    "says": "Only part of the model runs",
-    "means": "A model with many \"expert\" subnetworks where a routing mechanism sends each input to only a few experts. The full model is huge but each forward pass is cheap because most experts are skipped. Mixtral and GPT-4 use this."
+    "term": "MoE / 混合专家模型",
+    "says": "只有模型的一部分在运行",
+    "means": "一种拥有许多\"专家\"子网络的模型，路由机制将每个输入只发送给少数几个专家。完整模型很大，但每次前向传播很便宜，因为大部分专家被跳过。Mixtral 和 GPT-4 使用这个。"
   },
   {
-    "term": "MCP (Model Context Protocol)",
-    "says": "A way for AI to use tools",
-    "means": "An open protocol (JSON-RPC over stdio/HTTP) that standardizes how AI applications connect to external data sources and tools, with typed schemas for tools, resources, and prompts"
+    "term": "MCP / 模型上下文协议",
+    "says": "AI 使用工具的一种方式",
+    "means": "一种开放协议（基于 stdio/HTTP 的 JSON-RPC），标准化 AI 应用如何连接外部数据源和工具，为工具、资源和提示提供类型化模式"
   },
   {
-    "term": "NaN (Not a Number)",
-    "says": "Training crashed",
-    "means": "A floating-point value indicating undefined results (0/0, inf-inf). In training, NaN loss usually means: learning rate too high, exploding gradients, log of zero, or division by zero. Always the first thing to check when training fails."
+    "term": "NaN / 非数字",
+    "says": "训练崩溃了",
+    "means": "表示未定义结果的浮点值（0/0, inf-inf）。训练中，NaN 损失通常意味着：学习率太高、梯度爆炸、对零取对数、或除以零。训练失败时首先要检查的东西。"
   },
   {
-    "term": "Normalization",
-    "says": "Scaling the data",
-    "means": "Adjusting values to a standard range. Batch normalization normalizes across a batch. Layer normalization normalizes across features. Both stabilize training and allow higher learning rates."
+    "term": "Normalization（归一化）",
+    "says": "缩放数据",
+    "means": "将值调整到标准范围。批量归一化跨批次归一化。层归一化跨特征归一化。两者都稳定训练并允许更高的学习率。"
   },
   {
-    "term": "Overfitting",
-    "says": "The model memorized the data",
-    "means": "The model performs well on training data but poorly on unseen data. It learned the noise, not the signal. Fix with: more data, regularization (dropout, weight decay), early stopping, data augmentation, simpler model."
+    "term": "Overfitting（过拟合）",
+    "says": "模型记住了数据",
+    "means": "模型在训练数据上表现好，但在未见过的数据上表现差。它学到了噪声，而非信号。修复方法：更多数据、正则化（dropout、权重衰减）、早停、数据增强、更简单的模型。"
   },
   {
-    "term": "Optimizer",
-    "says": "The thing that updates weights",
-    "means": "An algorithm that uses gradients to update model parameters. SGD is the simplest. Adam is the most common. Each optimizer has different properties: convergence speed, memory usage, sensitivity to hyperparameters."
+    "term": "Optimizer（优化器）",
+    "says": "更新权重的东西",
+    "means": "使用梯度更新模型参数的算法。SGD 最简单。Adam 最常见。每个优化器有不同特性：收敛速度、内存使用、对超参数的敏感度。"
   },
   {
-    "term": "Parameter",
-    "says": "Model size",
-    "means": "A learnable value in the model, typically a weight or bias. \"7B parameters\" means 7 billion learnable numbers. Each float32 parameter takes 4 bytes, so 7B parameters = 28GB of memory just for the weights."
+    "term": "Parameter（参数）",
+    "says": "模型大小",
+    "means": "模型中可学习的值，通常是权重或偏置。\"70亿参数\"意味着 70 亿个可学习的数字。每个 float32 参数占 4 字节，所以 70 亿参数 = 仅权重就需要 28GB 内存。"
   },
   {
-    "term": "Perplexity",
-    "says": "How confused the model is",
-    "means": "The exponential of the average cross-entropy loss. Lower is better. A perplexity of 10 means the model is as uncertain as if it were choosing uniformly among 10 tokens at each step."
+    "term": "Perplexity（困惑度）",
+    "says": "模型有多困惑",
+    "means": "平均交叉熵损失的指数。越低越好。困惑度为 10 意味着模型每一步的不确定程度，相当于在 10 个 token 中均匀选择。"
   },
   {
-    "term": "Precision & Recall",
-    "says": "Accuracy metrics",
-    "means": "Precision = of items you flagged, how many were correct. Recall = of all correct items, how many did you find. They trade off: catching every spam email (high recall) means more false alarms (low precision). F1 score is their harmonic mean. Use precision when false positives are costly, recall when false negatives are costly."
+    "term": "Precision & Recall（精确率与召回率）",
+    "says": "准确率指标",
+    "means": "精确率 = 你标记的项目中，有多少是正确的。召回率 = 所有正确项目中，你找到了多少。两者此消彼长：抓住每封垃圾邮件（高召回率）意味着更多误报（低精确率）。F1 分数是它们的调和平均。假阳性代价高时看重精确率，假阴性代价高时看重召回率。"
   },
   {
-    "term": "Prompt Engineering",
-    "says": "Talking to AI the right way",
-    "means": "Designing the input text to reliably produce desired outputs -- including system prompts, few-shot examples, format instructions, and chain-of-thought triggers"
+    "term": "Prompt Engineering（提示工程）",
+    "says": "用正确的方式跟 AI 对话",
+    "means": "设计输入文本以可靠地产生期望输出——包括系统提示、少样本示例、格式说明和思维链触发器"
   },
   {
-    "term": "Prompt Injection",
-    "says": "Hacking the AI with words",
-    "means": "An attack where malicious text in the input overrides the system prompt or instructions. Direct injection: user types \"Ignore previous instructions.\" Indirect injection: a retrieved document contains hidden instructions. The LLM equivalent of SQL injection. No complete solution exists -- defense is layers of input validation, output filtering, and privilege separation."
+    "term": "Prompt Injection（提示注入）",
+    "says": "用文字黑入 AI",
+    "means": "一种攻击，输入中的恶意文本覆盖系统提示或指令。直接注入：用户输入\"忽略之前的指令\"。间接注入：检索到的文档包含隐藏指令。相当于 LLM 世界的 SQL 注入。没有完全解决方案——防御是层层输入验证、输出过滤和权限隔离。"
   },
   {
     "term": "QLoRA",
-    "says": "LoRA but cheaper",
-    "means": "Quantized LoRA. Keeps the frozen base model weights in 4-bit precision (NF4 format) while training LoRA adapters in 16-bit. Reduces memory by another 3-4x compared to standard LoRA. A 7B model that needs 14GB with LoRA fits in 4-6GB with QLoRA. Quality is within 1% of full fine-tuning on most benchmarks."
+    "says": "更便宜的 LoRA",
+    "means": "量化 LoRA。冻结的基础模型权重保持 4-bit 精度（NF4 格式），同时 LoRA 适配器以 16-bit 训练。比标准 LoRA 再减少 3-4 倍内存。用 LoRA 需要 14GB 的 7B 模型，用 QLoRA 可以放进 4-6GB。在大多数基准测试上，质量与完整微调相差不到 1%。"
   },
   {
-    "term": "RAG (Retrieval-Augmented Generation)",
-    "says": "AI that can search",
-    "means": "A pattern where you retrieve relevant documents from a knowledge base (using embedding similarity), stuff them into the prompt, and let the LLM answer based on that context"
+    "term": "RAG / 检索增强生成",
+    "says": "能搜索的 AI",
+    "means": "一种模式：从知识库中检索相关文档（使用嵌入相似度），把它们塞进提示里，让 LLM 基于该上下文回答"
   },
   {
-    "term": "RLHF (Reinforcement Learning from Human Feedback)",
-    "says": "How they make AI helpful",
-    "means": "A training pipeline: (1) collect human preferences on model outputs, (2) train a reward model on those preferences, (3) use PPO to optimize the LLM to produce higher-reward outputs"
+    "term": "RLHF / 基于人类反馈的强化学习",
+    "says": "如何让 AI 变得有用",
+    "means": "一种训练流水线：(1) 收集人类对模型输出的偏好，(2) 在这些偏好上训练奖励模型，(3) 使用 PPO 优化 LLM 以产生更高奖励的输出"
   },
   {
-    "term": "Quantization",
-    "says": "Making the model smaller",
-    "means": "Reducing the precision of model weights from float32 (4 bytes) to int8 (1 byte) or int4 (0.5 bytes). Trades a small amount of accuracy for 4-8x less memory and faster inference. GPTQ, AWQ, and GGUF are common formats."
+    "term": "Quantization（量化）",
+    "says": "让模型更小",
+    "means": "将模型权重的精度从 float32（4 字节）降低到 int8（1 字节）或 int4（0.5 字节）。以少量精度换取 4-8 倍更少的内存和更快的推理。GPTQ、AWQ 和 GGUF 是常见格式。"
   },
   {
     "term": "ReLU",
-    "says": "Activation function",
-    "means": "Rectified Linear Unit: f(x) = max(0, x). The simplest non-linear activation. Fast to compute, doesn't saturate for positive values. Used everywhere because it works and is cheap. Variants: LeakyReLU, GELU, SiLU."
+    "says": "激活函数",
+    "means": "修正线性单元：f(x) = max(0, x)。最简单的非线性激活。计算快，正值不会饱和。到处都在用，因为它好用又便宜。变体：LeakyReLU、GELU、SiLU。"
   },
   {
     "term": "ROUGE",
-    "says": "Summarization metric",
-    "means": "Recall-Oriented Understudy for Gisting Evaluation. Measures overlap between generated text and reference text. ROUGE-1 counts unigram matches, ROUGE-2 counts bigram matches, ROUGE-L finds the longest common subsequence. Cheap to compute but only measures surface similarity -- two sentences with the same meaning but different words score poorly."
+    "says": "摘要评估指标",
+    "means": "面向召回率的摘要评估。衡量生成文本与参考文本的重叠程度。ROUGE-1 统计单字匹配，ROUGE-2 统计双字匹配，ROUGE-L 找最长公共子序列。计算便宜，但只衡量表面相似度——两个意思相同但用词不同的句子得分很低。"
   },
   {
-    "term": "Semantic Search",
-    "says": "Smart search that understands meaning",
-    "means": "Finding documents by meaning rather than keyword matching. Embed the query and all documents into the same vector space, then return documents whose embeddings are closest to the query embedding. \"payment failed\" finds \"transaction declined\" even though they share no words. Powered by embedding models + vector databases."
+    "term": "Semantic Search（语义搜索）",
+    "says": "理解含义的智能搜索",
+    "means": "通过含义而非关键词匹配来查找文档。将查询和所有文档嵌入到同一个向量空间，然后返回嵌入最接近查询嵌入的文档。\"付款失败\"能找到\"交易被拒绝\"，即使它们没有共享任何词。由嵌入模型 + 向量数据库驱动。"
   },
   {
-    "term": "Streaming",
-    "says": "Seeing the response appear word by word",
-    "means": "The LLM sends tokens as they are generated rather than waiting for the complete response. Uses Server-Sent Events (SSE) or WebSocket protocols. Reduces perceived latency from seconds to milliseconds for the first token. Essential for production chat interfaces. Each chunk contains a delta (partial token or word)."
+    "term": "Streaming（流式传输）",
+    "says": "看到回复逐字出现",
+    "means": "LLM 在 token 生成时立即发送，而非等待完整回复。使用服务器发送事件（SSE）或 WebSocket 协议。将第一个 token 的感知延迟从秒级降到毫秒级。生产环境聊天界面的必备功能。每个数据块包含一个增量（部分 token 或词）。"
   },
   {
-    "term": "Self-Attention",
-    "says": "How the model decides what to focus on",
-    "means": "Each token computes query, key, and value vectors. Attention weight between two tokens = dot product of their query and key, scaled and softmaxed. Output = weighted sum of value vectors. Lets every token see every other token."
+    "term": "Self-Attention（自注意力）",
+    "says": "模型决定关注什么",
+    "means": "每个 token 计算 query、key 和 value 向量。两个 token 之间的注意力权重 = 它们 query 和 key 的点积，经缩放和 softmax。输出 = value 向量的加权和。让每个 token 都能看到所有其他 token。"
   },
   {
-    "term": "SFT (Supervised Fine-Tuning)",
-    "says": "Teaching the model to follow instructions",
-    "means": "Fine-tuning a pre-trained model on (instruction, response) pairs. The model learns to generate the response given the instruction. This is what turns a base model into a chat model."
+    "term": "SFT / 监督微调",
+    "says": "教模型遵循指令",
+    "means": "在（指令，回答）对上微调预训练模型。模型学习根据指令生成回答。这就是基础模型变成聊天模型的过程。"
   },
   {
     "term": "Softmax",
-    "says": "Turns numbers into probabilities",
-    "means": "softmax(x_i) = exp(x_i) / sum(exp(x_j)). Transforms a vector of arbitrary real numbers into a probability distribution (all positive, sums to 1). Used in classification heads, attention weights, and anywhere you need probabilities."
+    "says": "把数字变成概率",
+    "means": "softmax(x_i) = exp(x_i) / sum(exp(x_j))。将任意实数向量转换为概率分布（全部为正，总和为 1）。用于分类头、注意力权重以及任何需要概率的地方。"
   },
   {
-    "term": "Swarm",
-    "says": "A bunch of AI agents working together like bees",
-    "means": "Multiple agents sharing state and coordinating through message passing, with emergent behavior arising from simple individual rules rather than central control"
+    "term": "Swarm（群体智能）",
+    "says": "一群 AI 像蜜蜂一样协同工作",
+    "means": "多个智能体共享状态并通过消息传递协调，涌现行为来自简单的个体规则而非中央控制"
   },
   {
-    "term": "System Prompt",
-    "says": "The AI's instructions",
-    "means": "A special message at the start of a conversation that sets the model's behavior, persona, and constraints. Processed before user messages. Not visible to the user in most UIs. Defines what the model should and shouldn't do, its tone, format preferences, and domain focus. Different from user prompts -- system prompts are set by the developer."
+    "term": "System Prompt（系统提示）",
+    "says": "AI 的指令",
+    "means": "对话开始时的一条特殊消息，设定模型的行为、人格和约束。在用户消息之前处理。在大多数 UI 中对用户不可见。定义模型该做什么、不该做什么、语气、格式偏好和领域重点。与用户提示不同——系统提示由开发者设置。"
   },
   {
-    "term": "Tensor",
-    "says": "A multi-dimensional array",
-    "means": "The fundamental data structure in deep learning frameworks. A 0D tensor is a scalar, 1D is a vector, 2D is a matrix, 3D+ is a tensor. In PyTorch and JAX, tensors track their computation history for automatic differentiation and can live on CPU or GPU. All neural network inputs, outputs, weights, and gradients are tensors."
+    "term": "Tensor（张量）",
+    "says": "多维数组",
+    "means": "深度学习框架中的基本数据结构。0D 张量是标量，1D 是向量，2D 是矩阵，3D+ 是张量。在 PyTorch 和 JAX 中，张量跟踪计算历史以进行自动微分，可以存放在 CPU 或 GPU 上。所有神经网络的输入、输出、权重和梯度都是张量。"
   },
   {
-    "term": "Token",
-    "says": "A word",
-    "means": "A subword unit (typically 3-4 characters in English) produced by a tokenizer like BPE. \"unbelievable\" might be 3 tokens: \"un\" + \"believ\" + \"able\""
+    "term": "Token（词元）",
+    "says": "一个词",
+    "means": "由 BPE 等分词器产生的子词单元（英文通常 3-4 个字符）。\"unbelievable\" 可能是 3 个 token：\"un\" + \"believ\" + \"able\""
   },
   {
-    "term": "Temperature",
-    "says": "Creativity setting",
-    "means": "A scalar that divides logits before softmax. Temperature=1 is default. Higher = flatter distribution = more random outputs. Lower = sharper distribution = more deterministic. Temperature=0 is argmax (always pick the most likely token)."
+    "term": "Temperature（温度）",
+    "says": "创意度设置",
+    "means": "在 softmax 前除以 logits 的标量。温度=1 是默认值。越高 = 分布越平 = 输出越随机。越低 = 分布越尖 = 越确定。温度=0 就是 argmax（总是选最可能的 token）。"
   },
   {
-    "term": "Transfer Learning",
-    "says": "Using a pre-trained model",
-    "means": "Taking a model trained on one task and adapting it to a different task. The early layers learn general features (edges, syntax patterns) that transfer. Only the later layers need task-specific training. This is why you can fine-tune BERT for any NLP task."
+    "term": "Transfer Learning（迁移学习）",
+    "says": "使用预训练模型",
+    "means": "将在一个任务上训练的模型适配到不同任务。早期层学到通用特征（边缘、句法模式），这些可以迁移。只有后期层需要任务特定训练。这就是为什么你可以用 BERT 微调做任何 NLP 任务。"
   },
   {
     "term": "Transformer",
-    "says": "The architecture behind modern AI",
-    "means": "A neural network architecture that processes sequences using self-attention (letting every position attend to every other position) instead of recurrence, enabling massive parallelization"
+    "says": "现代 AI 背后的架构",
+    "means": "一种使用自注意力（让每个位置关注所有其他位置）而非循环来处理序列的神经网络架构，实现了大规模并行化"
   },
   {
-    "term": "Underfitting",
-    "says": "The model isn't learning",
-    "means": "The model is too simple to capture the patterns in the data. Training loss stays high. Fix with: more parameters, more layers, longer training, lower regularization, better features."
+    "term": "Underfitting（欠拟合）",
+    "says": "模型没学会",
+    "means": "模型太简单，无法捕捉数据中的模式。训练损失居高不下。修复：更多参数、更多层、更长训练、更低正则化、更好的特征。"
   },
   {
-    "term": "VAE (Variational Autoencoder)",
-    "says": "A generative model",
-    "means": "An autoencoder that learns a smooth latent space by forcing the encoder output to follow a Gaussian distribution. You can sample from this distribution and decode to generate new data. The reparameterization trick makes it trainable via backpropagation."
+    "term": "VAE / 变分自编码器",
+    "says": "一种生成模型",
+    "means": "一种通过强制编码器输出服从高斯分布来学习平滑隐空间的自编码器。你可以从这个分布中采样并解码生成新数据。重参数化技巧使其可以通过反向传播训练。"
   },
   {
-    "term": "Vector Database",
-    "says": "A special database for AI",
-    "means": "A database optimized for storing vectors (dense arrays of floats) and performing fast approximate nearest-neighbor search. The core operation in similarity search, RAG, and recommendation systems."
+    "term": "Vector Database（向量数据库）",
+    "says": "AI 专用数据库",
+    "means": "一种优化用于存储向量（浮点数的稠密数组）并执行快速近似最近邻搜索的数据库。相似性搜索、RAG 和推荐系统的核心操作。"
   },
   {
-    "term": "Weight",
-    "says": "What the model learned",
-    "means": "A single number in a model's parameter matrix. A linear layer with input size 768 and output size 3072 has 768*3072 = 2,359,296 weights. Training adjusts each weight to minimize the loss function."
+    "term": "Weight（权重）",
+    "says": "模型学到的东西",
+    "means": "模型参数矩阵中的单个数字。输入大小 768、输出大小 3072 的线性层有 768*3072 = 2,359,296 个权重。训练调整每个权重以最小化损失函数。"
   },
   {
-    "term": "Weight Decay",
-    "says": "Regularization",
-    "means": "Adding a penalty proportional to the magnitude of weights to the loss function. Equivalent to L2 regularization. Prevents weights from growing too large. Typical value: 0.01-0.1."
+    "term": "Weight Decay（权重衰减）",
+    "says": "正则化",
+    "means": "向损失函数添加与权重大小成正比的惩罚。等价于 L2 正则化。防止权重变得太大。典型值：0.01-0.1。"
   },
   {
-    "term": "Zero-Shot",
-    "says": "No training needed",
-    "means": "Using a model on a task it wasn't explicitly trained for, with no task-specific examples in the prompt. The model generalizes from pre-training. Works because large models have seen enough variety to handle new task formats."
+    "term": "Zero-Shot（零样本）",
+    "says": "无需训练",
+    "means": "在模型没有明确训练过的任务上使用，提示中没有任何任务特定示例。模型从预训练中泛化。之所以能行，是因为大模型见过足够多的多样性来处理新的任务格式。"
   }
 ];
 

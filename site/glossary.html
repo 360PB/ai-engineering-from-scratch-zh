@@ -205,10 +205,10 @@
     <div class="container">
       <div class="glossary-header">
         <h1>AI 术语表</h1>
-        <p>What people <em>say</em> vs what things actually <em>mean</em></p>
+        <p>人们怎么<em>说</em> vs 实际<em>是什么</em></p>
       </div>
       <div class="glossary-search-wrap">
-        <input type="text" class="glossary-search" id="glossarySearch" placeholder="Search terms...">
+        <input type="text" class="glossary-search" id="glossarySearch" placeholder="搜索术语...">
       </div>
       <div class="glossary-count" id="glossaryCount"></div>
       <div class="glossary-list" id="glossaryList"></div>
@@ -219,7 +219,7 @@
     <div class="container footer-inner">
       <p>AI Engineering from Scratch · 开源 · 永久免费.</p>
       <div class="footer-links">
-        <a href="index.html">Home</a>
+        <a href="index.html">首页</a>
         <a href="https://github.com/rohitg00/ai-engineering-from-scratch" target="_blank" rel="noopener">GitHub</a>
         <a href="catalog.html">课程索引</a>
               <a href="https://github.com/rohitg00/ai-engineering-from-scratch/issues/new/choose" target="_blank" rel="noopener">反馈问题 / Suggest</a>
@@ -285,10 +285,10 @@
             });
           }
 
-          countEl.textContent = terms.length + ' of ' + GLOSSARY.length + ' terms';
+          countEl.textContent = '共 ' + GLOSSARY.length + ' 条术语，显示 ' + terms.length + ' 条';
 
           if (terms.length === 0) {
-            listEl.innerHTML = '<div class="glossary-empty">No terms match your search.</div>';
+            listEl.innerHTML = '<div class="glossary-empty">没有匹配的术语。</div>';
             return;
           }
 
@@ -299,11 +299,11 @@
             html += '<div class="glossary-term">' + escapeHtml(t.term) + '</div>';
             html += '<div class="glossary-row">';
             html += '<div class="glossary-col">';
-            html += '<div class="glossary-col-label">What people say</div>';
+            html += '<div class="glossary-col-label">人们怎么说</div>';
             html += '<div class="glossary-col-says">"' + escapeHtml(t.says) + '"</div>';
             html += '</div>';
             html += '<div class="glossary-col">';
-            html += '<div class="glossary-col-label">What it actually means</div>';
+            html += '<div class="glossary-col-label">实际是什么</div>';
             html += '<div class="glossary-col-means">' + escapeHtml(t.means) + '</div>';
             html += '</div>';
             html += '</div>';
