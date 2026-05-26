@@ -129,7 +129,7 @@ const PHASES = [
         "status": "complete",
         "type": "Learn",
         "lang": "Python, Julia",
-        "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/01-math-foundations/01-linear-algebra-intuition/",
+        "url": "phases/01-线性代数直觉/docs/zh.md",
         "summary": "Every AI model is just matrix math wearing a fancy hat.",
         "keywords": "Vectors Are Points (and Directions) · Matrices Are Transformations · The Dot Product Measures Similarity · Linear Independence · Basis and Rank · Projection · Gram-Schmidt Process · Step 1: Vectors from scratch (Python) · Step 2: Matrices from scratch (Python) · Step 3: Why this matters for AI · Step 4: Julia version · Step 5: Linear independence and projection from scratch (Python) · Rank, Projection, and QR with NumPy · PyTorch -- Tensors Are Vectors with Autodiff"
       },
@@ -138,7 +138,7 @@ const PHASES = [
         "status": "complete",
         "type": "Build",
         "lang": "Python, Julia",
-        "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/01-math-foundations/02-vectors-matrices-operations/",
+        "url": "phases/02-向量矩阵与运算/docs/zh.md",
         "summary": "Every neural network is just matrix multiplication with extra steps.",
         "keywords": "Vectors: ordered lists of numbers · Matrices: grids of numbers · Why shapes matter · The operations map · Element-wise vs matrix multiplication · Broadcasting · Step 1: Vector class · Step 2: Matrix class with core operations · Step 3: See it work · Step 4: Connect to neural networks"
       },
@@ -147,7 +147,7 @@ const PHASES = [
         "status": "complete",
         "type": "Build",
         "lang": "Python, Julia",
-        "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/01-math-foundations/03-matrix-transformations/",
+        "url": "phases/03-矩阵变换与特征值/docs/zh.md",
         "summary": "A matrix is a machine that reshapes space. Learn what it does to every point, and you understand the whole transformation.",
         "keywords": "Transformations as matrices · Rotation · Scaling · Shearing · Reflection · Composition: chaining transformations · Eigenvalues and eigenvectors · Eigendecomposition · Why eigenvalues matter · Determinant as volume scaling factor · Step 1: Transformation matrices from scratch (Python) · Step 2: Composition of transformations · Step 3: Eigenvalues from scratch (2x2) · Step 4: Determinant as volume scaling factor · 3D rotations with NumPy"
       },
@@ -156,7 +156,7 @@ const PHASES = [
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
-        "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/01-math-foundations/04-calculus-for-ml/",
+        "url": "phases/04-机器学习中的微积分/docs/zh.md",
         "summary": "Derivatives tell you which way is downhill. That is all a neural network needs to learn.",
         "keywords": "What is a derivative? · Partial derivatives: one variable at a time · The gradient: vector of all partial derivatives · The connection to optimization · Numerical vs analytical derivatives · Derivatives by hand for simple functions · The chain rule · The Hessian Matrix · Taylor Series Approximation · Integrals in ML · Multivariable Chain Rule in a Computation Graph · The Jacobian matrix · Why this matters for neural networks · Step 1: Numerical derivative from scratch · Step 2: Partial derivatives and gradients · Step 3: Gradient descent to find the minimum of f(x) = x^2 · Step 4: Gradient descent on a 2D function · Step 5: Comparing numerical and analytical derivatives · Step 6: Computing the Hessian numerically · Step 7: Taylor approximation in action · Step 8: Why this matters for a neural network"
       },
@@ -165,7 +165,7 @@ const PHASES = [
         "status": "complete",
         "type": "Build",
         "lang": "Python",
-        "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/01-math-foundations/05-chain-rule-and-autodiff/",
+        "url": "phases/05-链式法则与自动求导/docs/zh.md",
         "summary": "The chain rule is the engine behind every neural network that learns.",
         "keywords": "The Chain Rule · Computational Graphs · Forward Mode vs Reverse Mode · Dual Numbers for Forward Mode · Building an Autograd Engine · How PyTorch Autograd Works Under the Hood · Step 1: The Value class · Step 2: Arithmetic operations with gradient tracking · Step 3: The backward pass · Step 4: More operations for a complete engine · Step 5: Mini MLP from scratch · Step 6: Gradient checking · Step 7: Verify against manual calculation · Verify against PyTorch · A more complex expression"
       },
@@ -174,7 +174,7 @@ const PHASES = [
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
-        "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/01-math-foundations/06-probability-and-distributions/",
+        "url": "phases/06-概率与分布/docs/zh.md",
         "summary": "Probability is the language AI uses to express uncertainty.",
         "keywords": "Events, Sample Spaces, and Probability · Conditional Probability and Independence · Probability Mass Functions vs Probability Density Functions · Common Distributions · Expected Value and Variance · Joint and Marginal Distributions · Why the Normal Distribution Shows Up Everywhere · Log Probabilities · Softmax as a Probability Distribution · Sampling · Step 1: Probability basics · Step 2: PMF and PDF from scratch · Step 3: Expected value and variance · Step 4: Sampling from distributions · Step 5: Softmax and log probabilities · Step 6: Central Limit Theorem demonstration · Step 7: Visualization"
       },
@@ -183,7 +183,7 @@ const PHASES = [
         "status": "complete",
         "type": "Build",
         "lang": "Python",
-        "url": "https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/01-math-foundations/07-bayes-theorem/",
+        "url": "phases/07-贝叶斯定理/docs/zh.md",
         "summary": "Probability is about what you expect. Bayes' theorem is about what you learn.",
         "keywords": "From joint probability to Bayes · The four parts · Medical test example · Spam filter example · Naive Bayes: independence assumption · Maximum likelihood estimation (MLE) · Maximum a posteriori (MAP) · Bayesian vs frequentist: the practical difference · Why Bayesian thinking matters for ML · Step 1: Bayes theorem function · Step 2: Naive Bayes classifier · Step 3: Train on spam data · Step 4: Inspect the learned probabilities · Conjugate Priors · Sequential Bayesian Updating · Connection to A/B Testing"
       },
