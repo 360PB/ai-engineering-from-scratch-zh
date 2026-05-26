@@ -1684,7 +1684,7 @@
       var lessonPath = params.get('path');
 
       if (!lessonPath) {
-        showError('No lesson path specified', 'Add ?path=phases/01-math-foundations/01-linear-algebra-intuition to the URL.');
+        showError('未指定课程路径', '请在 URL 中添加 ?path=phases/01-数学基础/01-线性代数直觉');
         return;
       }
 
@@ -1835,10 +1835,10 @@
       }
 
       function fetchLesson(path) {
-        var giteeBase = 'https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/raw/master/';
-        var zhUrl = giteeBase + path + '/docs/zh.md';
-        var enUrl = giteeBase + path + '/docs/en.md';
-        var quizUrl = giteeBase + path + '/quiz.json';
+        // Use relative paths for local files (same origin, no CORS issues)
+        var zhUrl = './' + path + '/docs/zh.md';
+        var enUrl = './' + path + '/docs/en.md';
+        var quizUrl = './' + path + '/quiz.json';
 
         // Try zh.md first, fallback to en.md
         fetch(zhUrl)
@@ -1876,7 +1876,7 @@
 
       function showError(title, msg) {
         var el = document.getElementById('lessonContent');
-        el.innerHTML = '<div class="lesson-error"><h2>' + title + '</h2><p>' + msg + '</p><a href="index.html" class="btn btn-primary">Back to Home</a></div>';
+        el.innerHTML = '<div class="lesson-error"><h2>' + title + '</h2><p>' + msg + '</p><a href="index.html" class="btn btn-primary">返回首页</a></div>';
       }
 
       function renderLesson(md) {
