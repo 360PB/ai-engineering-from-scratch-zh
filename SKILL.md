@@ -7,7 +7,7 @@
 - **原文**: 435 节课，20 个阶段，~320 小时，Python/TypeScript/Rust/Julia
 - **目标**: 将课程文档、代码注释、网站 UI 全面中文化
 - **进度**: 第 1 阶段（数学基础）01~04 课已完成 + 网站首页翻译
-- **上游仓库**: https://github.com/rohitg00/ai-engineering-from-scratch
+- **对照翻译**: 英文原版已放在本仓库 `original/` 目录下，无需额外克隆
 - **中文仓库**: https://gitee.com/qianchilang/ai-engineering-from-scratch-zh（私有）
 
 ## 目录结构
@@ -17,14 +17,19 @@ zh/
 ├── SKILL.md                          # 本文件
 ├── 课程目录.md                        # 小白友好的课程导览
 ├── 17个综合大项目.md                  # 17 个 Capstone 详解
-├── phases/                           # 课程正文（翻译目标）
+├── original/                          # ← 英文原版（对照翻译用）
+│   ├── phases/00~19/                  # 全部 435 课原文
+│   ├── site/                          # 英文网站
+│   ├── README.md
+│   └── ...
+├── phases/                           # ← 中文翻译（目标）
 │   └── 01-数学基础/
 │       ├── 01-线性代数直觉/
 │       ├── 02-向量矩阵与运算/
 │       ├── 03-矩阵变换与特征值/
 │       ├── 04-机器学习中的微积分/
 │       └── ... (待翻译)
-└── site/                             # 官方网站前端
+└── site/                             # ← 中文网站（目标）
     ├── index.html                    # 首页（已翻译导航/UI）
     ├── app.js                        # 交互逻辑
     ├── lesson.html                   # 课程页
@@ -105,8 +110,8 @@ def numerical_derivative(f, x, h=1e-7):
 
 ### 翻译新课程
 
-1. 读取原文：`ai-engineering-from-scratch/phases/XX-阶段名/XX-课程名/docs/en.md`
-2. 创建目录：`zh/phases/XX-中文阶段名/XX-中文课程名/{code,docs,outputs,assets}`
+1. 读取原文：`original/phases/XX-阶段名/XX-课程名/docs/en.md`
+2. 创建目录：`phases/XX-中文阶段名/XX-中文课程名/{code,docs,outputs,assets}`
 3. 翻译文档：写入 `docs/zh.md`
 4. 翻译代码：复制原文 `code/` 文件，添加中文注释和输出
 5. 翻译产物：写入 `outputs/*-zh.md`
@@ -123,7 +128,6 @@ def numerical_derivative(f, x, h=1e-7):
 ### 推送命令
 
 ```bash
-cd zh
 git add .
 git commit -m "translate: 课程名"
 git push origin master
@@ -133,16 +137,16 @@ git push origin master
 
 | 用途 | 路径 |
 |------|------|
-| 原文课程库 | `ai-engineering-from-scratch/phases/` |
-| 中文课程库 | `zh/phases/` |
-| 课程目录（中文） | `zh/课程目录.md` |
-| 综合项目（中文） | `zh/17个综合大项目.md` |
-| 网站首页 | `zh/site/index.html` |
-| 网站交互 | `zh/site/app.js` |
-| 搜索面板 | `zh/site/cmdpalette.js` |
-| 课程页 | `zh/site/lesson.html` |
-| 构建脚本 | `zh/site/build.js` |
-| 课程数据 | `zh/site/data.js` |
+| 原文课程库 | `original/phases/` |
+| 中文课程库 | `phases/` |
+| 课程目录（中文） | `课程目录.md` |
+| 综合项目（中文） | `17个综合大项目.md` |
+| 网站首页 | `site/index.html` |
+| 网站交互 | `site/app.js` |
+| 搜索面板 | `site/cmdpalette.js` |
+| 课程页 | `site/lesson.html` |
+| 构建脚本 | `site/build.js` |
+| 课程数据 | `site/data.js` |
 
 ## 翻译进度
 
