@@ -6,7 +6,9 @@
 
 - **原文**: 435 节课，20 个阶段，~320 小时，Python/TypeScript/Rust/Julia
 - **目标**: 将课程文档、代码注释、网站 UI 全面中文化
-- **进度**: 第 1 阶段（数学基础）01~07 课已完成 + 网站首页翻译
+- **进度**: Phase 0（环境搭建）12/12 课 ✅、Phase 1（数学基础）7/22 课 ✅
+- **网站**: 首页/课程页/索引/术语表/路线图 全部中文化 ✅
+- **data.js**: 手动维护（不再用 build.js 自动生成），已翻译 Phase 0-1 课程名
 - **对照翻译**: 英文原版已放在本仓库 `original/` 目录下，无需额外克隆
 - **中文仓库**: https://gitee.com/qianchilang/ai-engineering-from-scratch-zh（私有）
 
@@ -14,8 +16,11 @@
 
 ```
 zh/
-├── SKILL.md                          # 本文件
-├── 课程目录.md                        # 小白友好的课程导览
+├── SKILL.md                          # 本文件（翻译规范 + 进度）
+├── README.md                          # Gitee 首页展示的中文介绍
+├── README_BUILD.md                    # build.js 读取的课程目录（含中文课名）
+├── ROADMAP.md                         # 课程状态追踪（含中文课名）
+├── glossary/terms.md                  # 83 个 AI 术语中文翻译
 ├── 17个综合大项目.md                  # 17 个 Capstone 详解
 ├── original/                          # ← 英文原版（对照翻译用）
 │   ├── phases/00~19/                  # 全部 435 课原文
@@ -23,17 +28,17 @@ zh/
 │   ├── README.md
 │   └── ...
 ├── phases/                           # ← 中文翻译（目标）
-│   └── 01-数学基础/
-│       ├── 01-线性代数直觉/
-│       ├── 02-向量矩阵与运算/
-│       ├── 03-矩阵变换与特征值/
-│       ├── 04-机器学习中的微积分/
-│       └── ... (待翻译)
+│   ├── 00-setup-and-tooling/          # Phase 0（12课全部完成）
+│   ├── 01-数学基础/                    # Phase 1（7/22 课完成）
+│   └── ... (待翻译)
 └── site/                             # ← 中文网站（目标）
-    ├── index.html                    # 首页（已翻译导航/UI）
-    ├── app.js                        # 交互逻辑
-    ├── lesson.html                   # 课程页
-    ├── catalog.html / glossary.html  # 索引/术语表
+    ├── index.html                     # 首页（已翻译导航/UI）
+    ├── lesson.html                    # 课程页（支持加载 docs/zh.md）
+    ├── catalog.html                   # 课程索引
+    ├── glossary.html                  # 术语表
+    ├── prereqs.html                   # 路线图
+    ├── data.js                        # 课程数据（手动维护中文课名）
+    ├── build.js                       # 构建脚本（已改 Gitee + zh.md）
     └── ...
 ```
 
@@ -46,8 +51,15 @@ zh/
 | Phase X | 第 X 阶段 | `01-数学基础` |
 | Lesson X | 第 X 课 | `01-线性代数直觉` |
 | docs/en.md | docs/zh.md | 课程文档 |
-| outputs/*.md | outputs/*-zh.md | 产物（保留原文件名 + `-zh` 后缀） |
+| outputs/*.md | outputs/*.md | 产物（保持原文件名，内容翻译为中文） |
 | code/*.py | 不变 | 代码文件保持原名，注释改为中文 |
+
+### ⚠️ 重要：路径命名规则
+
+- `phases/` 下：**中文目录名**（如 `01-数学基础/01-线性代数直觉`）
+- `site/phases/` 下：**英文目录名**（如 `01-math-foundations/01-linear-algebra-intuition`）
+- **原因**：`data.js` 和 `lesson.html` 中的 `path` 字段使用英文路径，保持一致性
+- **同步命令**：`cp -r phases/01-数学基础/01-线性代数直觉 site/phases/01-math-foundations/01-linear-algebra-intuition/`
 
 ### 术语对照表（必须一致）
 
@@ -104,26 +116,41 @@ def numerical_derivative(f, x, h=1e-7):
 - `index.html`: 导航、按钮、标签、状态文字
 - `app.js`: 模态框交互文字、确认对话框
 - `cmdpalette.js`: 搜索面板占位符和快捷键标签
-- `data.js`: 不直接翻译，等课程文档翻译完用 `build.js` 重新生成
+- `data.js`: **手动维护**，不再用 `build.js` 自动生成。翻译完新课程后，直接修改 data.js 中对应的课程名
+- `build.js`: 已配置为读取 `README_BUILD.md` + `docs/zh.md` + Gitee 链接，但**当前不使用**（手动维护 data.js 更可控）
+- `lesson.html`: 已改为用**相对路径** `./phases/{path}/docs/zh.md` 加载本地课程文件（避免 Gitee raw 跨域问题）
 
 ## 工作流程
 
-### 翻译新课程
+### 翻译新课程（4步）
 
-1. 读取原文：`original/phases/XX-阶段名/XX-课程名/docs/en.md`
-2. 创建目录：`phases/XX-中文阶段名/XX-中文课程名/{code,docs,outputs,assets}`
-3. 翻译文档：写入 `docs/zh.md`
-4. 翻译代码：复制原文 `code/` 文件，添加中文注释和输出
-5. 翻译产物：写入 `outputs/*-zh.md`
-6. 提交：`git add . && git commit -m "translate: 第X阶段第X课 — 课程名"`
-7. 推送：`git push`
+1. **翻译课程文档**
+   - 读取原文：`original/phases/XX-阶段名/XX-课程名/docs/en.md`
+   - 创建目录：`phases/XX-中文阶段名/XX-中文课程名/{code,docs,outputs,assets}`
+   - 写入 `docs/zh.md`
+   - 复制 `code/` 文件，注释改为中文
+   - 写入 `outputs/*-zh.md`
+
+2. **同步到 site/phases/（EdgeOne Pages 实际部署目录）**
+   - `cp -r phases/XX-中文阶段名/XX-中文课程名 site/phases/XX-英文阶段名/XX-英文课程名/`
+   - **必须保持英文路径**（data.js 和 lesson.html 用英文路径匹配）
+
+3. **更新 data.js 课程名**
+   - 找到对应课程的 `name` 字段，改成中文
+   - 例如：`"name": "Dev Environment"` → `"name": "开发环境"`
+
+4. **提交推送**
+   ```bash
+   git add .
+   git commit -m "translate: Phase X 第Y课 — 课程名"
+   git push origin master
+   ```
 
 ### 更新网站
 
 1. 翻译 `site/*.html` 和 `site/*.js` 中的用户可见文字
-2. 用 `sed` 批量替换常见词汇（导航、按钮等）
-3. 单独处理不唯一的字符串
-4. 提交推送
+2. `lesson.html` 加载逻辑已改（相对路径 `./phases/...`），一般无需改动
+3. 提交推送
 
 ### 推送命令
 
@@ -139,38 +166,60 @@ git push origin master
 |------|------|
 | 原文课程库 | `original/phases/` |
 | 中文课程库 | `phases/` |
-| 课程目录（中文） | `课程目录.md` |
-| 综合项目（中文） | `17个综合大项目.md` |
+| 部署课程库 | `site/phases/`（EdgeOne Pages 实际部署） |
+| Gitee 首页 | `README.md` |
+| 构建用课程目录 | `README_BUILD.md`（build.js 读取） |
+| 课程状态追踪 | `ROADMAP.md` |
+| 术语表 | `glossary/terms.md` |
+| 综合项目 | `17个综合大项目.md` |
 | 网站首页 | `site/index.html` |
-| 网站交互 | `site/app.js` |
-| 搜索面板 | `site/cmdpalette.js` |
 | 课程页 | `site/lesson.html` |
-| 构建脚本 | `site/build.js` |
-| 课程数据 | `site/data.js` |
+| 课程索引 | `site/catalog.html` |
+| 术语表页 | `site/glossary.html` |
+| 路线图页 | `site/prereqs.html` |
+| 课程数据 | `site/data.js`（手动维护） |
+| 构建脚本 | `site/build.js`（备用） |
 
 ## 翻译进度
 
-### 第 1 阶段 — 数学基础（22 课）
+### Phase 0 — 环境搭建与工具（12 课）✅ 全部完成
 
-| 课号 | 名称 | 状态 |
-|------|------|------|
-| 01 | 线性代数直觉 | ✅ 完成 |
-| 02 | 向量矩阵与运算 | ✅ 完成 |
-| 03 | 矩阵变换与特征值 | ✅ 完成 |
-| 04 | 机器学习中的微积分 | ✅ 完成 |
-| 05 | 链式法则与自动求导 | ✅ 完成 |
-| 06 | 概率与分布 | ✅ 完成 |
-| 07 | 贝叶斯定理 | ✅ 完成 |
+| 课号 | 英文路径 | 中文名 | 状态 |
+|------|----------|--------|------|
+| 01 | 01-dev-environment | 开发环境 | ✅ |
+| 02 | 02-git-and-collaboration | Git 与协作 | ✅ |
+| 03 | 03-gpu-setup-and-cloud | GPU 配置与云端 | ✅ |
+| 04 | 04-apis-and-keys | API 与密钥 | ✅ |
+| 05 | 05-jupyter-notebooks | Jupyter 笔记本 | ✅ |
+| 06 | 06-python-environments | Python 环境 | ✅ |
+| 07 | 07-docker-for-ai | Docker 与 AI | ✅ |
+| 08 | 08-editor-setup | 编辑器配置 | ✅ |
+| 09 | 09-data-management | 数据管理 | ✅ |
+| 10 | 10-terminal-and-shell | 终端与 Shell | ✅ |
+| 11 | 11-linux-for-ai | AI 中的 Linux | ✅ |
+| 12 | 12-debugging-and-profiling | 调试与性能分析 | ✅ |
+
+### Phase 1 — 数学基础（22 课，7/22 完成）
+
+| 课号 | 中文名 | 状态 |
+|------|--------|------|
+| 01 | 线性代数直觉 | ✅ |
+| 02 | 向量矩阵与运算 | ✅ |
+| 03 | 矩阵变换与特征值 | ✅ |
+| 04 | 机器学习中的微积分 | ✅ |
+| 05 | 链式法则与自动求导 | ✅ |
+| 06 | 概率与分布 | ✅ |
+| 07 | 贝叶斯定理 | ✅ |
+| 08~22 | （待翻译） | ⬜ |
 
 ### 网站翻译
 
-| 页面 | 状态 |
-|------|------|
-| index.html | ✅ 导航/UI 已翻译 |
-| app.js | ✅ 交互文字已翻译 |
-| cmdpalette.js | ✅ 搜索面板已翻译 |
-| lesson.html | ✅ 基础导航已翻译 |
-| catalog.html | ✅ 基础导航已翻译 |
-| glossary.html | ✅ 基础导航已翻译 |
-| prereqs.html | ✅ 基础导航已翻译 |
-| data.js | ⬜ 需重新生成 |
+| 页面 | 状态 | 说明 |
+|------|------|------|
+| index.html | ✅ | 导航/UI 已翻译 |
+| lesson.html | ✅ | 加载 docs/zh.md，课程名中文显示 |
+| catalog.html | ✅ | 课程索引，链接指向 Gitee |
+| glossary.html | ✅ | 83 个术语全部中文化 |
+| prereqs.html | ✅ | 路线图已翻译 |
+| data.js | ✅ | Phase 0-1 课程名已翻译，**手动维护** |
+| build.js | ✅ | 已改 Gitee + zh.md（备用）|
