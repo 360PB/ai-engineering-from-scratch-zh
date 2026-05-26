@@ -12,12 +12,12 @@ const fs = require('fs');
 const path = require('path');
 
 const REPO_ROOT = path.resolve(__dirname, '..');
-const README_PATH = path.join(REPO_ROOT, 'README.md');
+const README_PATH = path.join(REPO_ROOT, 'README_BUILD.md');
 const ROADMAP_PATH = path.join(REPO_ROOT, 'ROADMAP.md');
 const GLOSSARY_PATH = path.join(REPO_ROOT, 'glossary', 'terms.md');
 const OUTPUT_PATH = path.join(__dirname, 'data.js');
 
-const GITHUB_BASE = 'https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/';
+const GITHUB_BASE = 'https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/tree/main/';
 
 // ─── Parse ROADMAP.md for lesson statuses ────────────────────────────
 function parseRoadmap(content) {
@@ -237,7 +237,7 @@ function parseReadme(content, roadmapStatuses) {
  * matching content — expected for planned lessons with no docs yet.
  */
 function extractLessonMeta(relPath) {
-  const docPath = path.join(REPO_ROOT, relPath, 'docs', 'en.md');
+  const docPath = path.join(REPO_ROOT, relPath, 'docs', 'zh.md');
   const result = { summary: '', keywords: '' };
   try {
     const lines = fs.readFileSync(docPath, 'utf8').split(/\r?\n/);
