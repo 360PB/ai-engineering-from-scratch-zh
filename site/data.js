@@ -247,7 +247,7 @@ const PHASES = [
         "type": "Build",
         "lang": "Python",
         "url": "phases/01-math-foundations/14-norms-and-distances",
-        "summary": "你的距离函数定义了"相似"的含义。选错了，下游一切都毁。",
+        "summary": "你的距离函数定义了「相似」的含义。选错了，下游一切都毁。",
         "keywords": "Norms: measuring vector magnitude · L1 Norm (Manhattan distance) · L2 Norm (Euclidean distance) · Lp Norms: the general family · L-infinity Norm (Chebyshev distance) · Cosine Similarity and Cosine Distance · Dot Product Similarity vs Cosine Similarity · Mahalanobis Distance · Jaccard Similarity (for sets) · Edit Distance (Levenshtein Distance) · KL Divergence (not a distance, but used like one) · Wasserstein Distance (Earth Mover's Distance) · Why Different Tasks Need Different Distances · Connection to Loss Functions · Connection to Regularization · Nearest Neighbor Search · Step 1: All norm and distance functions · Step 2: Same data, different distances, different neighbors · Step 3: Embedding similarity search"
       },
       {
@@ -1159,7 +1159,7 @@ const PHASES = [
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
-        phases/06-speech-and-audio/01-audio-fundamentals",
+        "url": "phases/06-speech-and-audio/01-audio-fundamentals",
         "summary": "Waveforms are the raw signal. Spectrograms are the representation. Mel features are the ML-friendly form. Every modern ASR and TTS pipeline walks this ladder, and the first rung…",
         "keywords": "Step 1: read a clip and plot the waveform · Step 2: synthesize a sine wave from first principles · Step 3: compute the DFT by hand · Step 4: find the dominant frequency · Step 5: demonstrate aliasing"
       },
@@ -1168,7 +1168,7 @@ const PHASES = [
         "status": "complete",
         "type": "Build",
         "lang": "Python",
-        phases/06-speech-and-audio/02-spectrograms-mel-features",
+        "url": "phases/06-speech-and-audio/02-spectrograms-mel-features",
         "summary": "Neural nets do not consume raw waveforms well. They consume spectrograms. They consume mel spectrograms even better. Every ASR, TTS, and audio classifier in 2026 lives or dies b…",
         "keywords": "Step 1: frame the waveform · Step 2: Hann window · Step 3: STFT magnitude · Step 4: mel filterbank · Step 5: log-mel · Step 6: MFCCs"
       },
@@ -1177,7 +1177,7 @@ const PHASES = [
         "status": "complete",
         "type": "Build",
         "lang": "Python",
-        phases/06-speech-and-audio/03-audio-classification",
+        "url": "phases/06-speech-and-audio/03-audio-classification",
         "summary": "Everything from \"dog barking vs siren\" to \"which language is this\" is audio classification. The features are mels. The architecture moves each decade. The evaluation stays AUC, …",
         "keywords": "Class imbalance is the real challenge · Evaluation · Step 1: featurize · Step 2: fixed-length summary · Step 3: k-NN · Step 4: upgrade to CNN on log-mels · Step 5: the 2026 default — fine-tune BEATs"
       },
@@ -1186,7 +1186,7 @@ const PHASES = [
         "status": "complete",
         "type": "Build",
         "lang": "Python",
-        phases/06-speech-and-audio/04-speech-recognition-asr",
+        "url": "phases/06-speech-and-audio/04-speech-recognition-asr",
         "summary": "Speech recognition is audio classification at every timestep, glued together by a sequence model that knows English and silence. CTC, RNN-T, and attention are the three ways to …",
         "keywords": "WER: the one number · Step 1: greedy CTC decode · Step 2: beam-search CTC · Step 3: WER · Step 4: inference against Whisper · Step 5: streaming with Parakeet or wav2vec 2.0"
       },
@@ -1195,7 +1195,7 @@ const PHASES = [
         "status": "complete",
         "type": "Build",
         "lang": "Python",
-        phases/06-speech-and-audio/05-whisper-architecture-finetuning",
+        "url": "phases/06-speech-and-audio/05-whisper-architecture-finetuning",
         "summary": "Whisper is a 30-second-window transformer encoder-decoder, trained on 680k hours of multilingual weakly-supervised audio-text pairs. One architecture, multiple tasks, robust acr…",
         "keywords": "Variants in 2026 · Fine-tuning · Step 1: run Whisper out of the box · Step 2: chunked long-form · Step 3: fine-tune with LoRA · Step 4: inspect what each layer learns"
       },
@@ -1204,7 +1204,7 @@ const PHASES = [
         "status": "complete",
         "type": "Build",
         "lang": "Python",
-        phases/06-speech-and-audio/06-speaker-recognition-verification",
+        "url": "phases/06-speech-and-audio/06-speaker-recognition-verification",
         "summary": "ASR asks \"what did they say?\" Speaker recognition asks \"who said it?\" The math looks the same — embeddings plus cosine — but every production decision hinges on a single EER num…",
         "keywords": "Scoring · Numbers you should know (2026) · Diarization · Step 1: toy embedding from MFCC statistics · Step 2: cosine similarity + threshold · Step 3: EER from similarity pairs · Step 4: production with SpeechBrain · Step 5: diarize with pyannote"
       },
@@ -1213,7 +1213,7 @@ const PHASES = [
         "status": "complete",
         "type": "Build",
         "lang": "Python",
-        phases/06-speech-and-audio/07-text-to-speech",
+        "url": "phases/06-speech-and-audio/07-text-to-speech",
         "summary": "ASR inverts speech to text; TTS inverts text to speech. The 2026 stack is three parts: text → tokens, tokens → mel, mel → waveform. Each part has a default model that fits in a …",
         "keywords": "Vocoder evolution · Evaluation · Step 1: phonemize input · Step 2: run Kokoro (2026 CPU default) · Step 3: run F5-TTS with voice cloning · Step 4: HiFi-GAN vocoder from scratch · Step 5: the full pipeline (pseudocode)"
       },
@@ -1222,7 +1222,7 @@ const PHASES = [
         "status": "complete",
         "type": "Build",
         "lang": "Python",
-        phases/06-speech-and-audio/08-voice-cloning-conversion",
+        "url": "phases/06-speech-and-audio/08-voice-cloning-conversion",
         "summary": "Voice cloning reads your text in someone else's voice. Voice conversion rewrites your voice into someone else's while preserving what you said. Both hang on the same primitive: …",
         "keywords": "The ethics bit, not a bolt-on · Numbers (2026) · Step 1: decompose with recognition-synthesis (code-only demo in main.py) · Step 2: zero-shot clone with F5-TTS · Step 3: voice conversion with KNN-VC · Step 4: embed a watermark · Step 5: consent gate"
       },
@@ -1231,7 +1231,7 @@ const PHASES = [
         "status": "complete",
         "type": "Build",
         "lang": "Python",
-        phases/06-speech-and-audio/09-music-generation",
+        "url": "phases/06-speech-and-audio/09-music-generation",
         "summary": "2026 music generation: Suno v5 and Udio v4 dominate commercial; MusicGen, Stable Audio Open, and ACE-Step lead open-source. The technical problem is mostly solved. The legal pro…",
         "keywords": "Token LM over neural-codec tokens · Diffusion over mels or latents · Hybrid (production) — Suno, Udio, Lyria · Evaluation · Step 1: generate with MusicGen · Step 2: melody conditioning · Step 3: FAD evaluation · Step 4: adding to the LLM-music workflow"
       },
@@ -1240,7 +1240,7 @@ const PHASES = [
         "status": "complete",
         "type": "Build",
         "lang": "Python",
-        phases/06-speech-and-audio/10-audio-language-models",
+        "url": "phases/06-speech-and-audio/10-audio-language-models",
         "summary": "2026 audio-language models reason over speech + environmental sound + music. Qwen2.5-Omni-7B matches GPT-4o Audio on MMAU-Pro. Audio Flamingo Next beats Gemini 2.5 Pro on LongAu…",
         "keywords": "The three-component template · The 2026 model map · Benchmark reality check (2026) · Where LALMs are useful in 2026 · Where they are NOT (yet) useful · Step 1: query Qwen2.5-Omni · Step 2: the projector pattern · Step 3: benchmarking MMAU / LongAudioBench"
       },
@@ -1249,7 +1249,7 @@ const PHASES = [
         "status": "complete",
         "type": "Build",
         "lang": "Python, Rust",
-        phases/06-speech-and-audio/11-real-time-audio-processing",
+        "url": "phases/06-speech-and-audio/11-real-time-audio-processing",
         "summary": "Batch pipelines process a file. Real-time pipelines process the next 20 milliseconds before the next 20 arrive. Every conversational AI, broadcast studio, and telephony bot live…",
         "keywords": "Common gotchas · Step 1: ring buffer · Step 2: VAD gate · Step 3: streaming ASR · Step 4: interruption handler"
       },
@@ -1258,7 +1258,7 @@ const PHASES = [
         "status": "complete",
         "type": "Build",
         "lang": "Python",
-        phases/06-speech-and-audio/12-voice-assistant-pipeline",
+        "url": "phases/06-speech-and-audio/12-voice-assistant-pipeline",
         "summary": "Everything from lessons 01-11, stitched together. Build a voice assistant that listens, reasons, and talks back. In 2026 that is a solved engineering problem, not a research pro…",
         "keywords": "The seven components · The three failure modes you will hit · 2026 production reference stacks · Step 1: mic capture with chunking (pseudocode) · Step 2: VAD-gated turn capture · Step 3: streaming STT → LLM → TTS · Step 4: tool calling inside the LLM loop · Step 5: interruption handling"
       },
@@ -1267,7 +1267,7 @@ const PHASES = [
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
-        phases/06-speech-and-audio/13-neural-audio-codecs",
+        "url": "phases/06-speech-and-audio/13-neural-audio-codecs",
         "summary": "2026 audio generation is almost all tokens. EnCodec, SNAC, Mimi, and DAC turn continuous waveforms into discrete sequences that a transformer can predict. The semantic-vs-acoust…",
         "keywords": "The core trick: Residual Vector Quantization (RVQ) · The four codecs that matter in 2026 · Frame rates matter for language modeling · Semantic vs acoustic tokens · 2026 reconstruction quality (bits per sec, lower bitrate is better) · Step 1: encode with EnCodec · Step 2: decode and measure reconstruction · Step 3: the semantic-acoustic split (Mimi-style) · Step 4: why AR LM over codec tokens works"
       },
@@ -1276,7 +1276,7 @@ const PHASES = [
         "status": "complete",
         "type": "Build",
         "lang": "Python",
-        phases/06-speech-and-audio/14-voice-activity-detection-turn-taking",
+        "url": "phases/06-speech-and-audio/14-voice-activity-detection-turn-taking",
         "summary": "Every voice agent lives or dies on two decisions: is the user speaking now, and are they done? VAD answers the first. Turn-detection (VAD + silence-hangover + semantic endpoint …",
         "keywords": "The three-tier VAD cascade · Key parameters and their defaults · The flush trick (Kyutai 2025) · 2026 VAD comparison · Step 1: the energy gate · Step 2: Silero VAD in Python · Step 3: turn-end state machine · Step 4: the flush trick skeleton"
       },
@@ -1285,7 +1285,7 @@ const PHASES = [
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
-        phases/06-speech-and-audio/15-streaming-speech-to-speech-moshi-hibiki",
+        "url": "phases/06-speech-and-audio/15-streaming-speech-to-speech-moshi-hibiki",
         "summary": "2024-2026 redefined voice AI. Moshi ships a single model that listens and speaks simultaneously at 200 ms latency. Hibiki does speech-to-speech translation chunk-by-chunk. Both …",
         "keywords": "The Moshi architecture · Why inner-monologue text helps · Hibiki: streaming speech-to-speech translation · The broader Kyutai stack (2026) · Sesame CSM — the cousin · 2026 performance numbers · Step 1: the interface · Step 2: the full-duplex loop · Step 3: the training objective (conceptual) · Step 4: where Moshi wins and where it doesn't"
       },
@@ -1294,7 +1294,7 @@ const PHASES = [
         "status": "complete",
         "type": "Build",
         "lang": "Python",
-        phases/06-speech-and-audio/16-anti-spoofing-audio-watermarking",
+        "url": "phases/06-speech-and-audio/16-anti-spoofing-audio-watermarking",
         "summary": "Voice cloning shipped faster than defenses. 2026 production voice systems need two things: a detector (AASIST, RawNet2) that classifies real vs fake speech, and a watermark (Aud…",
         "keywords": "ASVspoof 5 — the 2024-2025 benchmark · AASIST and RawNet2 — detection model families · AudioSeal — the 2024 watermark default · WavMark · WaveVerify (July 2025) · The gap adversaries exploit · C2PA / Content Authenticity Initiative · Step 1: a simple spectral-feature detector (toy) · Step 2: AudioSeal embed + detect · Step 3: evaluation — EER · Step 4: the production integration"
       },
@@ -1303,7 +1303,7 @@ const PHASES = [
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
-        phases/06-speech-and-audio/17-audio-evaluation-metrics",
+        "url": "phases/06-speech-and-audio/17-audio-evaluation-metrics",
         "summary": "You cannot ship what you cannot measure. This lesson names the 2026 metrics for every audio task: ASR (WER, CER, RTFx), TTS (MOS, UTMOS, SECS, WER-on-ASR-round-trip), audio-lang…",
         "keywords": "ASR metrics · TTS metrics · Voice-cloning-specific · Speaker verification · Diarization · Audio classification · Music generation · Audio-language benchmarks · Streaming speech-to-speech · The 2026 leaderboards · Step 1: WER with normalization · Step 2: TTS round-trip WER · Step 3: SECS for voice cloning · Step 4: FAD for music generation · Step 5: EER for speaker verification (same code as Lesson 6)"
       }
