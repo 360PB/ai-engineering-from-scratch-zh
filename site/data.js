@@ -188,7 +188,7 @@ const PHASES = [
         "keywords": "From joint probability to Bayes · The four parts · Medical test example · Spam filter example · Naive Bayes: independence assumption · Maximum likelihood estimation (MLE) · Maximum a posteriori (MAP) · Bayesian vs frequentist: the practical difference · Why Bayesian thinking matters for ML · Step 1: Bayes theorem function · Step 2: Naive Bayes classifier · Step 3: Train on spam data · Step 4: Inspect the learned probabilities · Conjugate Priors · Sequential Bayesian Updating · Connection to A/B Testing"
       },
       {
-        "name": "Optimization: Gradient Descent Family",
+        "name": "优化：梯度下降家族",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -197,7 +197,7 @@ const PHASES = [
         "keywords": "What optimization means · Gradient descent (vanilla) · Learning rate: the most important hyperparameter · SGD vs batch vs mini-batch · Momentum: the ball rolling downhill · Adam: adaptive learning rates · Learning rate schedules · Convex vs non-convex · Loss landscape visualization · Step 1: Define a test function · Step 2: Vanilla gradient descent · Step 3: SGD with momentum · Step 4: Adam · Step 5: Run and compare"
       },
       {
-        "name": "Information Theory: Entropy, KL Divergence",
+        "name": "信息论：熵与KL散度",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -206,7 +206,7 @@ const PHASES = [
         "keywords": "Information Content (Surprise) · Entropy (Average Surprise) · Cross-Entropy (The Loss Function You Use Every Day) · KL Divergence (Distance Between Distributions) · Mutual Information · Conditional Entropy · Joint Entropy · Mutual Information (Deep Dive) · Label Smoothing and Cross-Entropy · Why Cross-Entropy Is THE Classification Loss · Bits vs Nats · Perplexity · Step 1: Information content and entropy · Step 2: Cross-entropy and KL divergence · Step 3: Cross-entropy as classification loss · Step 4: Cross-entropy equals negative log-likelihood · Step 5: Mutual information"
       },
       {
-        "name": "Dimensionality Reduction: PCA, t-SNE, UMAP",
+        "name": "降维：PCA、t-SNE、UMAP",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -215,79 +215,79 @@ const PHASES = [
         "keywords": "The curse of dimensionality · PCA: find the directions that matter · Explained variance ratio · Choosing the number of components · t-SNE: preserve neighborhoods · UMAP: faster, better global structure · When to use which · Kernel PCA · Reconstruction Error · Step 1: PCA from scratch · Step 2: Test on synthetic data · Step 3: MNIST digits in 2D · Step 4: Compare with sklearn · Step 5: UMAP comparison"
       },
       {
-        "name": "Singular Value Decomposition",
+        "name": "奇异值分解",
         "status": "complete",
         "type": "Build",
         "lang": "Python, Julia",
         "url": "https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/tree/main/phases/01-math-foundations/11-singular-value-decomposition/",
-        "summary": "SVD is the Swiss Army knife of linear algebra. Every matrix has one. Every data scientist needs one.",
+        "summary": "SVD 是线性代数中的瑞士军刀。每个矩阵都有一个。每个数据科学家都需要它。",
         "keywords": "What SVD does geometrically · The full decomposition · Left singular vectors, singular values, right singular vectors · Outer product form · Relationship to eigendecomposition · Truncated SVD: low-rank approximation · Image compression with SVD · SVD for recommendation systems · SVD in NLP: Latent Semantic Analysis · SVD for noise reduction · Pseudoinverse via SVD · Numerical stability advantages · Connection to PCA · Step 1: SVD from scratch using power iteration · Step 2: Test and compare with NumPy · Step 3: Image compression demo · Step 4: Noise reduction · Step 5: Pseudoinverse"
       },
       {
-        "name": "Tensor Operations",
+        "name": "张量运算",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
         "url": "https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/tree/main/phases/01-math-foundations/12-tensor-operations/",
-        "summary": "Tensors are the common language between data and deep learning. Every image, every sentence, every gradient flows through them.",
+        "summary": "张量是数据与深度学习之间的通用语言。每张图像、每句话、每个梯度都流经它们。",
         "keywords": "What a tensor is · Tensor shapes in deep learning · How memory layout works · Broadcasting rules · Einsum: the universal tensor operation · Step 1: Tensor storage and strides · Step 2: Reshape, squeeze, unsqueeze · Step 3: Transpose and permute · Step 4: Element-wise operations and reductions · Step 5: Broadcasting with NumPy · Step 6: Einsum operations · Step 7: Attention mechanism via einsum · Scratch vs NumPy · Scratch vs PyTorch · Every neural network layer as a tensor operation"
       },
       {
-        "name": "Numerical Stability",
+        "name": "数值稳定性",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
         "url": "https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/tree/main/phases/01-math-foundations/13-numerical-stability/",
-        "summary": "Floating point is a leaky abstraction. It will bite you during training, and you will not see it coming.",
+        "summary": "浮点数是一个有漏洞的抽象。它会在训练期间咬你，而你不会事先察觉。",
         "keywords": "IEEE 754: How Computers Store Real Numbers · Why 0.1 + 0.2 != 0.3 · Catastrophic Cancellation · Overflow and Underflow · The Log-Sum-Exp Trick · Why Softmax Needs the Max-Subtraction Trick · NaN and Inf: Detection and Prevention · Numerical Gradient Checking · Mixed Precision Training · bfloat16 vs float16: Why bfloat16 Wins for Training · Gradient Clipping · Normalization Layers as Numerical Stabilizers · Common ML Numerical Bugs · Step 1: Demonstrate floating point precision limits · Step 2: Implement naive vs stable softmax · Step 3: Implement stable log-sum-exp · Step 4: Implement stable cross-entropy · Step 5: Gradient checking · Mixed precision simulation · Gradient clipping · NaN/Inf detection"
       },
       {
-        "name": "Norms & Distances",
+        "name": "范数与距离",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
         "url": "https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/tree/main/phases/01-math-foundations/14-norms-and-distances/",
-        "summary": "Your distance function defines what \"similar\" means. Choose wrong and everything downstream breaks.",
+        "summary": "你的距离函数定义了"相似"的含义。选错了，下游一切都毁。",
         "keywords": "Norms: measuring vector magnitude · L1 Norm (Manhattan distance) · L2 Norm (Euclidean distance) · Lp Norms: the general family · L-infinity Norm (Chebyshev distance) · Cosine Similarity and Cosine Distance · Dot Product Similarity vs Cosine Similarity · Mahalanobis Distance · Jaccard Similarity (for sets) · Edit Distance (Levenshtein Distance) · KL Divergence (not a distance, but used like one) · Wasserstein Distance (Earth Mover's Distance) · Why Different Tasks Need Different Distances · Connection to Loss Functions · Connection to Regularization · Nearest Neighbor Search · Step 1: All norm and distance functions · Step 2: Same data, different distances, different neighbors · Step 3: Embedding similarity search"
       },
       {
-        "name": "Statistics for ML",
+        "name": "机器学习统计",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
         "url": "https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/tree/main/phases/01-math-foundations/15-statistics-for-ml/",
-        "summary": "Statistics is how you know if your model actually works or just got lucky.",
+        "summary": "统计学能告诉你模型是真的有效，还是仅仅靠运气。",
         "keywords": "Descriptive Statistics: Summarizing Your Data · Correlation: How Variables Move Together · Covariance Matrix · Hypothesis Testing · The t-test · Chi-squared Test · A/B Testing for ML Models · Statistical Significance vs Practical Significance · Multiple Comparison Problem · Bootstrap Methods · Parametric vs Non-parametric Tests · Central Limit Theorem: Practical Implications · Common Statistical Mistakes in ML Papers"
       },
       {
-        "name": "Sampling Methods",
+        "name": "采样方法",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
         "url": "https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/tree/main/phases/01-math-foundations/16-sampling-methods/",
-        "summary": "Sampling is how AI explores the space of possibilities.",
+        "summary": "采样是 AI 探索可能性空间的方式。",
         "keywords": "Why Sampling Matters · Uniform Random Sampling · Inverse CDF Method (Inverse Transform Sampling) · Rejection Sampling · Importance Sampling · Monte Carlo Estimation · Markov Chain Monte Carlo (MCMC): Metropolis-Hastings · Gibbs Sampling · Temperature Sampling (Used in LLMs) · Top-k Sampling · Top-p (Nucleus) Sampling · Reparameterization Trick (Used in VAEs) · Gumbel-Softmax (Differentiable Categorical Sampling) · Stratified Sampling · Connection to Diffusion Models · Step 1: Uniform and inverse CDF sampling · Step 2: Rejection sampling · Step 3: Importance sampling · Step 4: Monte Carlo estimation of pi · Step 5: Metropolis-Hastings MCMC · Step 6: Gibbs sampling · Step 7: Temperature sampling · Step 8: Top-k and top-p sampling · Step 9: Reparameterization trick · Step 10: Gumbel-Softmax"
       },
       {
-        "name": "Linear Systems",
+        "name": "线性系统",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
         "url": "https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/tree/main/phases/01-math-foundations/17-linear-systems/",
-        "summary": "Solving Ax = b is the oldest problem in mathematics that still runs your neural network.",
+        "summary": "求解 Ax = b 是最古老却仍在驱动你神经网络的数学问题。",
         "keywords": "What Ax = b means geometrically · Column picture vs row picture · Gaussian elimination · Partial pivoting: why it matters · LU decomposition · QR decomposition · Cholesky decomposition · Least squares: when Ax = b has no exact solution · Normal equations = linear regression · Pseudoinverse (Moore-Penrose) · Condition number · Iterative methods: conjugate gradient · The full picture: which method when · Connection to ML · Step 1: Gaussian elimination with partial pivoting · Step 2: LU decomposition · Step 3: Cholesky decomposition · Step 4: Least squares via normal equations · Step 5: Condition number"
       },
       {
-        "name": "Convex Optimization",
+        "name": "凸优化",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
         "url": "https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/tree/main/phases/01-math-foundations/18-convex-optimization/",
-        "summary": "Convex problems have one valley. Neural networks have millions. Knowing the difference matters.",
+        "summary": "凸问题只有一个谷。神经网络有无数个。知道它们的区别很重要。",
         "keywords": "Convex sets · Convex functions · Testing for convexity · Why convexity matters · Convex vs non-convex in ML · The Hessian matrix · Newton's method · Constrained optimization · Lagrange multipliers · KKT conditions · Regularization as constrained optimization · Duality · Why deep learning works despite non-convexity · Second-order methods in practice · Step 1: Convexity checker · Step 2: Newton's method for 2D · Step 3: Lagrange multiplier solver · Step 4: Compare first-order vs second-order"
       },
       {
-        "name": "Complex Numbers for AI",
+        "name": "AI 中的复数",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -296,7 +296,7 @@ const PHASES = [
         "keywords": "What is a complex number? · Complex arithmetic · The complex plane · Polar form · Euler's formula · Why Euler's formula matters for ML · Connection to 2D rotations · Phasors and rotating signals · Roots of unity · Connection to the DFT · Why i is not imaginary · Complex exponentials vs trigonometric functions · Connection to transformers · Step 1: Complex class · Step 2: Polar conversion and Euler's formula · Step 3: Rotation · Step 4: DFT from complex arithmetic · Step 5: Inverse DFT · Step 6: Roots of unity"
       },
       {
-        "name": "The Fourier Transform",
+        "name": "傅里叶变换",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -305,7 +305,7 @@ const PHASES = [
         "keywords": "The DFT definition · What each coefficient means · Inverse DFT · The FFT: making it fast · Spectral analysis · Frequency resolution · The convolution theorem · Windowing · DFT properties · Connection to positional encodings · Connection to CNNs · Spectrograms and the Short-Time Fourier Transform · Aliasing · Zero-padding does not increase resolution · Step 1: DFT from scratch · Step 2: Inverse DFT · Step 3: FFT (Cooley-Tukey) · Step 4: Spectral analysis helpers"
       },
       {
-        "name": "Graph Theory for ML",
+        "name": "图论与机器学习",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -314,7 +314,7 @@ const PHASES = [
         "keywords": "Graphs: Nodes and Edges · The Adjacency Matrix · Degree · BFS and DFS · The Graph Laplacian · Spectral Properties · Message Passing · Concepts and ML Applications · Step 1: Graph class from scratch · Step 2: BFS and DFS · Step 3: Connected components and Laplacian eigenvalues · Step 4: Spectral clustering · Step 5: Message passing · numpy spectral analysis"
       },
       {
-        "name": "Stochastic Processes",
+        "name": "随机过程",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
