@@ -4,12 +4,12 @@
 const PHASES = [
   {
     "id": 0,
-    "name": "Setup & Tooling",
+    "name": "环境搭建与工具",
     "status": "complete",
     "desc": "Get your environment ready for everything that follows.",
     "lessons": [
       {
-        "name": "Dev Environment",
+        "name": "开发环境",
         "status": "complete",
         "type": "Build",
         "lang": "Python, TypeScript, Rust",
@@ -18,7 +18,7 @@ const PHASES = [
         "keywords": "Step 1: System Foundation · Step 2: Python with uv · Step 3: Node.js with pnpm · Step 4: Rust · Step 5: Julia (Optional) · Step 6: GPU Setup (If You Have One) · Step 7: Verify Everything"
       },
       {
-        "name": "Git & Collaboration",
+        "name": "Git 与协作",
         "status": "complete",
         "type": "Learn",
         "lang": "—",
@@ -27,7 +27,7 @@ const PHASES = [
         "keywords": "Step 1: Configure git · Step 2: The daily workflow · Step 3: Branching for experiments · Step 4: Working with this course repo"
       },
       {
-        "name": "GPU Setup & Cloud",
+        "name": "GPU 配置与云端",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -36,7 +36,7 @@ const PHASES = [
         "keywords": "Option 1: Local NVIDIA GPU · Option 2: Google Colab · Option 3: Cloud GPU · No GPU? No problem."
       },
       {
-        "name": "APIs & Keys",
+        "name": "API 与密钥",
         "status": "complete",
         "type": "Build",
         "lang": "Python, TypeScript",
@@ -45,7 +45,7 @@ const PHASES = [
         "keywords": "Step 1: Store API keys safely · Step 2: First API call (Python) · Step 3: First API call (TypeScript) · Step 4: Raw HTTP (no SDK)"
       },
       {
-        "name": "Jupyter Notebooks",
+        "name": "Jupyter 笔记本",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -54,7 +54,7 @@ const PHASES = [
         "keywords": "Step 1: Pick your interface · Step 2: Keyboard shortcuts that matter · Step 3: Cell types · Step 4: Magic commands · Step 5: Display rich output inline · Step 6: Google Colab · Notebooks vs Scripts: When to use which · Common traps"
       },
       {
-        "name": "Python Environments",
+        "name": "Python 环境",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -63,7 +63,7 @@ const PHASES = [
         "keywords": "Option 1: uv venv (Recommended) · Option 2: venv (Built-in) · Option 3: conda (When You Need It) · For This Course: Per-Phase Strategy · 1. Installing globally · 2. Mixing pip and conda · 3. Forgetting to activate · 4. Committing .venv to git · 5. CUDA version mismatch"
       },
       {
-        "name": "Docker for AI",
+        "name": "Docker 与 AI",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -72,7 +72,7 @@ const PHASES = [
         "keywords": "Why AI projects need Docker more than most · Key vocabulary · Common container patterns in AI · Step 1: Install Docker · Step 2: Install NVIDIA Container Toolkit (Linux with NVIDIA GPU) · Step 3: Understand base images · Step 4: Write a Dockerfile for AI development · Step 5: Volume mounts for data and models · Step 6: Docker Compose for multi-service AI apps · Step 7: Useful Docker commands for AI work · No GPU?"
       },
       {
-        "name": "Editor Setup",
+        "name": "编辑器配置",
         "status": "complete",
         "type": "Build",
         "lang": "—",
@@ -81,7 +81,7 @@ const PHASES = [
         "keywords": "Step 1: Install VS Code · Step 2: Install Essential Extensions · Step 3: Configure Settings · Step 4: Terminal Integration · Step 5: Remote Development (SSH into GPU Boxes) · Cursor · Windsurf · Vim/Neovim"
       },
       {
-        "name": "Data Management",
+        "name": "数据管理",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -90,7 +90,7 @@ const PHASES = [
         "keywords": "Step 1: Install the datasets library · Step 2: Load a dataset · Step 3: Stream large datasets · Step 4: Dataset formats · Step 5: Data splits · Step 6: Download and cache models · Step 7: Handle large files · Step 8: Storage patterns"
       },
       {
-        "name": "Terminal & Shell",
+        "name": "终端与 Shell",
         "status": "complete",
         "type": "Learn",
         "lang": "—",
@@ -99,7 +99,7 @@ const PHASES = [
         "keywords": "Step 1: Know your shell · Step 2: Piping and redirects · Step 3: Background processes · Step 4: tmux · Step 5: Monitoring with htop and nvtop · Step 6: SSH for remote GPU boxes · Step 7: Useful aliases for AI work · Step 8: Common AI terminal patterns"
       },
       {
-        "name": "Linux for AI",
+        "name": "AI 中的 Linux",
         "status": "complete",
         "type": "Learn",
         "lang": "—",
@@ -108,7 +108,7 @@ const PHASES = [
         "keywords": "Moving Around · Files and Directories · Reading Files · Searching"
       },
       {
-        "name": "Debugging & Profiling",
+        "name": "调试与性能分析",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
