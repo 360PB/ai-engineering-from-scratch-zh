@@ -139,7 +139,19 @@ def numerical_derivative(f, x, h=1e-7):
    - 找到对应课程的 `name` 字段，改成中文
    - 例如：`"name": "Dev Environment"` → `"name": "开发环境"`
 
-4. **提交推送**
+4. **⚠️ 提交前必须检查 data.js 语法**
+   ```bash
+   # Windows
+   node -c site/data.js
+
+   # 或用 Node.js 测试
+   node -e "try { eval(require('fs').readFileSync('site/data.js','utf8')); console.log('data.js OK') } catch(e) { console.error('SYNTAX ERROR:', e.message); process.exit(1) }"
+   ```
+   **常见错误**：
+   - 中文引号 `""` → 改为 `「」`
+   - URL 缺少引号 `"url": "phases/...` → 检查是否完整闭合引号
+
+5. **提交推送**
    ```bash
    git add .
    git commit -m "translate: Phase X 第Y课 — 课程名"
