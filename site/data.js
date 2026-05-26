@@ -125,7 +125,7 @@ const PHASES = [
     "desc": "The intuition behind every AI algorithm, through code.",
     "lessons": [
       {
-        "name": "Linear Algebra Intuition",
+        "name": "线性代数直觉",
         "status": "complete",
         "type": "Learn",
         "lang": "Python, Julia",
@@ -134,7 +134,7 @@ const PHASES = [
         "keywords": "Vectors Are Points (and Directions) · Matrices Are Transformations · The Dot Product Measures Similarity · Linear Independence · Basis and Rank · Projection · Gram-Schmidt Process · Step 1: Vectors from scratch (Python) · Step 2: Matrices from scratch (Python) · Step 3: Why this matters for AI · Step 4: Julia version · Step 5: Linear independence and projection from scratch (Python) · Rank, Projection, and QR with NumPy · PyTorch -- Tensors Are Vectors with Autodiff"
       },
       {
-        "name": "Vectors, Matrices & Operations",
+        "name": "向量矩阵与运算",
         "status": "complete",
         "type": "Build",
         "lang": "Python, Julia",
@@ -143,7 +143,7 @@ const PHASES = [
         "keywords": "Vectors: ordered lists of numbers · Matrices: grids of numbers · Why shapes matter · The operations map · Element-wise vs matrix multiplication · Broadcasting · Step 1: Vector class · Step 2: Matrix class with core operations · Step 3: See it work · Step 4: Connect to neural networks"
       },
       {
-        "name": "Matrix Transformations & Eigenvalues",
+        "name": "矩阵变换与特征值",
         "status": "complete",
         "type": "Build",
         "lang": "Python, Julia",
@@ -152,7 +152,7 @@ const PHASES = [
         "keywords": "Transformations as matrices · Rotation · Scaling · Shearing · Reflection · Composition: chaining transformations · Eigenvalues and eigenvectors · Eigendecomposition · Why eigenvalues matter · Determinant as volume scaling factor · Step 1: Transformation matrices from scratch (Python) · Step 2: Composition of transformations · Step 3: Eigenvalues from scratch (2x2) · Step 4: Determinant as volume scaling factor · 3D rotations with NumPy"
       },
       {
-        "name": "Calculus for ML: Derivatives & Gradients",
+        "name": "机器学习中的微积分",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -161,7 +161,7 @@ const PHASES = [
         "keywords": "What is a derivative? · Partial derivatives: one variable at a time · The gradient: vector of all partial derivatives · The connection to optimization · Numerical vs analytical derivatives · Derivatives by hand for simple functions · The chain rule · The Hessian Matrix · Taylor Series Approximation · Integrals in ML · Multivariable Chain Rule in a Computation Graph · The Jacobian matrix · Why this matters for neural networks · Step 1: Numerical derivative from scratch · Step 2: Partial derivatives and gradients · Step 3: Gradient descent to find the minimum of f(x) = x^2 · Step 4: Gradient descent on a 2D function · Step 5: Comparing numerical and analytical derivatives · Step 6: Computing the Hessian numerically · Step 7: Taylor approximation in action · Step 8: Why this matters for a neural network"
       },
       {
-        "name": "Chain Rule & Automatic Differentiation",
+        "name": "链式法则与自动求导",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
@@ -170,7 +170,7 @@ const PHASES = [
         "keywords": "The Chain Rule · Computational Graphs · Forward Mode vs Reverse Mode · Dual Numbers for Forward Mode · Building an Autograd Engine · How PyTorch Autograd Works Under the Hood · Step 1: The Value class · Step 2: Arithmetic operations with gradient tracking · Step 3: The backward pass · Step 4: More operations for a complete engine · Step 5: Mini MLP from scratch · Step 6: Gradient checking · Step 7: Verify against manual calculation · Verify against PyTorch · A more complex expression"
       },
       {
-        "name": "Probability & Distributions",
+        "name": "概率与分布",
         "status": "complete",
         "type": "Learn",
         "lang": "Python",
@@ -179,7 +179,7 @@ const PHASES = [
         "keywords": "Events, Sample Spaces, and Probability · Conditional Probability and Independence · Probability Mass Functions vs Probability Density Functions · Common Distributions · Expected Value and Variance · Joint and Marginal Distributions · Why the Normal Distribution Shows Up Everywhere · Log Probabilities · Softmax as a Probability Distribution · Sampling · Step 1: Probability basics · Step 2: PMF and PDF from scratch · Step 3: Expected value and variance · Step 4: Sampling from distributions · Step 5: Softmax and log probabilities · Step 6: Central Limit Theorem demonstration · Step 7: Visualization"
       },
       {
-        "name": "Bayes' Theorem & Statistical Thinking",
+        "name": "贝叶斯定理",
         "status": "complete",
         "type": "Build",
         "lang": "Python",
