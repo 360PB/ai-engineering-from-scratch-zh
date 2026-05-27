@@ -134,9 +134,9 @@ def numerical_derivative(f, x, h=1e-7):
 - `cmdpalette.js`: 搜索面板占位符和快捷键标签
 - `data.js`: **手动维护**，不再用 `build.js` 自动生成。翻译完新课程后，直接修改 data.js 中对应的课程名
 - `build.js`: 已配置为读取 `README_BUILD.md` + `docs/zh.md` + Gitee 链接，但**当前不使用**（手动维护 data.js 更可控）
-- `lesson.html`: 使用相对路径 `./phases/{path}/docs/zh.md` 加载本地课程文件，依赖 HTTP 服务
-- `catalog.html`: 课程索引，课程名链接指向 Gitee 仓库目录
-- `prereqs.html`: 路线图，已汉化
+- `lesson.html`: 相对路径 `./phases/{path}/docs/zh.md` 加载本地课程，依赖 HTTP 服务。**按钮文本已汉化**：复制、复制命令、已复制！、在 Gitee 查看
+- `catalog.html`: 课程索引，课程名链接指向 Gitee 仓库目录，状态列已汉化
+- `prereqs.html`: 路线图，已汉化。阅读按钮→lesson.html，Gitee查看→仓库目录
 
 ### 本地访问方式（必须）
 
@@ -152,9 +152,9 @@ def numerical_derivative(f, x, h=1e-7):
 
 | 链接类型 | 指向 | 示例 |
 |----------|------|------|
-| 课程名（catalog） | Gitee 仓库目录 | `https://gitee.com/.../tree/master/site/phases/00-setup-and-tooling/01-dev-environment` |
-| 阅读/复习按钮 | lesson.html 本地页面 | `lesson.html?path=phases/00-setup-and-tooling/01-dev-environment` |
-| 代码文件（Run the Code） | Gitee API 获取目录 | 通过 Gitee API 获取 site/phases/ 下 code/ 内容 |
+| 课程名（catalog/prereqs/index弹窗） | Gitee 仓库目录 | `https://gitee.com/.../tree/master/site/phases/00-setup-and-tooling/01-dev-environment` |
+| 阅读/复习按钮（prereqs/index弹窗） | lesson.html 本地页面 | `lesson.html?path=phases/00-setup-and-tooling/01-dev-environment` |
+| 代码文件 Run the Code | Gitee API + Gitee 查看按钮 | 通过 Gitee API 获取 code/ 内容，按钮指向 Gitee 文件页 |
 
 ## 工作流程
 
