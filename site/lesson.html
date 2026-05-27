@@ -2850,7 +2850,7 @@
           cb(null, ghApiCache[apiPath]);
           return;
         }
-        fetch('https://gitee.com/api/v5/repos/qianchilang/ai-engineering-from-scratch-zh/contents/' + apiPath, {
+        fetch('https://gitee.com/api/v5/repos/qianchilang/ai-engineering-from-scratch-zh/contents/phases/' + apiPath.replace('phases/', ''), {
           headers: { 'Accept': 'application/json' }
         }).then(function (res) {
           if (!res.ok) throw new Error(res.status);
