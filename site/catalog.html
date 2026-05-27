@@ -424,13 +424,13 @@
             html += '<tr>';
             html += '<td><span class="catalog-phase-label">' + String(r.phase).padStart(2, '0') + '</span></td>';
             if (r.url) {
-              html += '<td><a href="https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/tree/master/site/' + r.url + '" target="_blank" rel="noopener">' + escapeHtml(r.name) + '</a></td>';
+              html += '<td><a href="lesson.html?path=' + r.url + '">' + escapeHtml(r.name) + '</a></td>';
             } else {
               html += '<td>' + escapeHtml(r.name) + '</td>';
             }
             html += '<td>' + escapeHtml(r.type) + '</td>';
             html += '<td><span class="catalog-lang">' + escapeHtml(r.lang) + '</span></td>';
-            html += '<td><span class="catalog-status-dot ' + r.status + '"></span>' + r.status + '</td>';
+            html += '<td><span class="catalog-status-dot ' + r.status + '"></span>' + (r.status === 'complete' ? '已完成' : r.status === 'in-progress' ? '进行中' : '计划中') + '</td>';
             html += '</tr>';
           }
           bodyEl.innerHTML = html;
