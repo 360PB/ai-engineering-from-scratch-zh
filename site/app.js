@@ -240,7 +240,7 @@
       html += '<div class="modal-lesson' + (userComplete ? ' user-done' : '') + '">';
       html += '<span class="modal-lesson-status ' + statusClass + '"' + (userComplete ? ' title="你已完成这节课"' : '') + '></span>';
       if (l.url) {
-        html += '<a href="https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/tree/master/phases/' + l.url.replace('phases/', '') + '" target="_blank" rel="noopener">' + escapeHtml(l.name) + '</a>';
+        html += '<a href="https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/tree/master/site/' + l.url + '" target="_blank" rel="noopener">' + escapeHtml(l.name) + '</a>';
       } else {
         html += '<a>' + escapeHtml(l.name) + '</a>';
       }
@@ -249,7 +249,7 @@
 
       var actionHtml = '';
       if ((l.status === 'complete' || userComplete) && lessonPath) {
-        actionHtml = '<a href="https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/blob/master/phases/' + lessonPath.replace('phases/', '') + '/docs/zh.md" target="_blank" rel="noopener" class="modal-lesson-read">' + (userComplete ? '复习' : '阅读') + '</a>';
+        actionHtml = '<a href="https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/blob/master/site/' + lessonPath + '/docs/zh.md" target="_blank" rel="noopener" class="modal-lesson-read">' + (userComplete ? '复习' : '阅读') + '</a>';
       }
       var toggleHtml = '';
       if (hasProgress && lessonPath) {
