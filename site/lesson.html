@@ -2392,7 +2392,7 @@
       function renderCodeBlock(code, lang) {
         var highlighted = highlightSyntax(escapeHtml(code), lang);
         var langLabel = lang ? '<span class="code-lang">' + escapeHtml(lang) + '</span>' : '';
-        return '<pre>' + langLabel + '<button class="code-copy" data-code="' + escapeAttr(code) + '">Copy</button><code>' + highlighted + '</code></pre>';
+        return '<pre>' + langLabel + '<button class="code-copy" data-code="' + escapeAttr(code) + '">复制</button><code>' + highlighted + '</code></pre>';
       }
 
       function highlightSyntax(code, lang) {
@@ -2440,8 +2440,8 @@
           btn.addEventListener('click', function () {
             var code = btn.getAttribute('data-code');
             navigator.clipboard.writeText(code).then(function () {
-              btn.textContent = 'Copied!';
-              setTimeout(function () { btn.textContent = 'Copy'; }, 1500);
+              btn.textContent = '已复制！';
+              setTimeout(function () { btn.textContent = '复制'; }, 1500);
             });
           });
         });
@@ -2981,7 +2981,7 @@
             html += '<div class="code-card-run">' + escapeHtml(runCmd) + '</div>';
             html += '<div class="code-card-actions">';
             html += '<a class="code-card-btn" href="' + file.html_url + '" target="_blank" rel="noopener">View on GitHub</a>';
-            html += '<button class="code-card-btn code-card-copy" data-command="' + escapeAttr(runCmd) + '">Copy command</button>';
+            html += '<button class="code-card-btn code-card-copy" data-command="' + escapeAttr(runCmd) + '">复制命令</button>';
             html += '</div>';
             html += '</div>';
           });
@@ -2991,8 +2991,8 @@
             btn.addEventListener('click', function () {
               var command = btn.getAttribute('data-command');
               navigator.clipboard.writeText(command).then(function () {
-                btn.textContent = 'Copied!';
-                setTimeout(function () { btn.textContent = 'Copy command'; }, 1500);
+                btn.textContent = '已复制！';
+                setTimeout(function () { btn.textContent = '复制命令'; }, 1500);
               });
             });
           });
