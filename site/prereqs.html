@@ -431,16 +431,16 @@
     <div class="container">
       <div class="prereqs-header">
         <h1>路线图</h1>
-        <p>Click any phase to see its prerequisites and what it unlocks downstream.</p>
+        <p>点击任意阶段查看其前置条件及后续解锁内容。</p>
       </div>
 
       <div class="prereqs-controls">
         <div class="prereqs-legend">
-          <div class="legend-item"><span class="legend-dot complete"></span> Complete</div>
-          <div class="legend-item"><span class="legend-dot in-progress"></span> In Progress</div>
-          <div class="legend-item"><span class="legend-dot planned"></span> Planned</div>
+          <div class="legend-item"><span class="legend-dot complete"></span> 已完成</div>
+          <div class="legend-item"><span class="legend-dot in-progress"></span> 进行中</div>
+          <div class="legend-item"><span class="legend-dot planned"></span> 计划中</div>
         </div>
-        <button class="reset-btn" id="resetBtn">&#10005; Clear selection</button>
+        <button class="reset-btn" id="resetBtn">&#10005; 清除选择</button>
       </div>
 
       <div class="graph-scroll-hint">&#8596; Scroll to explore the full graph</div>
@@ -946,7 +946,7 @@
         }
         prereqHtml += '</ul>';
       } else {
-        prereqHtml = '<div class="detail-empty">None. This is a starting point.</div>';
+        prereqHtml = '<div class="detail-empty">无。起点阶段。</div>';
       }
 
       /* Unlocks list */
@@ -961,7 +961,7 @@
         }
         unlockHtml += '</ul>';
       } else {
-        unlockHtml = '<div class="detail-empty">Final destination. End of the curriculum.</div>';
+        unlockHtml = '<div class="detail-empty">终点。课程终点。</div>';
       }
 
       /* Compute exact GitHub tree URL using standard slug logic */
@@ -985,23 +985,21 @@
 
       panel.innerHTML =
         '<div class="detail-top">' +
-          '<span class="detail-phase-num">Phase ' + String(id).padStart(2, '0') + '</span>' +
-          '<span class="detail-status ' + phase.status + '">' + phase.status.replace('-', ' ') + '</span>' +
+          '<span class="detail-phase-num">第 ' + String(id).padStart(2, '0') + ' 阶段</span>' +
+          '<span class="detail-status ' + phase.status + '">' + (phase.status === 'complete' ? '已完成' : phase.status === 'in-progress' ? '进行中' : '计划中') + '</span>' +
         '</div>' +
         '<div class="detail-title">' + escapeHtml(phase.name) + '</div>' +
         '<div class="detail-desc">' + escapeHtml(phase.desc) + '</div>' +
         '<div class="detail-stats">' +
-          '<strong>' + stats.done + '</strong> of <strong>' + stats.total + '</strong> lessons complete' +
-          ' &nbsp;·&nbsp; <strong>' + ancestorCount + '</strong> prerequisite phases' +
-          ' &nbsp;·&nbsp; <strong>' + descendantCount + '</strong> phases unlocked' +
+          '<strong>' + stats.done + '</strong>/<strong>' + stats.total + '</strong> 课 &nbsp;·&nbsp; <strong>' + ancestorCount + '</strong> 前置阶段 &nbsp;·&nbsp; <strong>' + descendantCount + '</strong> 解锁阶段' +
         '</div>' +
         '<div class="detail-sections">' +
-          '<div><div class="detail-section-title"><span class="title-icon" style="color:var(--accent)">&#9664;</span> Prerequisites</div>' + prereqHtml + '</div>' +
-          '<div><div class="detail-section-title"><span class="title-icon" style="color:var(--complete)">&#9654;</span> Unlocks</div>' + unlockHtml + '</div>' +
+          '<div><div class="detail-section-title"><span class="title-icon" style="color:var(--accent)">&#9664;</span> 前置条件</div>' + prereqHtml + '</div>' +
+          '<div><div class="detail-section-title"><span class="title-icon" style="color:var(--complete)">&#9654;</span> 解锁内容</div>' + unlockHtml + '</div>' +
         '</div>' +
         '<div class="detail-actions">' +
-          (readLink ? '<a href="' + readLink + '" class="detail-link detail-link-read">Read</a>' : '') +
-          '<a href="' + phaseGithubUrl + '" target="_blank" rel="noopener" class="detail-link">View on GitHub</a>' +
+          (readLink ? '<a href="' + readLink + '" class="detail-link detail-link-read">阅读</a>' : '') +
+          '<a href="' + phaseGithubUrl + '" target="_blank" rel="noopener" class="detail-link">在 Gitee 查看</a>' +
         '</div>';
 
       panel.classList.add('open');
