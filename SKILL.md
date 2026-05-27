@@ -130,44 +130,54 @@ def numerical_derivative(f, x, h=1e-7):
 ### 网站翻译要点
 
 - `index.html`: 导航、按钮、标签、状态文字
-- `app.js`: 模态框交互文字、确认对话框
+- `app.js`: 模态框交互文字、确认对话框。**"阅读"按钮指向 `lesson.html?path=`**，在页面内加载本地 MD 文档
 - `cmdpalette.js`: 搜索面板占位符和快捷键标签
 - `data.js`: **手动维护**，不再用 `build.js` 自动生成。翻译完新课程后，直接修改 data.js 中对应的课程名
 - `build.js`: 已配置为读取 `README_BUILD.md` + `docs/zh.md` + Gitee 链接，但**当前不使用**（手动维护 data.js 更可控）
-- `lesson.html`: 已改为用**相对路径** `./phases/{path}/docs/zh.md` 加载本地课程文件（避免 Gitee raw 跨域问题）
+- `lesson.html`: 使用相对路径 `./phases/{path}/docs/zh.md` 加载本地课程文件，依赖 HTTP 服务
+- `catalog.html`: 课程索引，课程名链接指向 Gitee 仓库目录
+- `prereqs.html`: 路线图，已汉化
+
+### 本地访问方式（必须）
+
+1. 双击 `启动网站.bat` 或手动执行：
+   ```bash
+   cd site/
+   python -m http.server 8080
+   ```
+2. 打开 `http://localhost:8080/lesson.html?path=phases/00-setup-and-tooling/01-dev-environment`
+3. 便携 Python 在 `python/` 目录下，`启动网站.bat` 会自动优先使用
+
+### 链接规范（重要）
+
+| 链接类型 | 指向 | 示例 |
+|----------|------|------|
+| 课程名（catalog） | Gitee 仓库目录 | `https://gitee.com/.../tree/master/site/phases/00-setup-and-tooling/01-dev-environment` |
+| 阅读/复习按钮 | lesson.html 本地页面 | `lesson.html?path=phases/00-setup-and-tooling/01-dev-environment` |
+| 代码文件（Run the Code） | Gitee API 获取目录 | 通过 Gitee API 获取 site/phases/ 下 code/ 内容 |
 
 ## 工作流程
 
-### 翻译新课程（4步）
+### 翻译新课程（3步）
 
 1. **翻译课程文档**
    - 读取原文：`original/phases/XX-阶段名/XX-课程名/docs/en.md`
-   - 创建目录：`phases/XX-中文阶段名/XX-中文课程名/{code,docs,outputs,assets}`
-   - 写入 `docs/zh.md`
-   - 复制 `code/` 文件，注释改为中文
-   - 写入 `outputs/*-zh.md`
+   - 写入翻译：`site/phases/XX-英文阶段名/XX-英文课程名/docs/zh.md`
+   - 代码文件在 `site/phases/.../code/`，outputs 在 `site/phases/.../outputs/`
 
-2. **同步到 site/phases/（EdgeOne Pages 实际部署目录）**
-   - `cp -r phases/XX-中文阶段名/XX-中文课程名 site/phases/XX-英文阶段名/XX-英文课程名/`
-   - **必须保持英文路径**（data.js 和 lesson.html 用英文路径匹配）
-
-3. **更新 data.js 课程名**
+2. **更新 data.js 课程名**
    - 找到对应课程的 `name` 字段，改成中文
-   - 例如：`"name": "Dev Environment"` → `"name": "开发环境"`
 
-4. **⚠️ 提交前必须检查 data.js 语法**
+3. **⚠️ 提交前必须检查 data.js 语法**
    ```bash
    # Windows
    node -c site/data.js
-
-   # 或用 Node.js 测试
-   node -e "try { eval(require('fs').readFileSync('site/data.js','utf8')); console.log('data.js OK') } catch(e) { console.error('SYNTAX ERROR:', e.message); process.exit(1) }"
    ```
    **常见错误**：
    - 中文引号 `""` → 改为 `「」`
    - URL 缺少引号 `"url": "phases/...` → 检查是否完整闭合引号
 
-5. **提交推送**
+4. **提交推送**
    ```bash
    git add .
    git commit -m "translate: Phase X 第Y课 — 课程名"
@@ -192,21 +202,20 @@ git push origin master
 
 | 用途 | 路径 |
 |------|------|
-| 原文课程库 | `original/phases/` |
-| 中文课程库 | `phases/` |
-| 部署课程库 | `site/phases/`（EdgeOne Pages 实际部署） |
+| 中文课程库（实际部署） | `site/phases/`（英文路径，英文课名） |
+| 英文原文对照 | `original/phases/` |
+| 课程数据 | `site/data.js`（手动维护中文课名） |
+| 课程展示页 | `site/lesson.html`（相对路径加载本地 MD） |
 | Gitee 首页 | `README.md` |
-| 构建用课程目录 | `README_BUILD.md`（build.js 读取） |
+| 构建用课程目录 | `README_BUILD.md` |
 | 课程状态追踪 | `ROADMAP.md` |
 | 术语表 | `glossary/terms.md` |
 | 综合项目 | `17个综合大项目.md` |
 | 网站首页 | `site/index.html` |
-| 课程页 | `site/lesson.html` |
 | 课程索引 | `site/catalog.html` |
 | 术语表页 | `site/glossary.html` |
 | 路线图页 | `site/prereqs.html` |
-| 课程数据 | `site/data.js`（手动维护） |
-| 构建脚本 | `site/build.js`（备用） |
+| 启动脚本 | `启动网站.bat` + `python/`（便携 Python） |
 
 ## 翻译进度
 
