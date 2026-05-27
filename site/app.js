@@ -234,8 +234,8 @@
       var userComplete = hasProgress && lessonPath && window.AIFSProgress.isLessonComplete(lessonPath);
       if (userComplete) userDone++;
 
-      var statusClass = l.status.replace(/ /g, '-');
-      if (userComplete) statusClass = 'complete';
+      var statusClass = userComplete ? 'complete' : l.status.replace(/ /g, '-');
+      var typeLabel = l.type === 'Learn' ? '学习' : l.type === 'Build' ? '动手' : '项目';
 
       html += '<div class="modal-lesson' + (userComplete ? ' user-done' : '') + '">';
       html += '<span class="modal-lesson-status ' + statusClass + '"' + (userComplete ? ' title="你已完成这节课"' : '') + '></span>';
@@ -244,7 +244,7 @@
       } else {
         html += '<a>' + escapeHtml(l.name) + '</a>';
       }
-      html += '<span class="modal-lesson-type" data-type="' + escapeHtml(l.type) + '"' + (l.combines ? ' title="组合：' + escapeHtml(l.combines) + '"' : '') + '>' + escapeHtml(l.type) + '</span>';
+      html += '<span class="modal-lesson-type" data-type="' + escapeHtml(l.type) + '"' + (l.combines ? ' title="组合：' + escapeHtml(l.combines) + '"' : '') + '>' + typeLabel + '</span>';
       html += '<span class="modal-lesson-lang">' + escapeHtml(l.lang) + '</span>';
 
       var actionHtml = '';
