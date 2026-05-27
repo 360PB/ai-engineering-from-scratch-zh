@@ -965,7 +965,7 @@
       }
 
       /* Compute exact GitHub tree URL using standard slug logic */
-      var phaseGithubUrl = 'https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/tree/main/phases/' + extractPhaseSlug(phase);
+      var phaseGithubUrl = 'https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/tree/master/site/phases/' + extractPhaseSlug(phase);
 
       /* Find first readable lesson for Read button */
       var readLink = '';
@@ -975,7 +975,7 @@
         if (!lesson.url) continue;
         var pm = lesson.url.match(/(phases\/[^/]+\/[^/]+)\/?$/);
         if (pm) {
-          readLink = 'https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/tree/master/site/' + encodeURI(pm[1]);
+          readLink = 'lesson.html?path=' + pm[1];
           break;
         }
       }

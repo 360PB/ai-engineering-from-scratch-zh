@@ -2908,7 +2908,7 @@
         ghApiFetch(lessonPath + '/outputs', function (err, data) {
           var el = document.getElementById('outputsContent');
           if (err || !data || !Array.isArray(data) || data.length === 0) {
-            el.innerHTML = '<div class="panel-fallback"><a href="https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/tree/main/' + lessonPath + '" target="_blank" rel="noopener">View lesson on GitHub</a></div>';
+            el.innerHTML = '<div class="panel-fallback"><a href="https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/tree/master/site/' + lessonPath + '" target="_blank" rel="noopener">在 Gitee 查看</a></div>';
             return;
           }
 
@@ -2931,7 +2931,7 @@
             html += '<div class="output-card-name">' + escapeHtml(file.name) + '</div>';
             html += '<div class="output-desc" id="desc-' + idx + '">Loading description...</div>';
             html += '<div class="output-actions">';
-            html += '<a class="output-btn" href="' + file.html_url + '" target="_blank" rel="noopener">View on GitHub</a>';
+            html += '<a class="output-btn" href="' + file.html_url + '" target="_blank" rel="noopener">在 Gitee 查看</a>';
             if (installHint) {
               html += '<button class="output-btn" onclick="var h=document.getElementById(\'' + installId + '\');h.classList.toggle(\'visible\')">Install</button>';
             }
@@ -2966,7 +2966,7 @@
         ghApiFetch(lessonPath + '/code', function (err, data) {
           var el = document.getElementById('codeContent');
           if (err || !data || !Array.isArray(data) || data.length === 0) {
-            el.innerHTML = '<div class="panel-fallback"><a href="https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/tree/main/' + lessonPath + '" target="_blank" rel="noopener">View lesson on GitHub</a></div>';
+            el.innerHTML = '<div class="panel-fallback"><a href="https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/tree/master/site/' + lessonPath + '" target="_blank" rel="noopener">在 Gitee 查看</a></div>';
             return;
           }
 
@@ -2980,7 +2980,7 @@
             html += '<div class="code-card-size">' + formatSize(file.size) + '</div>';
             html += '<div class="code-card-run">' + escapeHtml(runCmd) + '</div>';
             html += '<div class="code-card-actions">';
-            html += '<a class="code-card-btn" href="' + file.html_url + '" target="_blank" rel="noopener">View on GitHub</a>';
+            html += '<a class="code-card-btn" href="' + file.html_url + '" target="_blank" rel="noopener">在 Gitee 查看</a>';
             html += '<button class="code-card-btn code-card-copy" data-command="' + escapeAttr(runCmd) + '">复制命令</button>';
             html += '</div>';
             html += '</div>';
