@@ -1835,10 +1835,10 @@
       }
 
       function fetchLesson(path) {
-        // path 格式为 "phases/00-setup-and-tooling/01-dev-environment"，实际在 site/phases/
-        var zhUrl = './site/' + path + '/docs/zh.md';
-        var enUrl = './site/' + path + '/docs/en.md';
-        var quizUrl = './site/' + path + '/quiz.json';
+        // lesson.html 在 site/ 下，课程在 site/phases/ 下
+        var zhUrl = './' + path + '/docs/zh.md';
+        var enUrl = './' + path + '/docs/en.md';
+        var quizUrl = './' + path + '/quiz.json';
 
         // Try zh.md first, fallback to en.md
         fetch(zhUrl)
