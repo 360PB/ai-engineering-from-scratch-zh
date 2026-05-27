@@ -6,7 +6,7 @@
 
 - **原文**: 435 节课，20 个阶段，~320 小时，Python/TypeScript/Rust/Julia
 - **目标**: 将课程文档、代码注释、网站 UI 全面中文化
-- **进度**: Phase 0-19 全部完成（433/433课），共缺 0 课 ✅
+- **进度**: ✅ Phase 0-19 全部完成（433/433课，100%）
 - **已翻译目录**: `site/phases/`（20个阶段433课），`phases/`（Phase 0-1 完整对照）
 - **对照翻译**: 英文原版已放在本仓库 `original/` 目录下，无需额外克隆
 - **中文仓库**: https://gitee.com/qianchilang/ai-engineering-from-scratch-zh（私有）
