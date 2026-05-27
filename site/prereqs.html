@@ -975,7 +975,7 @@
         if (!lesson.url) continue;
         var pm = lesson.url.match(/(phases\/[^/]+\/[^/]+)\/?$/);
         if (pm) {
-          readLink = 'lesson.html?path=' + encodeURI(pm[1]);
+          readLink = 'https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/tree/master/phases/' + encodeURI(pm[1]).replace('%2F', '/').replace('%2F', '/');
           break;
         }
       }
