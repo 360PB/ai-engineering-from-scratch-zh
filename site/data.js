@@ -6,7 +6,7 @@ const PHASES = [
     "id": 0,
     "name": "环境搭建与工具",
     "status": "complete",
-    "desc": "Get your environment ready for everything that follows.",
+    "desc": "为你准备好后续所有内容所需的环境。",
     "lessons": [
       {
         "name": "开发环境",
@@ -623,7 +623,7 @@ const PHASES = [
     "id": 4,
     "name": "计算机视觉",
     "status": "complete",
-    "desc": "From pixels to understanding — image, video, 3D, VLMs, and world models.",
+    "desc": "从像素到理解——图像、视频、3D、视觉语言模型与世界模型。",
     "lessons": [
       {
         "name": "图像基础：像素、通道、色彩空间",
@@ -883,7 +883,7 @@ const PHASES = [
     "id": 5,
     "name": "NLP：基础到进阶",
     "status": "complete",
-    "desc": "Language is the interface to intelligence.",
+    "desc": "语言是通往智能的接口。",
     "lessons": [
       {
         "name": "文本处理：分词、词干提取、词形还原",
@@ -1152,7 +1152,7 @@ const PHASES = [
     "id": 6,
     "name": "语音与音频",
     "status": "complete",
-    "desc": "Hear, understand, speak.",
+    "desc": "听、理解、说话。",
     "lessons": [
       {
         "name": "音频基础：波形、采样、FFT",
@@ -1313,7 +1313,7 @@ const PHASES = [
     "id": 7,
     "name": "Transformers 深度解析",
     "status": "complete",
-    "desc": "The architecture that changed everything.",
+    "desc": "改变一切的架构。",
     "lessons": [
       {
         "name": "为什么用 Transformer：RNN 的问题",
@@ -1465,7 +1465,7 @@ const PHASES = [
     "id": 8,"id": 8,
     "name": "生成式 AI",
     "status": "complete",
-    "desc": "Create images, video, audio, 3D, and more.",
+    "desc": "创造图像、视频、音频、3D 等。",
     "lessons": [
       {
         "name": "生成模型：分类与历史",
@@ -1607,7 +1607,7 @@ const PHASES = [
     "id": 9,"id": 9,
     "name": "强化学习",
     "status": "complete",
-    "desc": "The foundation of RLHF and game-playing AI.",
+    "desc": "RLHF 和游戏 AI 的基础。",
     "lessons": [
       {
         "name": "MDP、状态、动作与奖励",
@@ -1723,7 +1723,7 @@ const PHASES = [
     "id": 10,
     "name": "从零构建 LLM",
     "status": "complete",
-    "desc": "Build, train, and understand large language models.",
+    "desc": "从第一性原理构建、训练和理解大语言模型。",
     "lessons": [
       {
         "name": "分词器：BPE、WordPiece、SentencePiece",
@@ -1947,7 +1947,7 @@ const PHASES = [
     "id": 11,"id": 11,
     "name": "LLM 工程",
     "status": "complete",
-    "desc": "Put LLMs to work in production.",
+    "desc": "在生产环境中让 LLM 工作。",
     "lessons": [
       {
         "name": "提示工程：技术与模式",
@@ -2108,7 +2108,7 @@ const PHASES = [
     "id": 12,
     "name": "多模态 AI",
     "status": "complete",
-    "desc": "See, hear, read, and reason across modalities — from ViT patches to computer-use agents.",
+    "desc": "跨模态感知与推理——从 ViT 分块到计算机使用 Agent。",
     "lessons": [
       {
         "name": "视觉 Transformer 与 Patch-Token 原语",
@@ -2341,7 +2341,7 @@ const PHASES = [
     "id": 13,
     "name": "工具与协议",
     "status": "complete",
-    "desc": "The interfaces between AI and the real world.",
+    "desc": "AI 与现实世界之间的接口。",
     "lessons": [
       {
         "name": "工具接口",
@@ -2556,7 +2556,7 @@ const PHASES = [
     "id": 14,
     "name": "Agent 工程",
     "status": "complete",
-    "desc": "Build agents from first principles — loop, memory, planning, frameworks, benchmarks, production, workbench.",
+    "desc": "从第一性原理构建 Agent——循环、记忆、规划、框架、基准、生产、工作台。",
     "lessons": [
       {
         "name": "Agent 循环",
@@ -2942,7 +2942,7 @@ const PHASES = [
     "id": 15,
     "name": "自主系统",
     "status": "complete",
-    "desc": "Long-horizon agents, self-improvement, and the 2026 safety stack.",
+    "desc": "长周期 Agent、自我改进与 2026 安全栈。",
     "lessons": [
       {
         "name": "从聊天机器人到长时 Agent（METR）",
@@ -3148,7 +3148,7 @@ const PHASES = [
     "id": 16,
     "name": "多 Agent 与 Swarm",
     "status": "complete",
-    "desc": "Coordination, emergence, and collective intelligence.",
+    "desc": "协调、涌现与集体智能。",
     "lessons": [
       {
         "name": "为什么用多 Agent",
@@ -3381,7 +3381,7 @@ const PHASES = [
     "id": 17,
     "name": "基础设施与生产部署",
     "status": "complete",
-    "desc": "Ship AI to the real world.",
+    "desc": "将 AI 交付到真实世界。",
     "lessons": [
       {
         "name": "托管 LLM 平台——Bedrock、Azure OpenAI、Vertex AI",
@@ -3557,7 +3557,7 @@ const PHASES = [
     "id": 18,
     "name": "伦理、安全与对齐",
     "status": "complete",
-    "desc": "Build AI that helps humanity. Not optional.",
+    "desc": "构建助益于人类的 AI。不可或缺。",
     "lessons": [
       {
         "name": "指令跟随作为对齐信号",
@@ -3835,7 +3835,7 @@ const PHASES = [
     "id": 19,
     "name": "毕业项目",
     "status": "complete",
-    "desc": "2026 end-to-end shippable products, 20-40 hours each.",
+    "desc": "2026 年可交付的端到端产品，每项 20-40 小时。",
     "lessons": [
       {
         "name": "终端原生编程 Agent",
