@@ -249,7 +249,7 @@
 
       var actionHtml = '';
       if ((l.status === 'complete' || userComplete) && lessonPath) {
-        actionHtml = '<a href="https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/tree/master/site/' + lessonPath + '" target="_blank" rel="noopener" class="modal-lesson-read">' + (userComplete ? '复习' : '阅读') + '</a>';
+        actionHtml = '<a href="https://gitee.com/qianchilang/ai-engineering-from-scratch-zh/blob/master/site/' + lessonPath + '/docs/zh.md" target="_blank" rel="noopener" class="modal-lesson-read">' + (userComplete ? '复习' : '阅读') + '</a>';
       }
       var toggleHtml = '';
       if (hasProgress && lessonPath) {
