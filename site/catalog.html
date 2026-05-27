@@ -257,12 +257,12 @@
         <p>20 个阶段全部 435 课。支持搜索、筛选、排序。</p>
       </div>
       <div class="catalog-controls">
-        <input type="text" class="catalog-search" id="catalogSearch" placeholder="Search lessons...">
+        <input type="text" class="catalog-search" id="catalogSearch" placeholder="搜索课程...">
         <select class="catalog-filter" id="catalogPhase">
           <option value="">所有阶段</option>
         </select>
         <select class="catalog-filter" id="catalogStatus">
-          <option value="">All Status</option>
+          <option value="">全部状态</option>
           <option value="complete">已完成</option>
           <option value="planned">计划中</option>
         </select>
@@ -272,11 +272,11 @@
         <table class="catalog-table" id="catalogTable">
           <thead>
             <tr>
-              <th data-sort="phase">Phase <span class="sort-arrow"></span></th>
-              <th data-sort="name">Lesson <span class="sort-arrow"></span></th>
-              <th data-sort="type">Type <span class="sort-arrow"></span></th>
-              <th data-sort="lang">Language <span class="sort-arrow"></span></th>
-              <th data-sort="status">Status <span class="sort-arrow"></span></th>
+              <th data-sort="phase">阶段 <span class="sort-arrow"></span></th>
+              <th data-sort="name">课程 <span class="sort-arrow"></span></th>
+              <th data-sort="type">类型 <span class="sort-arrow"></span></th>
+              <th data-sort="lang">语言 <span class="sort-arrow"></span></th>
+              <th data-sort="status">状态 <span class="sort-arrow"></span></th>
             </tr>
           </thead>
           <tbody id="catalogBody"></tbody>
@@ -411,10 +411,10 @@
             return 0;
           });
 
-          countEl.textContent = rows.length + ' of ' + allRows.length + ' lessons';
+          countEl.textContent = rows.length + ' / ' + allRows.length + ' 课';
 
           if (rows.length === 0) {
-            bodyEl.innerHTML = '<tr><td colspan="5" class="catalog-empty">No lessons match your filters.</td></tr>';
+            bodyEl.innerHTML = '<tr><td colspan="5" class="catalog-empty">没有课程匹配你的筛选条件。</td></tr>';
             return;
           }
 
