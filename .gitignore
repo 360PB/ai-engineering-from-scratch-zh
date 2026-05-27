@@ -1,4 +1,3 @@
-python/
 *.zip
 __pycache__/
 *.pyc
