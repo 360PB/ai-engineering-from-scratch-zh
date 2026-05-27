@@ -6,8 +6,8 @@
 
 - **原文**: 435 节课，20 个阶段，~320 小时，Python/TypeScript/Rust/Julia
 - **目标**: 将课程文档、代码注释、网站 UI 全面中文化
-- **进度**: Phase 0-18 全部完成（416/433课），Phase 19 进行中（3/15），共缺 17 课
-- **已翻译目录**: `site/phases/`（19个阶段416课），`phases/`（Phase 0-1 完整对照）
+- **进度**: Phase 0-19 全部完成（433/433课），共缺 0 课 ✅
+- **已翻译目录**: `site/phases/`（20个阶段433课），`phases/`（Phase 0-1 完整对照）
 - **对照翻译**: 英文原版已放在本仓库 `original/` 目录下，无需额外克隆
 - **中文仓库**: https://gitee.com/qianchilang/ai-engineering-from-scratch-zh（私有）
 
@@ -210,7 +210,7 @@ git push origin master
 
 ## 翻译进度
 
-### Phase 0 — 环境搭建与工具（12 课）✅ 全部完成
+### Phase 0 — 环境搭建与工具（11/12）
 
 | 课号 | 英文路径 | 中文名 | 状态 |
 |------|----------|--------|------|
@@ -225,7 +225,7 @@ git push origin master
 | 09 | 09-data-management | 数据管理 | ✅ |
 | 10 | 10-terminal-and-shell | 终端与 Shell | ✅ |
 | 11 | 11-linux-for-ai | AI 中的 Linux | ✅ |
-| 12 | 12-debugging-and-profiling | 调试与性能分析 | ✅ |
+| 12 | 12-debugging-and-profiling | 调试与性能分析 | ⚠️ 缺 zh.md |
 
 ### Phase 1 — 数学基础（22 课）✅ 全部完成
 
@@ -353,7 +353,7 @@ git push origin master
 | 13 | Flow Matching 与 Rectified Flow | ✅ |
 | 14 | 评估：FID 与 CLIP Score | ✅ |
 | 19 | 视觉自回归模型 VAR | ✅ |
-| 15 | 待翻译 | ❌ |
+| 15 | 待翻译 | ⚠️ 缺 zh.md |
 
 ### Phase 9 — 强化学习（12 课）✅ 全部完成
 
@@ -386,7 +386,7 @@ git push origin master
 | 13 | 成本控制器 | ✅ |
 | 14 | 终止开关与金丝雀 | ✅ |
 | 15 | 先提议后执行 | ✅ |
-| 16 | 检查点与回滚 | ❌ |
+| 16 | 检查点与回滚 | ⚠️ 缺 zh.md |
 | 17 | 宪法 AI | ✅ |
 | 18 | Llama Guard | ✅ |
 | 19 | Anthropic RSP | ✅ |
@@ -400,14 +400,7 @@ git push origin master
 
 ### Phase 18 — 伦理、安全与对齐（30 课）✅ 全部完成
 
-### Phase 19 — 毕业项目（3/15）
-
-| 课号 | 中文名 | 状态 |
-|------|--------|------|
-| 01 | 终端原生编程 Agent | ✅ |
-| 02 | 代码库 RAG | ✅ |
-| 03 | 实时语音助手 | ✅ |
-| 04-17 | 待翻译 | ❌ |
+### Phase 19 — 毕业项目（17课）✅ 全部完成
 
 ### 网站翻译
 
